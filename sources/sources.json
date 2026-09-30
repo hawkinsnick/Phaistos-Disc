@@ -28,5 +28,42 @@
     "acquisition_status": "blocked_http_502",
     "record_license": "NOASSERTION",
     "scope": "Full exhibit page unavailable; not a checked transcription witness."
+  },
+  {
+    "source_id": "evans1909",
+    "title": "Scripta Minoa I",
+    "author": "Arthur J. Evans",
+    "publication_year": 1909,
+    "url": "https://archive.org/details/scriptaminoawrit01evanuoft",
+    "download_url": "https://archive.org/download/scriptaminoawrit01evanuoft/scriptaminoawrit01evanuoft.pdf",
+    "full_source_sha256": "b06f8a04f3f7e33578f28aa0e88be600a13ebc6d03891a79c721558ca50c05e7",
+    "bytes": 24716760,
+    "acquisition_status": "authenticated_bytes",
+    "record_license": "Public-domain historical edition; original project transcription MIT",
+    "rights_evidence_url": "https://archive.org/details/scriptaminoawrit01evanuoft",
+    "rights_evidence": "Archive metadata: publication 1909, possible copyright status NOT_IN_COPYRIGHT, copyright-region US. Faithful historical page reproductions; no modern edition or museum image license is implied.",
+    "locators": [
+      "p.276 Figure126 signary (PDF page294)",
+      "p.280 Figure128 face A (PDF page298)",
+      "p.282 Figure129 face B (PDF page300)",
+      "p.274 reported counts (PDF page292)",
+      "p.288 stroke discussion (PDF page306)",
+      "plates XII/XIII (PDF pages347/351)"
+    ],
+    "review_scope": "Project visual transcription of numbered figures; not a new examination of the physical object and not external peer review."
+  },
+  {
+    "source_id": "unicode-proposal2006",
+    "url": "https://unicode.org/wg2/docs/n3066.pdf",
+    "title": "Proposal for encoding the Phaistos Disc characters in the SMP of the UCS",
+    "authors": [
+      "Michael Everson",
+      "John Jenkins"
+    ],
+    "publication_date": "2006-04-01",
+    "full_source_sha256": "de456fcda8f74b9c4251661dbff10a5bcd65feed7fe864b946980711219a9b1b",
+    "acquisition_status": "authenticated_bytes",
+    "record_license": "NOASSERTION",
+    "scope": "Attributed count and direction assertions only; no figures or PDF redistributed."
   }
 ]

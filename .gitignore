@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 .venv/
+sources/images/
+source-cache/
+output/

@@ -1,0 +1,276 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "object_id": {
+      "const": "PD-001"
+    },
+    "physical_objects": {
+      "const": 1
+    },
+    "faces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "face_id": {
+            "enum": [
+              "PD-001-A",
+              "PD-001-B"
+            ]
+          },
+          "label": {
+            "enum": [
+              "A",
+              "B"
+            ]
+          },
+          "independent_document": {
+            "const": false
+          },
+          "reading_direction": {
+            "type": "null"
+          },
+          "starting_point": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "face_id",
+          "label",
+          "independent_document",
+          "reading_direction",
+          "starting_point"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "witnesses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "witness_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_lineage": {
+            "type": "string",
+            "minLength": 1
+          },
+          "verification_status": {
+            "const": "project_source_checked"
+          },
+          "external_peer_review_completed": {
+            "const": false
+          },
+          "project_traversal": {
+            "const": "outer_to_inner"
+          },
+          "source_numbering": {
+            "const": "center_to_outer"
+          }
+        },
+        "required": [
+          "witness_id",
+          "source_id",
+          "source_lineage",
+          "verification_status",
+          "external_peer_review_completed",
+          "project_traversal",
+          "source_numbering"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "group_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "face_id": {
+            "enum": [
+              "PD-001-A",
+              "PD-001-B"
+            ]
+          },
+          "evans_label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "outer_index": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 31
+          },
+          "witness_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "occurrence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 2,
+            "maxItems": 7
+          },
+          "interpretation_as_word": {
+            "type": "null"
+          },
+          "separator_status": {
+            "const": "source_graphical_group"
+          },
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              },
+              "verification_status": {
+                "const": "project_source_checked"
+              }
+            },
+            "required": [
+              "source_id",
+              "locator",
+              "verification_status"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "group_id",
+          "face_id",
+          "evans_label",
+          "outer_index",
+          "witness_id",
+          "occurrence_ids",
+          "interpretation_as_word",
+          "separator_status",
+          "provenance"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "occurrences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "occurrence_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "group_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "index": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7
+          },
+          "sign_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "uncertainty": {
+            "enum": [
+              "unknown",
+              "source_legible"
+            ]
+          },
+          "position": {
+            "type": "null"
+          },
+          "phonetic_value": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "occurrence_id",
+          "group_id",
+          "index",
+          "sign_id",
+          "uncertainty",
+          "position",
+          "phonetic_value"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "rights": {
+      "type": "object",
+      "properties": {
+        "record_license": {
+          "type": "string",
+          "minLength": 1
+        },
+        "third_party_material": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "rights": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "source_id",
+              "rights"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "record_license",
+        "third_party_material"
+      ],
+      "additionalProperties": false
+    },
+    "claim_boundary": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "object_id",
+    "physical_objects",
+    "faces",
+    "witnesses",
+    "groups",
+    "occurrences",
+    "rights",
+    "claim_boundary"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

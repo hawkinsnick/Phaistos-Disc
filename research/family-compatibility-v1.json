@@ -22,9 +22,9 @@
   "pilot": "representative-pilot-step2",
   "next_family_gate": "At least one executable known-answer control plus measured compatible target vectors.",
   "member": "Phaistos-Disc",
-  "member_version": "0.1.0",
-  "native_state": "FOUNDATION_ONLY",
-  "next_action": "Acquire and independently check a primary transcription witness.",
-  "blocked_claim": "No transcription coverage, pooled analysis, or decipherment claim.",
+  "member_version": "0.2.0",
+  "native_state": "SOURCE_CHECKED_GRAPHICAL_WITNESS",
+  "next_action": "Obtain external epigraphic review and additional independent witnesses.",
+  "blocked_claim": "No decipherment, pooled analysis or external peer-review claim.",
   "membership_boundary": "Native evidence only; membership implies no linguistic affinity, shared sign identities, or pooled analysis."
 }

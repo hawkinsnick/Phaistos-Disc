@@ -1,0 +1,45 @@
+{
+  "experiments": [
+    {
+      "id": "transcription-release",
+      "state": "BLOCKED",
+      "claim_allowed": false,
+      "result_ref": null,
+      "requires": [
+        "checked primary witness",
+        "source locators",
+        "independent record review"
+      ]
+    },
+    {
+      "id": "frequency-analysis",
+      "state": "BLOCKED",
+      "claim_allowed": false,
+      "result_ref": null,
+      "requires": [
+        "checked occurrences",
+        "declared segmentation and reading policy"
+      ]
+    },
+    {
+      "id": "cross-script-comparison",
+      "state": "BLOCKED",
+      "claim_allowed": false,
+      "result_ref": null,
+      "requires": [
+        "native evidence",
+        "explicit compatible dimensions",
+        "non-transitive relationship claims"
+      ]
+    },
+    {
+      "id": "decipherment",
+      "state": "BLOCKED",
+      "claim_allowed": false,
+      "result_ref": null,
+      "requires": [
+        "independent evidence beyond pattern similarity"
+      ]
+    }
+  ]
+}

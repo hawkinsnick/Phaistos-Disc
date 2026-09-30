@@ -1,49 +1,59 @@
-# Phaistos Disc — 0.1.0
+# Phaistos Disc — 0.2.0
 
-An evidence-first foundation for the Phaistos Disc, the fifth member of the Aegean corpus research family. This release supplies a native data model and executable integrity gates.
+A source-attributed research corpus and reproducible workbench within the five-member Aegean corpus family.
 
-## Committed evidence
+| Evidence | Committed coverage |
+|---|---:|
+| Physical objects | 1 |
+| Faces of that object | 2 |
+| Checked graphical witnesses | 1 published witness |
+| Source-delimited graphical groups | 61 |
+| Project-transcribed occurrence slots | 242 |
+| Identified slots | 241 |
+| Erased/unknown slots | 1 |
+| Encoded repertoire | 45 base signs and a separate combining mark |
 
-| Layer | Coverage |
-|---|---|
-| Object scaffold | 1 physical object; 2 editorial faces |
-| Unicode repertoire | 45 base signs; 1 separate combining oblique stroke |
-| Checked transcription witnesses | 0 |
-| Checked sign occurrences | 0 |
-| Actual impression count | Unknown in this release |
+This is a project transcription of Evans's 1909 Figures128/129, checked against the numbered signary. It is not a new examination of the original object, an externally peer-reviewed critical edition or a decipherment. The historical edition reports a total241, while the project counts242 graphical slots in its figures. Both assertions remain visible. No phonetic values are assigned.
 
-The Unicode 17 repertoire is derived from authenticated UnicodeData bytes. Standard sign names describe encoding labels; they do not supply phonetic or semantic readings. PD-U identifiers refer to code points, without assuming equivalence to another edition's sign numbering.
+## Use the release
 
-The museum catalogue identifier Π-Ν1358 comes from primary-publisher search metadata. Both catalogue and exhibit page retrievals returned HTTP 502 on 2026-09-30; their full records remain unchecked. No museum image or edition transcription is bundled.
+Download a versioned ZIP from [Releases](https://github.com/hawkinsnick/Phaistos-Disc/releases), extract it, and read the source, rights and evidence boundaries before analysis. Published ZIPs include faithful public-domain source-page images. Original sourcePDF and modern copyrighted editions are not bundled.
 
-## Validate
+## Reproduce the checks
 
 ```sh
 python -m pip install -r requirements-validation.txt
 python scripts/validate_current_state.py
 python scripts/test_foundation.py
+python scripts/build_corpus.py
 ```
 
-CI runs both commands. The validator recomputes the Unicode registry from the checked subset, checks source hashes and licenses, validates schemas and references, recomputes evidence counts and rejects gate leakage. Tests deliberately corrupt provenance, signs, object independence, evidence digests and gate flags.
+The source ledger, raw numeric transcription and review records have explicit SHA256 identities. The builder preserves native Evans labels A1–A31/B1–B30 while its declared project traversal runs outer-to-inner. Traversal can be reversed; it is not a linguistic reading conclusion. Graphical groups are not assumed words. Faces are not independent documents, and editions sharing photographs are not independent objects.
 
-The subset can be reproduced from externally downloaded, digest-checked Unicode 17 data:
+To acquire exact primary-source bytes and render checked historical pages (requires Poppler's `pdftoppm`):
 
 ```sh
-python scripts/extract_unicode_subset.py --source /path/to/UnicodeData.txt --out /tmp/phaistos-subset.txt
+python scripts/fetch_primary_sources.py --cache /tmp/phaistos-primary --render
 ```
 
-## Evidence model
+A source-byte mismatch stops acquisition; pins are never updated automatically. Native glyph coordinates remain unknown. Where group anchors are provided, they locate approximate group labels in historical drawings, not physical stamp centroids, millimetres or object measurements.
 
-`corpus/disc.json` holds one object with faces A/B as editorial labels awaiting alignment to a checked witness. A face is not an independent document. Reading direction and starting point are unknown until attributed to a witness. No synthetic coordinates are generated.
+## Available layers
 
-Each future occurrence requires a face, witness, sequence index, sign or uncertainty alternatives and a source locator. Coordinates require an image source, frame, locator and measurement method. Marked groups carry separator assertions; they are not automatically words. Corrections and competing readings belong to witness-specific assertions. The oblique stroke is a combining mark, not a 46th base sign.
+Checked native transcription, sign crosswalk, source ledger and executable evidence gates.
 
-## Family boundary
+## Limits and remaining gates
 
-Linear A, Linear B, Cypro-Minoan, Cretan hieroglyphic and Phaistos Disc retain separate native identifiers and evidence. Contract 1.1 adds membership and an interchange project identifier; it makes no claim of linguistic relationship and authorizes no pooled analysis. Existing four-member baselines remain historical artifacts.
+Project visual review and separate software accounting are documented; no independent human epigraphic review has occurred. Stroke coverage is incomplete and source assertions conflict. The modern university codification contributes only attributed disagreement observations; its full transcription and PDF are not redistributed. Museum inventory metadata remains pending a full catalogue check after access failures.
 
-## Next milestone: 0.2
+Frequency summaries are conditional on this transcription. Software known-answer tests check arithmetic and reversible transforms; they do not replace LinearB linguistic gold. Cross-script inference, pooled analysis, stroke-semantic interpretation and decipherment remain blocked.
 
-Acquire a checkable primary transcription witness and rights statement, align its face/sign numbering, encode source-located occurrences and marked groups, review disagreements independently, then open the transcription release gate. Keep incompatible witnesses separate. Arkalochori and other proposed comparanda require their own objects and explicit relationship claims; they are not silently incorporated into this native corpus.
+## Family alignment
 
-Code and original project contributions: MIT. Unicode-derived records: Unicode-3.0. See `sources/sources.json` and `licenses/` for source-specific rights.
+LinearA, LinearB, Cypro-Minoan, Cretan hieroglyphic and Phaistos Disc share provenance, rights, unknown-value, interchange and gate contracts. Native identifiers remain separate. Membership asserts no linguistic affinity. Frozen historical baselines keep their original scope; current readiness is recorded separately.
+
+## Rights and citation
+
+Original code and project-created transcription records: MIT. Unicode-derived records: Unicode-3.0 (`licenses/Unicode-3.0.txt`). Historical Evans pages: public-domain edition, with author, publication and digitization attribution in `sources/sources.json`. These rights do not license modern museum photographs or scholarly editions. See `CITATION.cff` and cite the original evidence used.
+
+See `releases/` for milestone-specific scope and acceptance records. The next evidence milestone is external epigraphic review plus additional checked witnesses, keeping unresolved disagreements intact.

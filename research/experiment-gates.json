@@ -1,44 +1,70 @@
 {
+  "policy": "A stable software/data edition does not open linguistic or external-review gates.",
   "experiments": [
     {
       "id": "transcription-release",
-      "state": "BLOCKED",
-      "claim_allowed": false,
-      "result_ref": null,
+      "state": "READY_PROJECT_SCOPE",
+      "claim_allowed": true,
+      "claim_scope": "Source-attributed project description only",
+      "result_ref": "corpus/disc.json",
       "requires": [
-        "checked primary witness",
-        "source locators",
-        "independent record review"
+        "Primary published figure and signary acquired",
+        "Source-located project transcription",
+        "Visual review and separate lexical accounting; external review remains blocked"
       ]
     },
     {
       "id": "frequency-analysis",
       "state": "BLOCKED",
       "claim_allowed": false,
+      "claim_scope": null,
       "result_ref": null,
       "requires": [
-        "checked occurrences",
-        "declared segmentation and reading policy"
+        "Checked occurrence slots",
+        "Declared traversal, unknown-slot and graphical-group policies"
       ]
     },
     {
       "id": "cross-script-comparison",
       "state": "BLOCKED",
       "claim_allowed": false,
+      "claim_scope": null,
       "result_ref": null,
       "requires": [
-        "native evidence",
-        "explicit compatible dimensions",
-        "non-transitive relationship claims"
+        "Compatible target definitions",
+        "Linguistic known-answer control",
+        "Source-independent native evidence"
       ]
     },
     {
       "id": "decipherment",
       "state": "BLOCKED",
       "claim_allowed": false,
+      "claim_scope": null,
       "result_ref": null,
       "requires": [
-        "independent evidence beyond pattern similarity"
+        "Independent linguistic evidence beyond pattern similarity"
+      ]
+    },
+    {
+      "id": "external-critical-review",
+      "state": "BLOCKED",
+      "claim_allowed": false,
+      "claim_scope": null,
+      "result_ref": null,
+      "requires": [
+        "Independent epigraphic reviewer"
+      ]
+    },
+    {
+      "id": "stroke-analysis",
+      "state": "BLOCKED",
+      "claim_allowed": false,
+      "claim_scope": null,
+      "result_ref": null,
+      "requires": [
+        "Resolved source inconsistencies",
+        "Checked complete mark coverage"
       ]
     }
   ]
