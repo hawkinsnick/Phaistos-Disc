@@ -222,28 +222,177 @@
                     "type": "string",
                     "minLength": 1
                   },
-                  "locat…1536 tokens truncated…w);edit(data);q.write_text(json.dumps(data,ensure_ascii=False))
-        if reseal:
-            s=json.loads(state_raw)
-            for e in s['evidence']:
-                if e['path']==path:e['sha256']=hashlib.sha256(q.read_bytes()).hexdigest()
-            state.write_text(json.dumps(s))
-        try:
-            validate(root)
-        except Exception:pass
-        else:raise AssertionError('Accepted corruption: '+path)
-        finally:q.write_bytes(raw);state.write_bytes(state_raw)
-    reject('signs/unicode-registry.json',lambda x:x[0].update(phonetic_value='a'),True)
-    reject('corpus/disc.json',lambda x:x.update(object_count=2),True)
-    reject('corpus/disc.json',lambda x:x['faces'][1].update(face_id='PD-001-A'),True)
-    reject('corpus/disc.json',lambda x:x['faces'][0].update(reading_direction='clockwise'),True)
-    reject('corpus/disc.json',lambda x:x.update(actual_sign_impression_total=241),True)
-    reject('corpus/disc.json',lambda x:x['witnesses'].append({'witness_id':'w1','source_id':'invented','locator':'p1','verification_status':'source_checked','reading_direction':None,'starting_point':None}),True)
-    reject('research/experiment-gates.json',lambda x:x['experiments'][0].update(claim_allowed=True),True)
-    reject('research/experiment-gates.json',lambda x:x['experiments'][0].update(state='READY'),True)
-    reject('research/family-compatibility-v1.json',lambda x:x['members'].remove('phaistos-disc'))
-    reject('sources/sources.json',lambda x:x[0].update(subset_sha256='0'*64),True)
-    reject('analysis/current-status.json',lambda x:x['committed_evidence_counts'].update(source_checked_occurrences=241))
-    reject('analysis/current-status.json',lambda x:x['scientific_results'].update(decipherment_claim_allowed=True))
-    assert validate(root)['status']=='PASS'
-print(json.dumps({'status':'PASS','negative_controls':12,'recovery':'PASS'}))
+                  "locator": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "x",
+                  "y",
+                  "frame_id",
+                  "image_source_id",
+                  "method",
+                  "locator"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              },
+              "verification_status": {
+                "enum": [
+                  "unchecked",
+                  "source_checked"
+                ]
+              }
+            },
+            "required": [
+              "source_id",
+              "locator",
+              "verification_status"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "occurrence_id",
+          "object_id",
+          "face_id",
+          "witness_id",
+          "sequence_index",
+          "sign_id",
+          "alternatives",
+          "uncertainty",
+          "correction",
+          "position",
+          "provenance"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "group_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "witness_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "face_id": {
+            "enum": [
+              "PD-001-A",
+              "PD-001-B"
+            ]
+          },
+          "occurrence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "separator_assertion": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "interpretation_as_word": {
+            "type": "null"
+          },
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              },
+              "verification_status": {
+                "enum": [
+                  "unchecked",
+                  "source_checked"
+                ]
+              }
+            },
+            "required": [
+              "source_id",
+              "locator",
+              "verification_status"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "group_id",
+          "witness_id",
+          "face_id",
+          "occurrence_ids",
+          "separator_assertion",
+          "interpretation_as_word",
+          "provenance"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "actual_sign_impression_total": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "rights": {
+      "type": "object",
+      "properties": {
+        "record_license": {
+          "type": "string",
+          "minLength": 1
+        },
+        "third_party_images": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "record_license",
+        "third_party_images"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "object_id",
+    "object_count",
+    "record_status",
+    "inventory_assertions",
+    "faces",
+    "witnesses",
+    "occurrences",
+    "groups",
+    "actual_sign_impression_total",
+    "rights"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}
