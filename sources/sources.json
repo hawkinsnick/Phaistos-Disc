@@ -1,0 +1,32 @@
+[
+  {
+    "source_id": "unicode17",
+    "url": "https://www.unicode.org/Public/17.0.0/ucd/UnicodeData.txt",
+    "retrieved": "2026-09-30",
+    "acquisition_status": "authenticated_bytes",
+    "full_source_sha256": "2e1efc1dcb59c575eedf5ccae60f95229f706ee6d031835247d843c11d96470c",
+    "subset_path": "sources/unicode-17-phaistos-subset.txt",
+    "subset_sha256": "3cbbc1b6112208b4269bb7d01afc67d9cdaeaf1fe31c3a9359b6179194a7afb6",
+    "record_license": "Unicode-3.0",
+    "license_path": "licenses/Unicode-3.0.txt",
+    "license_sha256": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96",
+    "scope": "Encoding identities and names only; neither phonetic values nor occurrence readings."
+  },
+  {
+    "source_id": "heraklion-catalogue",
+    "url": "https://ca.heraklionmuseum.gr/ca/pawtucket/index.php/Detail/objects/336",
+    "retrieval_attempt": "2026-09-30",
+    "acquisition_status": "blocked_http_502",
+    "search_index_title": "The Phaistos Disc. Clay disc with impressed pictorial signs in a spiral pattern [Π-Ν1358]",
+    "record_license": "NOASSERTION",
+    "scope": "Primary publisher search metadata only; full catalogue record not checked. No images redistributed."
+  },
+  {
+    "source_id": "heraklion-exhibit",
+    "url": "https://www.heraklionmuseum.gr/en/exhibit/the-phaistos-disc/",
+    "retrieval_attempt": "2026-09-30",
+    "acquisition_status": "blocked_http_502",
+    "record_license": "NOASSERTION",
+    "scope": "Full exhibit page unavailable; not a checked transcription witness."
+  }
+]

@@ -1,0 +1,462 @@
+[
+  {
+    "sign_id": "PD-U101D0",
+    "codepoint": "U+101D0",
+    "character": "𐇐",
+    "unicode_name": "PHAISTOS DISC SIGN PEDESTRIAN",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101D1",
+    "codepoint": "U+101D1",
+    "character": "𐇑",
+    "unicode_name": "PHAISTOS DISC SIGN PLUMED HEAD",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101D2",
+    "codepoint": "U+101D2",
+    "character": "𐇒",
+    "unicode_name": "PHAISTOS DISC SIGN TATTOOED HEAD",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101D3",
+    "codepoint": "U+101D3",
+    "character": "𐇓",
+    "unicode_name": "PHAISTOS DISC SIGN CAPTIVE",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101D4",
+    "codepoint": "U+101D4",
+    "character": "𐇔",
+    "unicode_name": "PHAISTOS DISC SIGN CHILD",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101D5",
+    "codepoint": "U+101D5",
+    "character": "𐇕",
+    "unicode_name": "PHAISTOS DISC SIGN WOMAN",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101D6",
+    "codepoint": "U+101D6",
+    "character": "𐇖",
+    "unicode_name": "PHAISTOS DISC SIGN HELMET",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101D7",
+    "codepoint": "U+101D7",
+    "character": "𐇗",
+    "unicode_name": "PHAISTOS DISC SIGN GAUNTLET",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101D8",
+    "codepoint": "U+101D8",
+    "character": "𐇘",
+    "unicode_name": "PHAISTOS DISC SIGN TIARA",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101D9",
+    "codepoint": "U+101D9",
+    "character": "𐇙",
+    "unicode_name": "PHAISTOS DISC SIGN ARROW",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101DA",
+    "codepoint": "U+101DA",
+    "character": "𐇚",
+    "unicode_name": "PHAISTOS DISC SIGN BOW",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101DB",
+    "codepoint": "U+101DB",
+    "character": "𐇛",
+    "unicode_name": "PHAISTOS DISC SIGN SHIELD",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101DC",
+    "codepoint": "U+101DC",
+    "character": "𐇜",
+    "unicode_name": "PHAISTOS DISC SIGN CLUB",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101DD",
+    "codepoint": "U+101DD",
+    "character": "𐇝",
+    "unicode_name": "PHAISTOS DISC SIGN MANACLES",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101DE",
+    "codepoint": "U+101DE",
+    "character": "𐇞",
+    "unicode_name": "PHAISTOS DISC SIGN MATTOCK",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101DF",
+    "codepoint": "U+101DF",
+    "character": "𐇟",
+    "unicode_name": "PHAISTOS DISC SIGN SAW",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101E0",
+    "codepoint": "U+101E0",
+    "character": "𐇠",
+    "unicode_name": "PHAISTOS DISC SIGN LID",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101E1",
+    "codepoint": "U+101E1",
+    "character": "𐇡",
+    "unicode_name": "PHAISTOS DISC SIGN BOOMERANG",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101E2",
+    "codepoint": "U+101E2",
+    "character": "𐇢",
+    "unicode_name": "PHAISTOS DISC SIGN CARPENTRY PLANE",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101E3",
+    "codepoint": "U+101E3",
+    "character": "𐇣",
+    "unicode_name": "PHAISTOS DISC SIGN DOLIUM",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101E4",
+    "codepoint": "U+101E4",
+    "character": "𐇤",
+    "unicode_name": "PHAISTOS DISC SIGN COMB",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101E5",
+    "codepoint": "U+101E5",
+    "character": "𐇥",
+    "unicode_name": "PHAISTOS DISC SIGN SLING",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101E6",
+    "codepoint": "U+101E6",
+    "character": "𐇦",
+    "unicode_name": "PHAISTOS DISC SIGN COLUMN",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101E7",
+    "codepoint": "U+101E7",
+    "character": "𐇧",
+    "unicode_name": "PHAISTOS DISC SIGN BEEHIVE",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101E8",
+    "codepoint": "U+101E8",
+    "character": "𐇨",
+    "unicode_name": "PHAISTOS DISC SIGN SHIP",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101E9",
+    "codepoint": "U+101E9",
+    "character": "𐇩",
+    "unicode_name": "PHAISTOS DISC SIGN HORN",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101EA",
+    "codepoint": "U+101EA",
+    "character": "𐇪",
+    "unicode_name": "PHAISTOS DISC SIGN HIDE",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101EB",
+    "codepoint": "U+101EB",
+    "character": "𐇫",
+    "unicode_name": "PHAISTOS DISC SIGN BULLS LEG",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101EC",
+    "codepoint": "U+101EC",
+    "character": "𐇬",
+    "unicode_name": "PHAISTOS DISC SIGN CAT",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101ED",
+    "codepoint": "U+101ED",
+    "character": "𐇭",
+    "unicode_name": "PHAISTOS DISC SIGN RAM",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101EE",
+    "codepoint": "U+101EE",
+    "character": "𐇮",
+    "unicode_name": "PHAISTOS DISC SIGN EAGLE",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101EF",
+    "codepoint": "U+101EF",
+    "character": "𐇯",
+    "unicode_name": "PHAISTOS DISC SIGN DOVE",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101F0",
+    "codepoint": "U+101F0",
+    "character": "𐇰",
+    "unicode_name": "PHAISTOS DISC SIGN TUNNY",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101F1",
+    "codepoint": "U+101F1",
+    "character": "𐇱",
+    "unicode_name": "PHAISTOS DISC SIGN BEE",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101F2",
+    "codepoint": "U+101F2",
+    "character": "𐇲",
+    "unicode_name": "PHAISTOS DISC SIGN PLANE TREE",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101F3",
+    "codepoint": "U+101F3",
+    "character": "𐇳",
+    "unicode_name": "PHAISTOS DISC SIGN VINE",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101F4",
+    "codepoint": "U+101F4",
+    "character": "𐇴",
+    "unicode_name": "PHAISTOS DISC SIGN PAPYRUS",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101F5",
+    "codepoint": "U+101F5",
+    "character": "𐇵",
+    "unicode_name": "PHAISTOS DISC SIGN ROSETTE",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101F6",
+    "codepoint": "U+101F6",
+    "character": "𐇶",
+    "unicode_name": "PHAISTOS DISC SIGN LILY",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101F7",
+    "codepoint": "U+101F7",
+    "character": "𐇷",
+    "unicode_name": "PHAISTOS DISC SIGN OX BACK",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101F8",
+    "codepoint": "U+101F8",
+    "character": "𐇸",
+    "unicode_name": "PHAISTOS DISC SIGN FLUTE",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101F9",
+    "codepoint": "U+101F9",
+    "character": "𐇹",
+    "unicode_name": "PHAISTOS DISC SIGN GRATER",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101FA",
+    "codepoint": "U+101FA",
+    "character": "𐇺",
+    "unicode_name": "PHAISTOS DISC SIGN STRAINER",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101FB",
+    "codepoint": "U+101FB",
+    "character": "𐇻",
+    "unicode_name": "PHAISTOS DISC SIGN SMALL AXE",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101FC",
+    "codepoint": "U+101FC",
+    "character": "𐇼",
+    "unicode_name": "PHAISTOS DISC SIGN WAVY BAND",
+    "unicode_category": "So",
+    "kind": "base_sign",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  },
+  {
+    "sign_id": "PD-U101FD",
+    "codepoint": "U+101FD",
+    "character": "𐇽",
+    "unicode_name": "PHAISTOS DISC SIGN COMBINING OBLIQUE STROKE",
+    "unicode_category": "Mn",
+    "kind": "combining_mark",
+    "phonetic_value": null,
+    "source_id": "unicode17"
+  }
+]

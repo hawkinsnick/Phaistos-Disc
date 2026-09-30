@@ -1,0 +1,249 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "object_id": {
+      "const": "PD-001"
+    },
+    "object_count": {
+      "const": 1
+    },
+    "record_status": {
+      "const": "editorial_scaffold"
+    },
+    "inventory_assertions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "const": "search_metadata_only"
+          }
+        },
+        "required": [
+          "value",
+          "source_id",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "faces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "face_id": {
+            "enum": [
+              "PD-001-A",
+              "PD-001-B"
+            ]
+          },
+          "label": {
+            "enum": [
+              "A",
+              "B"
+            ]
+          },
+          "label_status": {
+            "type": "string",
+            "minLength": 1
+          },
+          "layout": {
+            "const": "spiral"
+          },
+          "reading_direction": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "starting_point": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "coordinate_frame": {
+            "type": [
+              "object",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "face_id",
+          "label",
+          "label_status",
+          "layout",
+          "reading_direction",
+          "starting_point",
+          "coordinate_frame"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "witnesses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "witness_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reading_direction": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "starting_point": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "verification_status": {
+            "enum": [
+              "unchecked",
+              "source_checked"
+            ]
+          }
+        },
+        "required": [
+          "witness_id",
+          "source_id",
+          "locator",
+          "reading_direction",
+          "starting_point",
+          "verification_status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "occurrences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "occurrence_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "object_id": {
+            "const": "PD-001"
+          },
+          "face_id": {
+            "enum": [
+              "PD-001-A",
+              "PD-001-B"
+            ]
+          },
+          "witness_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sequence_index": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sign_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "uncertainty": {
+            "enum": [
+              "certain",
+              "probable",
+              "possible",
+              "uncertain",
+              "unknown"
+            ]
+          },
+          "correction": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "position": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "x": {
+                    "type": "number"
+                  },
+                  "y": {
+                    "type": "number"
+                  },
+                  "frame_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "image_source_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "method": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "locat…1536 tokens truncated…w);edit(data);q.write_text(json.dumps(data,ensure_ascii=False))
+        if reseal:
+            s=json.loads(state_raw)
+            for e in s['evidence']:
+                if e['path']==path:e['sha256']=hashlib.sha256(q.read_bytes()).hexdigest()
+            state.write_text(json.dumps(s))
+        try:
+            validate(root)
+        except Exception:pass
+        else:raise AssertionError('Accepted corruption: '+path)
+        finally:q.write_bytes(raw);state.write_bytes(state_raw)
+    reject('signs/unicode-registry.json',lambda x:x[0].update(phonetic_value='a'),True)
+    reject('corpus/disc.json',lambda x:x.update(object_count=2),True)
+    reject('corpus/disc.json',lambda x:x['faces'][1].update(face_id='PD-001-A'),True)
+    reject('corpus/disc.json',lambda x:x['faces'][0].update(reading_direction='clockwise'),True)
+    reject('corpus/disc.json',lambda x:x.update(actual_sign_impression_total=241),True)
+    reject('corpus/disc.json',lambda x:x['witnesses'].append({'witness_id':'w1','source_id':'invented','locator':'p1','verification_status':'source_checked','reading_direction':None,'starting_point':None}),True)
+    reject('research/experiment-gates.json',lambda x:x['experiments'][0].update(claim_allowed=True),True)
+    reject('research/experiment-gates.json',lambda x:x['experiments'][0].update(state='READY'),True)
+    reject('research/family-compatibility-v1.json',lambda x:x['members'].remove('phaistos-disc'))
+    reject('sources/sources.json',lambda x:x[0].update(subset_sha256='0'*64),True)
+    reject('analysis/current-status.json',lambda x:x['committed_evidence_counts'].update(source_checked_occurrences=241))
+    reject('analysis/current-status.json',lambda x:x['scientific_results'].update(decipherment_claim_allowed=True))
+    assert validate(root)['status']=='PASS'
+print(json.dumps({'status':'PASS','negative_controls':12,'recovery':'PASS'}))

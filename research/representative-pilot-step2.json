@@ -1,0 +1,12 @@
+{
+  "name": "representative-pilot",
+  "version": "0.1.0",
+  "corpus": "Phaistos-Disc",
+  "state": "BLOCKED",
+  "selection_rule": "One physical object, two faces; no independent-document sampling. Keep witness disagreements separate.",
+  "requires": [
+    "checked transcription witness",
+    "provenance and rights audit"
+  ],
+  "results": []
+}

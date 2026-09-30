@@ -1,0 +1,32 @@
+{
+  "name": "family-evidence-baseline-v1",
+  "version": "0.1.0",
+  "state": "FOUNDATION_ONLY",
+  "metrics": {
+    "editorial_object_scaffolds": {
+      "value": 1,
+      "status": "committed"
+    },
+    "editorial_faces": {
+      "value": 2,
+      "status": "committed_not_independent_documents"
+    },
+    "encoded_base_sign_types": {
+      "value": 45,
+      "status": "unicode_metadata"
+    },
+    "checked_transcriptions": {
+      "value": 0,
+      "status": "committed"
+    },
+    "checked_occurrences": {
+      "value": 0,
+      "status": "committed"
+    },
+    "actual_sign_impression_total": {
+      "value": null,
+      "status": "unknown"
+    }
+  },
+  "claim_boundary": "Registry is not a transcription. Two faces are one physical object. No pooling or decipherment claim."
+}

@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Aegean Epigraphy Interchange v0.1",
+  "type": "object",
+  "required": [
+    "project",
+    "record_id",
+    "assertions",
+    "rights"
+  ],
+  "properties": {
+    "project": {
+      "enum": [
+        "linear-a",
+        "cypro-minoan",
+        "cretan-hieroglyphic",
+        "linear-b",
+        "cypriot-syllabary",
+        "other",
+        "phaistos-disc"
+      ]
+    },
+    "record_id": {
+      "type": "string"
+    },
+    "identifiers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "system",
+          "value",
+          "source_id"
+        ],
+        "properties": {
+          "system": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "assertions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "assertion_type",
+          "value",
+          "status",
+          "provenance"
+        ],
+        "properties": {
+          "assertion_type": {
+            "type": "string"
+          },
+          "value": {},
+          "status": {
+            "enum": [
+              "published",
+              "independent_observation",
+              "project_derived"
+            ]
+          },
+          "uncertainty": {
+            "enum": [
+              "certain",
+              "probable",
+              "possible",
+              "uncertain",
+              "unknown",
+              "not_stated"
+            ]
+          },
+          "physical_locus": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "lineage_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "provenance": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "source_id"
+              ],
+              "properties": {
+                "source_id": {
+                  "type": "string"
+                },
+                "locator": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "agent": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "transformation": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "source_version": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "rights": {
+      "type": "object",
+      "required": [
+        "record_license"
+      ],
+      "properties": {
+        "record_license": {
+          "type": "string"
+        },
+        "third_party_material": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}
