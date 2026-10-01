@@ -1,6 +1,6 @@
 {
-  "repository_version": "1.0.0",
-  "milestone": "AUDITABLE_SOURCE_ATTRIBUTED_EDITION",
+  "repository_version": "0.3.0",
+  "milestone": "SOURCE_CRITICAL_APPARATUS",
   "committed_evidence_counts": {
     "physical_objects": 1,
     "faces": 2,
@@ -12,7 +12,7 @@
     "unknown_slots": 1
   },
   "scientific_results": {
-    "descriptive_analysis": "EXECUTED_SOURCE_CONDITIONAL",
+    "descriptive_analysis": "BLOCKED",
     "decipherment_claim_allowed": false,
     "external_peer_review_completed": false,
     "pooled_analysis_allowed": false
@@ -48,7 +48,7 @@
     },
     {
       "path": "research/experiment-gates.json",
-      "sha256": "7c1431b81e3012b5a805ad22fa134363fe625bfe52d1cb4b4ce98e1973037269"
+      "sha256": "cacf070d972ef0dce60f2f1776deafd93d55bdbbe559726926ba94123d761f47"
     },
     {
       "path": "apparatus/claims.json",
@@ -61,30 +61,6 @@
     {
       "path": "apparatus/stroke-assertions.json",
       "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c"
-    },
-    {
-      "path": "spatial/frames.json",
-      "sha256": "7bfdceb0b8a336880d16312bfe9c91802926068266e112863e79941f75e93410"
-    },
-    {
-      "path": "spatial/group-anchors.json",
-      "sha256": "897d563ca46384c118322ba6352464021f90ccb9fc078bbb58ddec7665990fd1"
-    },
-    {
-      "path": "exports/aegean-interop.json",
-      "sha256": "501c9e044e6472e03243a6d6237164106801dd6392b5932a910efe6012d35564"
-    },
-    {
-      "path": "analysis/descriptive-v1.json",
-      "sha256": "3cbca455c910aad839c239b509935309dd526956914caf12b5764f61a8d224b2"
-    },
-    {
-      "path": "research/family-readiness-v1.json",
-      "sha256": "4907b77da7c096b28bb542bc715500e5e94367202529b903fdb5ed35172d9072"
-    },
-    {
-      "path": "analysis/acceptance-1.0.json",
-      "sha256": "47960a8c688db295e38292e431e9deec9c6d67c51839a565578acdfd1a20071a"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved."

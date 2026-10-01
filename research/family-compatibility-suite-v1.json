@@ -1,5 +1,5 @@
 {
-  "suite_version": "1.2.0",
+  "suite_version": "1.1.0",
   "name": "Aegean family compatibility suite",
   "required_members": [
     "linear-a",
@@ -11,13 +11,12 @@
   "required_artifacts": [
     "research/family-compatibility-v1.json",
     "analysis/family-evidence-baseline-v1.json",
-    "research/representative-pilot-step2.json",
-    "research/family-readiness-v1.json"
+    "research/representative-pilot-step2.json"
   ],
   "checks": [
     {
       "id": "FC-001",
-      "rule": "contract_version equals required_contract_version (1.2.0)"
+      "rule": "contract_version equals required_contract_version (1.1.0)"
     },
     {
       "id": "FC-002",
@@ -58,10 +57,6 @@
     {
       "id": "FC-011",
       "rule": "Phaistos Disc faces remain one object; membership implies neither linguistic affinity nor pooled evidence."
-    },
-    {
-      "id": "FC-012",
-      "rule": "Readiness distinguishes physical clusters, source representations, unknown values and software versus linguistic controls."
     }
   ],
   "status_semantics": {
@@ -70,5 +65,5 @@
     "FAIL": "contract violated"
   },
   "claim_boundary": "Suite checks architecture and governance compatibility; it does not certify epigraphic correctness.",
-  "required_contract_version": "1.2.0"
+  "required_contract_version": "1.1.0"
 }
