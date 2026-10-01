@@ -1,6 +1,6 @@
 {
-  "repository_version": "0.6.0",
-  "milestone": "FIVE_MEMBER_COMPARISON_READINESS",
+  "repository_version": "0.7.0",
+  "milestone": "SOURCE_PRESERVING_EXPORTS",
   "committed_evidence_counts": {
     "physical_objects": 1,
     "faces": 2,
@@ -71,12 +71,16 @@
       "sha256": "897d563ca46384c118322ba6352464021f90ccb9fc078bbb58ddec7665990fd1"
     },
     {
+      "path": "exports/aegean-interop.json",
+      "sha256": "501c9e044e6472e03243a6d6237164106801dd6392b5932a910efe6012d35564"
+    },
+    {
       "path": "analysis/descriptive-v1.json",
       "sha256": "3cbca455c910aad839c239b509935309dd526956914caf12b5764f61a8d224b2"
     },
     {
       "path": "research/family-readiness-v1.json",
-      "sha256": "00ee5cb4a62a2480bb6047fa2f46d7ef3b22e5b45c0040b52eb72fa3f723fec3"
+      "sha256": "08b483b1585235b604816ec9fdcdeac81324e7ce40087554177e2546d260609f"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved."
