@@ -1,4 +1,4 @@
-# Phaistos Disc — 2.0.0-rc.1
+# Phaistos Disc — 2.0.0-rc.2
 
 **2.0 release candidate: final independently reviewed 2.0 is blocked.** See [acceptance criteria](research/acceptance-2.0.md) and [current acceptance report](analysis/acceptance-2.0.json). The latest stable 1.x release is 1.6.0.
 
@@ -87,6 +87,8 @@ Adds a retrospectively registered, byte-pinned descriptive suite with exact grou
 
 Adds a complete 242-slot review draft, attributed submission validator and offline occurrence-note editor. Draft import/export preserves stable native IDs under view reversal and rejects source hash, missing-slot and review-state tampering. Submitted decisions are never automatically accepted as independent review or applied to native readings.
 
-## Milestone 2.0.0-rc.1
+## Milestone 2.0.0-rc.2
 
 Release candidate for the occurrence evidence ledger, typed source coverage, pinned descriptive research suite, and offline review workflow. The machine-replayed acceptance report explicitly blocks final 2.0 pending independent human review, complete occurrence ordinal/detail assessment and physical mark coverage assessment. This prerelease does not satisfy the proposed independently reviewed critical-edition milestone.
+
+The rc.2 acceptance repair adds a source-pinned V2 human review submission and 61 group mark assessments. Final 2.0 still requires independent human review, all 242 ordinal/detail assessments, and adequate physical mark coverage evidence. See [acceptance procedure](research/acceptance-2.0.md) and [source adequacy findings](analysis/source-adequacy-v2.json). No human review has been recorded.

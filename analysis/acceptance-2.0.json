@@ -1,6 +1,6 @@
 {
   "target_release": "2.0.0",
-  "candidate_release": "2.0.0-rc.1",
+  "candidate_release": "2.0.0-rc.2",
   "engineering_artifact_replay": "PASS",
   "candidate_ready": true,
   "final_2_0_allowed": false,
@@ -22,6 +22,10 @@
     {
       "path": "reviews/review-packet-v1.json",
       "sha256": "695c427dcde98e479ff0ad4cd12909735bf2c8c034a0b13d2aabdf4afa3d1a2b"
+    },
+    {
+      "path": "reviews/review-packet-v2.json",
+      "sha256": "9f9606d4caac3c59b608503696275c02bab2d478c7c7394251cf1ca4dd656679"
     }
   ],
   "occurrence_audit_counts": {
@@ -32,6 +36,20 @@
     "external_reviews": 0
   },
   "review_packet_status": "VALID_DRAFT",
+  "review_evidence": {
+    "record_present": false,
+    "external_review_accepted": false,
+    "ordinal_and_detail_complete": false,
+    "physical_mark_coverage_complete": false,
+    "final_2_0_allowed": false,
+    "reviewed_slots": 0,
+    "ordinal_assessments": 0,
+    "detail_assessments": 0,
+    "mark_groups_assessed": 0,
+    "mark_groups_physical_coverage_supported": 0,
+    "receipt": null,
+    "boundary": "No human acceptance record exists. Pending review is not completed review."
+  },
   "acceptance_requirements": [
     {
       "id": "source_linked_occurrence_ledger",
@@ -51,13 +69,13 @@
     {
       "id": "complete_occurrence_ordinal_and_detail_assessment",
       "state": "BLOCKED",
-      "scope": "196 individual ordinals not yet certified; no exhaustive fine-detail assessment. An uncertainty decision is valid when supported and explicitly scoped"
+      "scope": "Recorded human ordinal assessments 0/242; detail assessments 0/242. Historical project exemplars are separate evidence; supported uncertainty is retained."
     },
     {
       "id": "complete_mark_coverage_assessment",
       "state": "BLOCKED",
-      "scope": "Source-located stroke candidates are not a complete physical mark inventory"
+      "scope": "Recorded physical coverage support 0/61 groups. Source-limited observations do not establish physical completeness; a human must verify evidence adequacy."
     }
   ],
-  "claim_boundary": "This is a 2.0 release candidate for tools and evidence organization. It is not the independently reviewed critical edition proposed as final 2.0; no language, phonetic value or decipherment is established."
+  "claim_boundary": "Acceptance is conditional on recorded human review and source adequacy, not a version number or a schema-valid declaration. No native correction, language, phonetic value or decipherment is automatically established."
 }

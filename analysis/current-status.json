@@ -1,6 +1,6 @@
 {
-  "repository_version": "2.0.0-rc.1",
-  "milestone": "WITNESS_WORKBENCH_AND_ASSERTION_SENSITIVITY",
+  "repository_version": "2.0.0-rc.2",
+  "milestone": "RECORDED_HUMAN_ACCEPTANCE_AND_SOURCE_ADEQUACY",
   "committed_evidence_counts": {
     "physical_objects": 1,
     "faces": 2,
@@ -83,7 +83,7 @@
     },
     {
       "path": "research/family-readiness-v1.json",
-      "sha256": "c808ed517cb9421b011a293d8f6294365837bea5816ba12fd7143c321c8a2a49"
+      "sha256": "955ddc697d4ce293a5c2d3d19bd89c33328401ca4473c7fe6768ad87dc5acb42"
     },
     {
       "path": "analysis/acceptance-1.0.json",
@@ -147,15 +147,35 @@
     },
     {
       "path": "scripts/review_packet.py",
-      "sha256": "fe3e74488a68f07aa52395535ef20704742bebe98e7f9fa70cb5f8e8ff8934ab"
+      "sha256": "79d9a521db1244c692c539473d819f882ef92324352e6f19f2f64d8c02601944"
     },
     {
       "path": "analysis/acceptance-2.0.json",
-      "sha256": "d1453ef80193bc2d22b111e5ef198f630669d211beb4c2dfec6f42141e9f800e"
+      "sha256": "26bd4ba44e2171c9da092ff39e93b74be028228a05d6780a44919962254ad094"
     },
     {
       "path": "scripts/acceptance_2.py",
-      "sha256": "89bc9a26c06da3e855564c6402ad1a81f50698eb09cebb92643e84c44d3b195a"
+      "sha256": "e2843bfad869b77c3f8f7ce184193a507ecbfb307fa12f9dabaa476b4e67fad6"
+    },
+    {
+      "path": "reviews/review-packet-v2.json",
+      "sha256": "9f9606d4caac3c59b608503696275c02bab2d478c7c7394251cf1ca4dd656679"
+    },
+    {
+      "path": "reviews/acceptance-record-template.json",
+      "sha256": "1bc83c0a3e202e8b9e2385abc83b270df5bb8331c595691afee12ecc238bf277"
+    },
+    {
+      "path": "scripts/review_acceptance.py",
+      "sha256": "08dae6c00f1cdcbc41d755a6614b7150e2e596ec9cc721d61954f6fcbc82cde6"
+    },
+    {
+      "path": "scripts/test_review_acceptance.py",
+      "sha256": "ed834d89883cac58b9569512f5ffd90b1422e819c0554090ce3467f341c56271"
+    },
+    {
+      "path": "analysis/source-adequacy-v2.json",
+      "sha256": "5c5b83b87c5d4c7744d1bbc0760ed4ed718e8436daf71be2a10a862cf9276452"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved.",

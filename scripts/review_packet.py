@@ -18,6 +18,7 @@ def validate(packet,root=R):
         if reviewer[k] is not None and (not isinstance(reviewer[k],str) or not reviewer[k].strip() or len(reviewer[k])>2000):raise ValueError('reviewer text')
     if reviewer['independence_declared'] is not None and type(reviewer['independence_declared']) is not bool:raise ValueError('independence declaration type')
     if not isinstance(packet['entries'],list) or len(packet['entries'])!=242:raise ValueError('complete slot coverage required')
+    if any(not isinstance(e,dict) for e in packet['entries']):raise ValueError('entry must be an object')
     if [e.get('occurrence_id') for e in packet['entries']]!=[e['occurrence_id'] for e in expected['entries']]:raise ValueError('missing, reordered, duplicate or foreign occurrence')
     decisions=0
     for e in packet['entries']:

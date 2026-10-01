@@ -10,7 +10,7 @@ def require(ok,message):
 def validate(root=R):
     def load(p):return json.loads((root/p).read_text())
     def sha(p):return hashlib.sha256((root/p).read_bytes()).hexdigest()
-    version=(root/'VERSION').read_text().strip();require(re.fullmatch(r'(0\.[2-9]\.0|1\.[0-6]\.0|1\.2\.1|2\.0\.0-rc\.1)',version),'unsupported milestone version')
+    version=(root/'VERSION').read_text().strip();require(re.fullmatch(r'(0\.[2-9]\.0|1\.[0-6]\.0|1\.2\.1|2\.0\.0-rc\.[12]|2\.0\.0)',version),'unsupported milestone version')
     require(re.search(r'^version: "'+re.escape(version)+'"$',(root/'CITATION.cff').read_text(),re.M),'citation version drift')
     for p in root.rglob('*.json'):
         if '.git' not in p.parts and 'output' not in p.parts:json.loads(p.read_text())
@@ -65,8 +65,13 @@ def validate(root=R):
     gates=load('research/experiment-gates.json')['experiments']
     for gate in gates:
         if gate['state']=='BLOCKED':require(gate['claim_allowed'] is False and gate['result_ref'] is None,'blocked gate leakage')
-    for gid in ['cross-script-comparison','decipherment','external-critical-review']:
+    for gid in ['cross-script-comparison','decipherment']:
         gate=next(g for g in gates if g['id']==gid);require(gate['state']=='BLOCKED' and gate['claim_allowed'] is False,'unsupported scientific gate')
+    from review_acceptance import evaluate as evaluate_review
+    recorded_review=evaluate_review(root)
+    if version=='2.0.0':require(recorded_review['final_2_0_allowed'],'final 2.0 requires complete recorded human acceptance')
+    external_gate=next(g for g in gates if g['id']=='external-critical-review')
+    require(external_gate['state']==('READY_RECORDED_HUMAN_REVIEW' if recorded_review['external_review_accepted'] else 'BLOCKED') and external_gate['claim_allowed']==recorded_review['external_review_accepted'] and external_gate['result_ref']==('reviews/accepted-review.json' if recorded_review['external_review_accepted'] else None),'review gate/receipt mismatch')
     state=load('analysis/current-status.json');require(state['repository_version']==version,'status version')
     counts={'physical_objects':1,'faces':2,'encoded_base_sign_types':45,'checked_graphical_witnesses':1,'source_checked_groups':len(groups),'source_checked_occurrence_slots':len(occ),'identified_slots':sum(o['sign_id'] is not None for o in occ),'unknown_slots':sum(o['sign_id'] is None for o in occ)}
     if (root/'reviews/photographic-comparison-v1.json').exists():
@@ -74,7 +79,7 @@ def validate(root=R):
         witness_validate(root)
         counts['project_checked_photographic_witnesses']=1
     require(state['committed_evidence_counts']==counts,'evidence count drift')
-    require(state['scientific_results']['decipherment_claim_allowed'] is False and state['scientific_results']['external_peer_review_completed'] is False,'scientific claim promotion')
+    require(state['scientific_results']['decipherment_claim_allowed'] is False and state['scientific_results']['external_peer_review_completed']==recorded_review['external_review_accepted'],'scientific claim promotion')
     for item in state['evidence']:require(sha(item['path'])==item['sha256'],'evidence digest drift: '+item['path'])
     family=load('research/family-compatibility-v1.json');suite=load('research/family-compatibility-suite-v1.json')
     require(family['contract_version']==suite['required_contract_version']==suite['suite_version'] and family['contract_version'] in ['1.1.0','1.2.0'],'family version')
@@ -132,8 +137,10 @@ def validate(root=R):
     if (root/'analysis/acceptance-2.0.json').exists():
         from acceptance_2 import calculate as acceptance_two
         require(load('analysis/acceptance-2.0.json')==acceptance_two(root),'2.0 acceptance replay drift')
-        require(load('analysis/acceptance-2.0.json')['final_2_0_allowed'] is False,'unearned final 2.0 acceptance')
-    return {'status':'PASS','version':version,'evidence_counts':counts,'external_review':'BLOCKED','decipherment':'BLOCKED'}
+        require(load('analysis/acceptance-2.0.json')['final_2_0_allowed']==recorded_review['final_2_0_allowed'],'unearned final 2.0 acceptance')
+        require(state['scientific_results']['final_2_0_allowed']==recorded_review['final_2_0_allowed'],'current acceptance/receipt mismatch')
+        if version=='2.0.0':require(recorded_review['final_2_0_allowed'],'final 2.0 requires complete recorded human acceptance')
+    return {'status':'PASS','version':version,'evidence_counts':counts,'external_review':'READY_RECORDED_HUMAN_REVIEW' if recorded_review['external_review_accepted'] else 'BLOCKED','decipherment':'BLOCKED'}
 if __name__=='__main__':
     try:print(json.dumps(validate()))
     except Exception as e:print('FAIL:',e,file=sys.stderr);sys.exit(1)

@@ -1,0 +1,49 @@
+{
+  "assessment_id": "PD-SOURCE-ADEQUACY-002",
+  "assessor": "Codex project source inspection; not independent human review",
+  "source_id": "olivier1975",
+  "inspected_pages": [
+    {
+      "page": 7,
+      "sha256": "223119820629f0464b883436303e5c0ab766875e2be70c1f048ce23c495f2e87"
+    },
+    {
+      "page": 8,
+      "sha256": "0b1b43567cc2d004d1ca6e927964e3fa77b5b7c7e51d55965a446a9d54fd8c72"
+    },
+    {
+      "page": 9,
+      "sha256": "93ba14b92a590ee467ec889245fec90b5fa58cf2dda407a71a748a24eda7d2ce"
+    },
+    {
+      "page": 10,
+      "sha256": "a7791347006a965918cc0d74300d95ca77ec2f2e44f5ef6aa8ebcf1414d377d9"
+    },
+    {
+      "page": 20,
+      "sha256": "cd0426b02f2f7a387128a92ef33e87d1148a3b96f8df046b96cd817a68d9e3fc"
+    }
+  ],
+  "observations": [
+    {
+      "locator": "p7 numbering discussion",
+      "finding": "Published within-group numbering follows the left-to-right orientation of the published panels. This convention does not establish the object’s linguistic reading direction. Individual panel alignment still needs source-located checking."
+    },
+    {
+      "locator": "pp8–9 whole-face photographs",
+      "finding": "These page reproductions provide whole-face context, not an authenticated multi-light or physical surface inspection. The downloaded page width is 710 pixels."
+    },
+    {
+      "locator": "pp10,20 group photograph panels",
+      "finding": "Isolated group panels show source glyph shapes, but crop boundaries, contrast and reproduction resolution limit surface/mark coverage. A source-visible candidate cannot establish absence of other incisions or scratches."
+    }
+  ],
+  "physical_mark_inventory_certified": false,
+  "individual_ordinal_checks_added": 0,
+  "needed_for_resolution": [
+    "Independent epigraphic reviewer assesses every slot and all 61 groups, including uncertainty and contrary observations.",
+    "Higher-resolution authorized source images, suitable illumination and/or object examination must support the required fine-detail and physical-mark scope.",
+    "A human maintainer records the identity, expertise, conflicts, independence and source-adequacy checks; the preparation agent cannot attest these."
+  ],
+  "rights": "Inspected publisher images are private source cache only; no modern images or full article text bundled."
+}

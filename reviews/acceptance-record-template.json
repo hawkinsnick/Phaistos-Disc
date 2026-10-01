@@ -1,0 +1,17 @@
+{
+  "format": "PD-human-review-acceptance-v1",
+  "packet_path": null,
+  "packet_sha256": null,
+  "reviewer_name": null,
+  "maintainer_name": null,
+  "verification_record": null,
+  "accepted_at": null,
+  "maintainer_is_human": false,
+  "reviewer_is_human": false,
+  "identity_verified": false,
+  "expertise_verified": false,
+  "conflicts_reviewed": false,
+  "independence_verified": false,
+  "redistribution_permission_verified": false,
+  "physical_evidence_adequacy_verified": false
+}
