@@ -1,0 +1,104 @@
+[
+  {
+    "claim_id": "PD-C001",
+    "kind": "reading",
+    "locus": "PD-A-E24-S05",
+    "source_id": "hmu-codification",
+    "locator": "p1 AVIII=A24",
+    "value": {
+      "proposed_evans_sign": 20
+    },
+    "uncertainty": "source_marks_question",
+    "status": "attributed_conjecture",
+    "baseline_effect": "none; native erased slot remains null"
+  },
+  {
+    "claim_id": "PD-C002",
+    "kind": "reading",
+    "locus": "PD-B-E03-S05",
+    "source_id": "hmu-codification",
+    "locator": "p1 BXXVIII=B03; repeated on p3",
+    "value": {
+      "proposed_evans_sign": 25
+    },
+    "uncertainty": "source_unqualified",
+    "status": "disagrees_with_project_figure_reading07",
+    "baseline_effect": "none; competing source assertion retained"
+  },
+  {
+    "claim_id": "PD-C003",
+    "kind": "stroke",
+    "locus": "PD-A-E17",
+    "source_id": "hmu-codification",
+    "locator": "p1 AXV=A17 versus p2 AXV=A17",
+    "value": {
+      "overview": "underscore_present",
+      "detail": "underscore_not_shown"
+    },
+    "uncertainty": "unresolved",
+    "status": "same_source_internal_disagreement",
+    "baseline_effect": "none; omission is not certified physical absence"
+  },
+  {
+    "claim_id": "PD-C004",
+    "kind": "stroke",
+    "locus": "PD-A-E10",
+    "source_id": "evans1909",
+    "locator": "p288 footnote2 versus Figures128/signary",
+    "value": {
+      "asserted_sign": 1,
+      "figure_project_signs": [
+        2,
+        12,
+        31,
+        26
+      ]
+    },
+    "uncertainty": "unresolved",
+    "status": "listed_target_not_in_group",
+    "baseline_effect": "none; no occurrence is fabricated to satisfy this footnote"
+  },
+  {
+    "claim_id": "PD-C005",
+    "kind": "count",
+    "locus": "PD-001",
+    "source_id": "evans1909",
+    "locator": "p288 prose/footnotes",
+    "value": {
+      "reported_total": 15,
+      "reported_face_A": 9,
+      "reported_face_B": 7,
+      "face_sum": 16
+    },
+    "uncertainty": "scope_unclear",
+    "status": "source_arithmetic_or_inclusion_disagreement",
+    "baseline_effect": "none; possible A25 inferred stroke kept separate"
+  },
+  {
+    "claim_id": "PD-C006",
+    "kind": "traversal",
+    "locus": "PD-001",
+    "source_id": "evans1909",
+    "locator": "p287-288",
+    "value": {
+      "proposed_reading": "center_to_outer"
+    },
+    "uncertainty": "published_hypothesis",
+    "status": "source_attributed",
+    "baseline_effect": "project outer-to-inner traversal is reversible and not a reading claim"
+  },
+  {
+    "claim_id": "PD-C007",
+    "kind": "traversal",
+    "locus": "PD-001",
+    "source_id": "unicode-proposal2006",
+    "locator": "p3 Directionality",
+    "value": {
+      "reported_consensus": "outer_to_center",
+      "encoding_directionality": "left_to_right_for_exchange"
+    },
+    "uncertainty": "source_reported",
+    "status": "source_attributed",
+    "baseline_effect": "font directionality does not define physical or linguistic reading"
+  }
+]

@@ -1,0 +1,189 @@
+{
+  "scope": "Source-listed/inferred claims, not a complete verified mark inventory",
+  "marks": [
+    {
+      "mark_id": "PD-M001",
+      "group_id": "PD-A-E29",
+      "asserted_evans_sign": 7,
+      "target_occurrence_id": "PD-A-E29-S03",
+      "source_id": "evans1909",
+      "locator": "p288 footnote1",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M002",
+      "group_id": "PD-B-E07",
+      "asserted_evans_sign": 7,
+      "target_occurrence_id": null,
+      "source_id": "evans1909",
+      "locator": "p288 footnote1",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M003",
+      "group_id": "PD-B-E11",
+      "asserted_evans_sign": 7,
+      "target_occurrence_id": "PD-B-E11-S03",
+      "source_id": "evans1909",
+      "locator": "p288 footnote1",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M004",
+      "group_id": "PD-A-E10",
+      "asserted_evans_sign": 1,
+      "target_occurrence_id": null,
+      "source_id": "evans1909",
+      "locator": "p288 footnote2",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M005",
+      "group_id": "PD-A-E17",
+      "asserted_evans_sign": 1,
+      "target_occurrence_id": "PD-A-E17-S02",
+      "source_id": "evans1909",
+      "locator": "p288 footnote2",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M006",
+      "group_id": "PD-B-E28",
+      "asserted_evans_sign": 5,
+      "target_occurrence_id": "PD-B-E28-S04",
+      "source_id": "evans1909",
+      "locator": "p288 footnote3",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M007",
+      "group_id": "PD-B-E05",
+      "asserted_evans_sign": 8,
+      "target_occurrence_id": "PD-B-E05-S05",
+      "source_id": "evans1909",
+      "locator": "p288 footnote4",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M008",
+      "group_id": "PD-B-E10",
+      "asserted_evans_sign": 8,
+      "target_occurrence_id": "PD-B-E10-S05",
+      "source_id": "evans1909",
+      "locator": "p288 footnote4",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M009",
+      "group_id": "PD-B-E13",
+      "asserted_evans_sign": 8,
+      "target_occurrence_id": "PD-B-E13-S04",
+      "source_id": "evans1909",
+      "locator": "p288 footnote4",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M010",
+      "group_id": "PD-A-E31",
+      "asserted_evans_sign": 18,
+      "target_occurrence_id": "PD-A-E31-S05",
+      "source_id": "evans1909",
+      "locator": "p288 footnote5",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M011",
+      "group_id": "PD-A-E10",
+      "asserted_evans_sign": 26,
+      "target_occurrence_id": "PD-A-E10-S04",
+      "source_id": "evans1909",
+      "locator": "p288 footnote6",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M012",
+      "group_id": "PD-A-E13",
+      "asserted_evans_sign": 26,
+      "target_occurrence_id": "PD-A-E13-S04",
+      "source_id": "evans1909",
+      "locator": "p288 footnote6",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M013",
+      "group_id": "PD-A-E16",
+      "asserted_evans_sign": 26,
+      "target_occurrence_id": "PD-A-E16-S04",
+      "source_id": "evans1909",
+      "locator": "p288 footnote6",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M014",
+      "group_id": "PD-A-E05",
+      "asserted_evans_sign": 35,
+      "target_occurrence_id": "PD-A-E05-S03",
+      "source_id": "evans1909",
+      "locator": "p288 footnote7",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M015",
+      "group_id": "PD-B-E25",
+      "asserted_evans_sign": 43,
+      "target_occurrence_id": "PD-B-E25-S04",
+      "source_id": "evans1909",
+      "locator": "p288 footnote8",
+      "status": "source_listed",
+      "meaning": null,
+      "physical_position": null
+    },
+    {
+      "mark_id": "PD-M016",
+      "group_id": "PD-A-E25",
+      "asserted_evans_sign": 8,
+      "target_occurrence_id": "PD-A-E25-S03",
+      "source_id": "evans1909",
+      "locator": "p288 footnote9",
+      "status": "published_inference_due_to_damage",
+      "meaning": null,
+      "physical_position": null
+    }
+  ],
+  "source_listed_assertions": 15,
+  "additional_inferred_assertions": 1,
+  "unresolved_target_assertions": [
+    "PD-M002",
+    "PD-M004"
+  ],
+  "statistical_use_allowed": false,
+  "target_boundary": "B7 contains two occurrences of sign07, so the source-listed stroke target is not uniquely assigned; A10 footnote target sign01 is absent from the group. Both targets remain null."
+}

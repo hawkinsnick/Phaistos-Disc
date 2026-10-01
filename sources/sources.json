@@ -65,5 +65,17 @@
     "acquisition_status": "authenticated_bytes",
     "record_license": "NOASSERTION",
     "scope": "Attributed count and direction assertions only; no figures or PDF redistributed."
+  },
+  {
+    "source_id": "hmu-codification",
+    "url": "https://daidalika.hmu.gr/wp-content/uploads/2020/11/codification.pdf",
+    "title": "Codification of the Phaistos Disk",
+    "host": "Hellenic Mediterranean University, Daidalika",
+    "author_attribution": "Document itself is unsigned; hosting site identifies Gareth Owens. Authorship is not imputed from hosting.",
+    "full_source_sha256": "7630a4f38ca41974b219bafc547e3443dfe8c29be793458ab904dc30d921cf51",
+    "acquisition_status": "authenticated_bytes",
+    "record_license": "NOASSERTION",
+    "redistribution": "PDF, full numeric transcription and images not redistributed. Only limited attributed factual disagreements are encoded.",
+    "source_independence": "Unknown; neither photographic independence nor lineage from Evans is established."
   }
 ]

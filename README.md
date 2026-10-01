@@ -1,4 +1,4 @@
-# Phaistos Disc — 0.2.0
+# Phaistos Disc — 0.3.0
 
 A source-attributed research corpus and reproducible workbench within the five-member Aegean corpus family.
 
@@ -40,7 +40,7 @@ A source-byte mismatch stops acquisition; pins are never updated automatically. 
 
 ## Available layers
 
-Checked native transcription, sign crosswalk, source ledger and executable evidence gates.
+- Source-critical apparatus and separate stroke assertions
 
 ## Limits and remaining gates
 

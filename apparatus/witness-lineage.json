@@ -1,0 +1,24 @@
+{
+  "physical_objects": 1,
+  "graphical_witnesses": [
+    {
+      "witness_id": "PD-W-EVANS1909-FIGURES",
+      "source_id": "evans1909",
+      "basis": "Tracing from photographs; p281 explicitly discusses a more recent photograph of faceB",
+      "independent_object": false
+    }
+  ],
+  "comparison_sources": [
+    {
+      "source_id": "hmu-codification",
+      "photographic_lineage": "unknown",
+      "independent_evidence_claim_allowed": false
+    },
+    {
+      "source_id": "unicode-proposal2006",
+      "role": "encoding proposal with secondary discussion",
+      "independent_evidence_claim_allowed": false
+    }
+  ],
+  "policy": "Different pages, publication dates or encodings do not establish independent observations."
+}

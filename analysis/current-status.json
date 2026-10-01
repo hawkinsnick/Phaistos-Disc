@@ -1,6 +1,6 @@
 {
-  "repository_version": "0.2.0",
-  "milestone": "SOURCE_CHECKED_TRANSCRIPTION",
+  "repository_version": "0.3.0",
+  "milestone": "SOURCE_CRITICAL_APPARATUS",
   "committed_evidence_counts": {
     "physical_objects": 1,
     "faces": 2,
@@ -32,7 +32,7 @@
     },
     {
       "path": "sources/sources.json",
-      "sha256": "f9a720dc6a0792dd0476e061cabacb49416373bc0b060adf34de54b2ca3e06db"
+      "sha256": "8b5248c30b8148cae97ade455d2940e3a687244cc8ba71beb8aa06c2cccc334d"
     },
     {
       "path": "research/transcription-policy-v1.json",
@@ -49,6 +49,18 @@
     {
       "path": "research/experiment-gates.json",
       "sha256": "cacf070d972ef0dce60f2f1776deafd93d55bdbbe559726926ba94123d761f47"
+    },
+    {
+      "path": "apparatus/claims.json",
+      "sha256": "8b94dc170ca025a8012da5dcb9cbe165d7019e75d83687cc0a535f27a04c43a7"
+    },
+    {
+      "path": "apparatus/witness-lineage.json",
+      "sha256": "003d4e3256391da34b27620724ca9163a633af7caf4e6039a7e8b8dc217cdc03"
+    },
+    {
+      "path": "apparatus/stroke-assertions.json",
+      "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved."
