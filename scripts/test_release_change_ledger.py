@@ -1,6 +1,6 @@
 """Exercise actual Git history, byte changes, JSON types and dangerous-looking paths."""
 import json, pathlib, subprocess, tempfile, unittest
-from release_change_ledger import calculate, semantic, commit, markdown
+from release_change_ledger import calculate, semantic, commit, markdown, parse_json
 class LedgerTests(unittest.TestCase):
     def test_history(self):
         with tempfile.TemporaryDirectory() as d:
@@ -22,6 +22,11 @@ class LedgerTests(unittest.TestCase):
             # Working-tree corruption must not affect an immutable comparison.
             (r/'corpus/a.json').write_text('uncommitted corruption');self.assertEqual(calculate(r,base,target),v)
             with self.assertRaises(ValueError):commit(r,'--help')
+    def test_array_types_and_invalid_json(self):
+        self.assertEqual(len(semantic([{'x':False}], [{'x':0}])),1)
+        self.assertEqual(semantic([{'a':1,'b':2}], [{'b':2,'a':1}]),[])
+        for raw in ['{"x":1,"x":2}', '{"x":NaN}', '{"x":Infinity}']:
+            with self.assertRaises(ValueError):parse_json(raw)
     def test_add_null_and_type(self):
         self.assertEqual(semantic({}, {'x':None}),[{'pointer':'/x','operation':'add','after':None}])
         self.assertEqual(len(semantic(True,1)),1)

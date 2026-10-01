@@ -25,6 +25,27 @@ def content(root, item):
         return None
     return git(root, 'cat-file', 'blob', item[2])
 
+def strict_equal(a, b):
+    if type(a) is not type(b):
+        return False
+    if isinstance(a, list):
+        return len(a) == len(b) and all(strict_equal(x, y) for x, y in zip(a, b))
+    if isinstance(a, dict):
+        return a.keys() == b.keys() and all(strict_equal(a[k], b[k]) for k in a)
+    return a == b
+
+def parse_json(raw):
+    def pairs(items):
+        result = {}
+        for key, value in items:
+            if key in result:
+                raise ValueError('duplicate JSON key')
+            result[key] = value
+        return result
+    def constant(value):
+        raise ValueError('nonfinite JSON number: ' + value)
+    return json.loads(raw, object_pairs_hook=pairs, parse_constant=constant)
+
 def semantic(before, after, pointer=''):
     # JSON Pointer escaping keeps keys containing slash or tilde unambiguous.
     if type(before) is not type(after):
@@ -42,7 +63,7 @@ def semantic(before, after, pointer=''):
         return out
     if isinstance(before, list):
         # Never infer stable identities or align scientific records by position.
-        return [] if before == after else [{'pointer': pointer, 'operation': 'replace_array', 'before': before, 'after': after}]
+        return [] if strict_equal(before, after) else [{'pointer': pointer, 'operation': 'replace_array', 'before': before, 'after': after}]
     return [] if before == after else [{'pointer': pointer, 'operation': 'replace', 'before': before, 'after': after}]
 
 def category(path):
@@ -69,7 +90,7 @@ def calculate(root, baseline, target):
                'json_comparison': 'not_applicable', 'json_changes': []}
         if path.endswith('.json') and before is not None and after is not None:
             try:
-                row['json_changes'] = semantic(json.loads(before), json.loads(after))
+                row['json_changes'] = semantic(parse_json(before), parse_json(after))
                 row['json_comparison'] = 'compared'
             except (ValueError, UnicodeError):
                 row['json_comparison'] = 'invalid_json'
