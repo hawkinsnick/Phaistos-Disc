@@ -119,6 +119,9 @@ def validate(root=R):
     if (root/'reviews/occurrence-audit-v1.json').exists():
         from occurrence_audit import calculate as occurrence_calculate
         require(load('reviews/occurrence-audit-v1.json')==occurrence_calculate(root),'occurrence evidence replay drift')
+    if (root/'analysis/source-coverage-v1.json').exists():
+        from source_coverage import calculate as source_calculate
+        require(load('analysis/source-coverage-v1.json')==source_calculate(root),'source coverage replay drift')
     return {'status':'PASS','version':version,'evidence_counts':counts,'external_review':'BLOCKED','decipherment':'BLOCKED'}
 if __name__=='__main__':
     try:print(json.dumps(validate()))

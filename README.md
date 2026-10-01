@@ -1,4 +1,4 @@
-# Phaistos Disc — 1.3.0
+# Phaistos Disc — 1.4.0
 
 A source-attributed research corpus and reproducible workbench within the five-member Aegean corpus family.
 
@@ -72,3 +72,7 @@ See `releases/` for milestone-specific scope and acceptance records. The next ev
 ## Milestone 1.3.0
 
 Adds a source-linked evidence row for every one of the 242 native slots. Forty-six labeled photographic exemplars are distinguished from 196 ordinals not individually certified. Native readings and all unknown, position and review boundaries remain unchanged.
+
+## Milestone 1.4.0
+
+Adds a typed, replayable eight-source coverage ledger: encoding standards, historical baseline, bounded photographic comparison, dependent assertions and context evidence remain distinct. Preserves the Pernier volume/imprint/catalogue date conflict and unresolved photographic lineage. Museum pages still return HTTP 502; no metadata is invented.

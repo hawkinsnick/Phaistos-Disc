@@ -1,0 +1,106 @@
+{
+  "format": "source-coverage-v1",
+  "source_registry_sha256": "942ea067831f90a6cd72c7f35bc668974a2b63e1de67d2759f74bf27456c5924",
+  "physical_objects": 1,
+  "sources": [
+    {
+      "source_id": "unicode17",
+      "role": "encoding_standard",
+      "record_license": "Unicode-3.0",
+      "recorded_access_status": "authenticated_bytes",
+      "full_source_sha256": "2e1efc1dcb59c575eedf5ccae60f95229f706ee6d031835247d843c11d96470c",
+      "coverage_units": {
+        "encoded_base_signs": 45,
+        "separate_combining_marks": 1
+      },
+      "complete_object_autopsy": false,
+      "independent_review_completed": false
+    },
+    {
+      "source_id": "heraklion-catalogue",
+      "role": "museum_metadata_pending",
+      "record_license": "NOASSERTION",
+      "recorded_access_status": "blocked_http_502",
+      "full_source_sha256": null,
+      "coverage_units": null,
+      "complete_object_autopsy": false,
+      "independent_review_completed": false
+    },
+    {
+      "source_id": "heraklion-exhibit",
+      "role": "museum_metadata_pending",
+      "record_license": "NOASSERTION",
+      "recorded_access_status": "blocked_http_502",
+      "full_source_sha256": null,
+      "coverage_units": null,
+      "complete_object_autopsy": false,
+      "independent_review_completed": false
+    },
+    {
+      "source_id": "evans1909",
+      "role": "native_graphical_baseline",
+      "record_license": "Public-domain historical edition; original project transcription MIT",
+      "recorded_access_status": "authenticated_bytes",
+      "full_source_sha256": "b06f8a04f3f7e33578f28aa0e88be600a13ebc6d03891a79c721558ca50c05e7",
+      "coverage_units": {
+        "graphical_groups": 61,
+        "project_slots": 242
+      },
+      "complete_object_autopsy": false,
+      "independent_review_completed": false
+    },
+    {
+      "source_id": "unicode-proposal2006",
+      "role": "encoding_proposal",
+      "record_license": "NOASSERTION",
+      "recorded_access_status": "authenticated_bytes",
+      "full_source_sha256": "de456fcda8f74b9c4251661dbff10a5bcd65feed7fe864b946980711219a9b1b",
+      "coverage_units": null,
+      "complete_object_autopsy": false,
+      "independent_review_completed": false
+    },
+    {
+      "source_id": "hmu-codification",
+      "role": "limited_competing_assertions",
+      "record_license": "NOASSERTION",
+      "recorded_access_status": "authenticated_bytes",
+      "full_source_sha256": "7630a4f38ca41974b219bafc547e3443dfe8c29be793458ab904dc30d921cf51",
+      "coverage_units": null,
+      "complete_object_autopsy": false,
+      "independent_review_completed": false
+    },
+    {
+      "source_id": "olivier1975",
+      "role": "bounded_photographic_comparison",
+      "record_license": "NOASSERTION",
+      "recorded_access_status": "authenticated_publisher_page_images",
+      "full_source_sha256": null,
+      "coverage_units": {
+        "group_photo_comparisons": 61,
+        "labeled_exemplars": 46,
+        "individual_ordinal_pending": 196
+      },
+      "complete_object_autopsy": false,
+      "independent_review_completed": false
+    },
+    {
+      "source_id": "pernier1908",
+      "role": "historical_identity_and_context",
+      "record_license": "Public-domain historical edition",
+      "recorded_access_status": "authenticated_bytes",
+      "full_source_sha256": "a35ca871a54964f66d66a418e55ec772b3c147b7f697360f1f4ea13eef67cd98",
+      "coverage_units": null,
+      "complete_object_autopsy": false,
+      "independent_review_completed": false
+    }
+  ],
+  "lineage_sha256": "9e6a161b637dcf01f287b4e7c3c3ff448f31caeb4b33cdb9c34ff02095ccc834",
+  "pernier_dates": {
+    "volume_year": 1908,
+    "imprint_year": 1909,
+    "archive_metadata_year": "1906",
+    "archive_date_adopted": false
+  },
+  "rights_boundary": "Acquisition and citation do not license redistribution. Only the five authenticated historical Evans renders are packaged; modern source images and PDFs remain excluded.",
+  "comparison_boundary": "Source publications are not additional independent objects. Pernier/Evans photographic overlap is unresolved. An encoding, duplicate drawing or dependent edition is not an independent epigraphic witness."
+}

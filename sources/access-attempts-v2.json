@@ -1,0 +1,17 @@
+{
+  "checked": "2026-10-01",
+  "attempts": [
+    {
+      "source_id": "heraklion-catalogue",
+      "status": "HTTP_502",
+      "full_record_verified": false
+    },
+    {
+      "source_id": "heraklion-exhibit",
+      "status": "HTTP_502",
+      "full_record_verified": false
+    }
+  ],
+  "metadata_adopted": false,
+  "note": "Repeated normal public-page access through web retrieval; no catalogue identity or image rights inferred from failure."
+}
