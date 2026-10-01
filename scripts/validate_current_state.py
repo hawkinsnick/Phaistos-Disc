@@ -10,7 +10,7 @@ def require(ok,message):
 def validate(root=R):
     def load(p):return json.loads((root/p).read_text())
     def sha(p):return hashlib.sha256((root/p).read_bytes()).hexdigest()
-    version=(root/'VERSION').read_text().strip();require(re.fullmatch(r'(0\.[2-9]\.0|1\.0\.0)',version),'unsupported milestone version')
+    version=(root/'VERSION').read_text().strip();require(re.fullmatch(r'(0\.[2-9]\.0|1\.[0-2]\.0)',version),'unsupported milestone version')
     require(re.search(r'^version: "'+re.escape(version)+'"$',(root/'CITATION.cff').read_text(),re.M),'citation version drift')
     for p in root.rglob('*.json'):
         if '.git' not in p.parts and 'output' not in p.parts:json.loads(p.read_text())
@@ -69,6 +69,10 @@ def validate(root=R):
         gate=next(g for g in gates if g['id']==gid);require(gate['state']=='BLOCKED' and gate['claim_allowed'] is False,'unsupported scientific gate')
     state=load('analysis/current-status.json');require(state['repository_version']==version,'status version')
     counts={'physical_objects':1,'faces':2,'encoded_base_sign_types':45,'checked_graphical_witnesses':1,'source_checked_groups':len(groups),'source_checked_occurrence_slots':len(occ),'identified_slots':sum(o['sign_id'] is not None for o in occ),'unknown_slots':sum(o['sign_id'] is None for o in occ)}
+    if (root/'reviews/photographic-comparison-v1.json').exists():
+        from validate_witness_audit import validate as witness_validate
+        witness_validate(root)
+        counts['project_checked_photographic_witnesses']=1
     require(state['committed_evidence_counts']==counts,'evidence count drift')
     require(state['scientific_results']['decipherment_claim_allowed'] is False and state['scientific_results']['external_peer_review_completed'] is False,'scientific claim promotion')
     for item in state['evidence']:require(sha(item['path'])==item['sha256'],'evidence digest drift: '+item['path'])
@@ -105,7 +109,7 @@ def validate(root=R):
     if (root/'research/family-readiness-v1.json').exists():
         readiness=load('research/family-readiness-v1.json');require(readiness['target_versions']['Phaistos-Disc']==version,'readiness member version')
         require(readiness['pooled_analysis_allowed'] is False and readiness['linguistic_known_answer_control']['state']=='BLOCKED','family readiness promotion')
-    if (root/'analysis/acceptance-1.0.json').exists():
+    if version=='1.0.0' and (root/'analysis/acceptance-1.0.json').exists():
         from acceptance import calculate
         acceptance=load('analysis/acceptance-1.0.json')
         require(acceptance==calculate(root) and acceptance['status']=='PASS' and version=='1.0.0','1.0 acceptance drift')

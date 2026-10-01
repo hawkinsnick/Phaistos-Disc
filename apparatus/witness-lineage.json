@@ -20,5 +20,24 @@
       "independent_evidence_claim_allowed": false
     }
   ],
-  "policy": "Different pages, publication dates or encodings do not establish independent observations."
+  "policy": "Different pages, publication dates or encodings do not establish independent observations.",
+  "photographic_witnesses": [
+    {
+      "witness_id": "PD-W-OLIVIER1975-PHOTOS",
+      "source_id": "olivier1975",
+      "photographic_acquisition_reported": "1971-02",
+      "acquisition_locator": "p6 footnote2",
+      "independent_object": false,
+      "newer_photographic_acquisition_reported": true,
+      "review_ref": "reviews/photographic-comparison-v1.json"
+    },
+    {
+      "witness_id": "PD-W-PERNIER1908-PLATES",
+      "source_id": "pernier1908",
+      "role": "historical_plate_context",
+      "independent_object": false,
+      "independent_of_evans_photographs": null,
+      "full_group_review_completed": false
+    }
+  ]
 }

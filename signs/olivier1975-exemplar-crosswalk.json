@@ -1,0 +1,327 @@
+{
+  "source_id": "olivier1975",
+  "scope": "45 source-labeled exemplars plus the unreadable exemplar. The reverse-index transform is checked against these printed labels; it is not a certification of every unillustrated within-group ordinal.",
+  "entries": [
+    {
+      "evans_sign_number": 1,
+      "source_exemplar": "A2.1",
+      "source_page": 27,
+      "native_occurrence_id": "PD-A-E02-S02",
+      "native_sign_id": "PD-U101D0"
+    },
+    {
+      "evans_sign_number": 2,
+      "source_exemplar": "A13.4",
+      "source_page": 27,
+      "native_occurrence_id": "PD-A-E13-S01",
+      "native_sign_id": "PD-U101D1"
+    },
+    {
+      "evans_sign_number": 3,
+      "source_exemplar": "A4.2",
+      "source_page": 27,
+      "native_occurrence_id": "PD-A-E04-S02",
+      "native_sign_id": "PD-U101D2"
+    },
+    {
+      "evans_sign_number": 4,
+      "source_exemplar": "A27.3",
+      "source_page": 27,
+      "native_occurrence_id": "PD-A-E27-S03",
+      "native_sign_id": "PD-U101D3"
+    },
+    {
+      "evans_sign_number": 5,
+      "source_exemplar": "B28.1",
+      "source_page": 27,
+      "native_occurrence_id": "PD-B-E28-S04",
+      "native_sign_id": "PD-U101D4"
+    },
+    {
+      "evans_sign_number": 6,
+      "source_exemplar": "A8.4",
+      "source_page": 27,
+      "native_occurrence_id": "PD-A-E08-S01",
+      "native_sign_id": "PD-U101D5"
+    },
+    {
+      "evans_sign_number": 7,
+      "source_exemplar": "B5.2",
+      "source_page": 27,
+      "native_occurrence_id": "PD-B-E05-S04",
+      "native_sign_id": "PD-U101D6"
+    },
+    {
+      "evans_sign_number": 8,
+      "source_exemplar": "B12.2",
+      "source_page": 27,
+      "native_occurrence_id": "PD-B-E12-S02",
+      "native_sign_id": "PD-U101D7"
+    },
+    {
+      "evans_sign_number": 9,
+      "source_exemplar": "B4.5",
+      "source_page": 27,
+      "native_occurrence_id": "PD-B-E04-S01",
+      "native_sign_id": "PD-U101D8"
+    },
+    {
+      "evans_sign_number": 10,
+      "source_exemplar": "A4.3",
+      "source_page": 28,
+      "native_occurrence_id": "PD-A-E04-S01",
+      "native_sign_id": "PD-U101D9"
+    },
+    {
+      "evans_sign_number": 11,
+      "source_exemplar": "A19.1",
+      "source_page": 28,
+      "native_occurrence_id": "PD-A-E19-S02",
+      "native_sign_id": "PD-U101DA"
+    },
+    {
+      "evans_sign_number": 12,
+      "source_exemplar": "A7.1",
+      "source_page": 28,
+      "native_occurrence_id": "PD-A-E07-S03",
+      "native_sign_id": "PD-U101DB"
+    },
+    {
+      "evans_sign_number": 13,
+      "source_exemplar": "A31.3",
+      "source_page": 28,
+      "native_occurrence_id": "PD-A-E31-S03",
+      "native_sign_id": "PD-U101DC"
+    },
+    {
+      "evans_sign_number": 14,
+      "source_exemplar": "A9.4",
+      "source_page": 28,
+      "native_occurrence_id": "PD-A-E09-S04",
+      "native_sign_id": "PD-U101DD"
+    },
+    {
+      "evans_sign_number": 15,
+      "source_exemplar": "B23.5",
+      "source_page": 28,
+      "native_occurrence_id": "PD-B-E23-S01",
+      "native_sign_id": "PD-U101DE"
+    },
+    {
+      "evans_sign_number": 16,
+      "source_exemplar": "B17.3",
+      "source_page": 28,
+      "native_occurrence_id": "PD-B-E17-S01",
+      "native_sign_id": "PD-U101DF"
+    },
+    {
+      "evans_sign_number": 17,
+      "source_exemplar": "A8.2",
+      "source_page": 28,
+      "native_occurrence_id": "PD-A-E08-S03",
+      "native_sign_id": "PD-U101E0"
+    },
+    {
+      "evans_sign_number": 18,
+      "source_exemplar": "A12.1",
+      "source_page": 28,
+      "native_occurrence_id": "PD-A-E12-S06",
+      "native_sign_id": "PD-U101E1"
+    },
+    {
+      "evans_sign_number": 19,
+      "source_exemplar": "A8.1",
+      "source_page": 28,
+      "native_occurrence_id": "PD-A-E08-S04",
+      "native_sign_id": "PD-U101E2"
+    },
+    {
+      "evans_sign_number": 20,
+      "source_exemplar": "B18.2",
+      "source_page": 29,
+      "native_occurrence_id": "PD-B-E18-S04",
+      "native_sign_id": "PD-U101E3"
+    },
+    {
+      "evans_sign_number": 21,
+      "source_exemplar": "A3.1",
+      "source_page": 29,
+      "native_occurrence_id": "PD-A-E03-S07",
+      "native_sign_id": "PD-U101E4"
+    },
+    {
+      "evans_sign_number": 22,
+      "source_exemplar": "B30.3",
+      "source_page": 29,
+      "native_occurrence_id": "PD-B-E30-S03",
+      "native_sign_id": "PD-U101E5"
+    },
+    {
+      "evans_sign_number": 23,
+      "source_exemplar": "A5.3",
+      "source_page": 29,
+      "native_occurrence_id": "PD-A-E05-S01",
+      "native_sign_id": "PD-U101E6"
+    },
+    {
+      "evans_sign_number": 24,
+      "source_exemplar": "B26.3",
+      "source_page": 29,
+      "native_occurrence_id": "PD-B-E26-S02",
+      "native_sign_id": "PD-U101E7"
+    },
+    {
+      "evans_sign_number": 25,
+      "source_exemplar": "A18.4",
+      "source_page": 29,
+      "native_occurrence_id": "PD-A-E18-S03",
+      "native_sign_id": "PD-U101E8"
+    },
+    {
+      "evans_sign_number": 26,
+      "source_exemplar": "A7.2",
+      "source_page": 29,
+      "native_occurrence_id": "PD-A-E07-S02",
+      "native_sign_id": "PD-U101E9"
+    },
+    {
+      "evans_sign_number": 27,
+      "source_exemplar": "A12.5",
+      "source_page": 29,
+      "native_occurrence_id": "PD-A-E12-S02",
+      "native_sign_id": "PD-U101EA"
+    },
+    {
+      "evans_sign_number": 28,
+      "source_exemplar": "A17.2",
+      "source_page": 29,
+      "native_occurrence_id": "PD-A-E17-S01",
+      "native_sign_id": "PD-U101EB"
+    },
+    {
+      "evans_sign_number": 29,
+      "source_exemplar": "B5.4",
+      "source_page": 29,
+      "native_occurrence_id": "PD-B-E05-S02",
+      "native_sign_id": "PD-U101EC"
+    },
+    {
+      "evans_sign_number": 30,
+      "source_exemplar": "B4.4",
+      "source_page": 30,
+      "native_occurrence_id": "PD-B-E04-S02",
+      "native_sign_id": "PD-U101ED"
+    },
+    {
+      "evans_sign_number": 31,
+      "source_exemplar": "A10.2",
+      "source_page": 30,
+      "native_occurrence_id": "PD-A-E10-S03",
+      "native_sign_id": "PD-U101EE"
+    },
+    {
+      "evans_sign_number": 32,
+      "source_exemplar": "B15.3",
+      "source_page": 30,
+      "native_occurrence_id": "PD-B-E15-S03",
+      "native_sign_id": "PD-U101EF"
+    },
+    {
+      "evans_sign_number": 33,
+      "source_exemplar": "A14.2",
+      "source_page": 30,
+      "native_occurrence_id": "PD-A-E14-S01",
+      "native_sign_id": "PD-U101F0"
+    },
+    {
+      "evans_sign_number": 34,
+      "source_exemplar": "B9.3",
+      "source_page": 30,
+      "native_occurrence_id": "PD-B-E09-S02",
+      "native_sign_id": "PD-U101F1"
+    },
+    {
+      "evans_sign_number": 35,
+      "source_exemplar": "A15.3",
+      "source_page": 30,
+      "native_occurrence_id": "PD-A-E15-S05",
+      "native_sign_id": "PD-U101F2"
+    },
+    {
+      "evans_sign_number": 36,
+      "source_exemplar": "B10.3",
+      "source_page": 30,
+      "native_occurrence_id": "PD-B-E10-S03",
+      "native_sign_id": "PD-U101F3"
+    },
+    {
+      "evans_sign_number": 37,
+      "source_exemplar": "A15.2",
+      "source_page": 30,
+      "native_occurrence_id": "PD-A-E15-S06",
+      "native_sign_id": "PD-U101F4"
+    },
+    {
+      "evans_sign_number": 38,
+      "source_exemplar": "A4.1",
+      "source_page": 30,
+      "native_occurrence_id": "PD-A-E04-S03",
+      "native_sign_id": "PD-U101F5"
+    },
+    {
+      "evans_sign_number": 39,
+      "source_exemplar": "B24.2",
+      "source_page": 31,
+      "native_occurrence_id": "PD-B-E24-S03",
+      "native_sign_id": "PD-U101F6"
+    },
+    {
+      "evans_sign_number": 40,
+      "source_exemplar": "A30.2",
+      "source_page": 31,
+      "native_occurrence_id": "PD-A-E30-S02",
+      "native_sign_id": "PD-U101F7"
+    },
+    {
+      "evans_sign_number": 41,
+      "source_exemplar": "A22.3",
+      "source_page": 31,
+      "native_occurrence_id": "PD-A-E22-S03",
+      "native_sign_id": "PD-U101F8"
+    },
+    {
+      "evans_sign_number": 42,
+      "source_exemplar": "B22.2",
+      "source_page": 31,
+      "native_occurrence_id": "PD-B-E22-S03",
+      "native_sign_id": "PD-U101F9"
+    },
+    {
+      "evans_sign_number": 43,
+      "source_exemplar": "B25.1",
+      "source_page": 31,
+      "native_occurrence_id": "PD-B-E25-S04",
+      "native_sign_id": "PD-U101FA"
+    },
+    {
+      "evans_sign_number": 44,
+      "source_exemplar": "A25.2",
+      "source_page": 31,
+      "native_occurrence_id": "PD-A-E25-S02",
+      "native_sign_id": "PD-U101FB"
+    },
+    {
+      "evans_sign_number": 45,
+      "source_exemplar": "B11.2",
+      "source_page": 31,
+      "native_occurrence_id": "PD-B-E11-S02",
+      "native_sign_id": "PD-U101FC"
+    }
+  ],
+  "unknown_exemplar": {
+    "source_exemplar": "A24.1",
+    "source_page": 31,
+    "native_occurrence_id": "PD-A-E24-S05",
+    "native_sign_id": null
+  }
+}

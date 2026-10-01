@@ -1,0 +1,188 @@
+{
+  "source_id": "olivier1975",
+  "acquisition": "Public publisher page renders; article PDF returned HTTP403",
+  "record_license": "NOASSERTION",
+  "redistribution_allowed": false,
+  "pages": [
+    {
+      "page": 5,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0005_0000_710.jpg",
+      "bytes": 132684,
+      "sha256": "406b3d05f7bfe6e7cebc6395374ddf5bea1f6490f60b12f28eefd120d26390d7"
+    },
+    {
+      "page": 6,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0006_0000_710.jpg",
+      "bytes": 194930,
+      "sha256": "8b8d957409e5e3692ab3edeabc85c6b444d6576bc8ca268b0d48e91585790881"
+    },
+    {
+      "page": 7,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0007_0000_710.jpg",
+      "bytes": 129015,
+      "sha256": "223119820629f0464b883436303e5c0ab766875e2be70c1f048ce23c495f2e87"
+    },
+    {
+      "page": 8,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0008_0000_710.jpg",
+      "bytes": 157168,
+      "sha256": "0b1b43567cc2d004d1ca6e927964e3fa77b5b7c7e51d55965a446a9d54fd8c72"
+    },
+    {
+      "page": 9,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0009_0000_710.jpg",
+      "bytes": 167709,
+      "sha256": "93ba14b92a590ee467ec889245fec90b5fa58cf2dda407a71a748a24eda7d2ce"
+    },
+    {
+      "page": 10,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0010_0000_710.jpg",
+      "bytes": 66608,
+      "sha256": "a7791347006a965918cc0d74300d95ca77ec2f2e44f5ef6aa8ebcf1414d377d9"
+    },
+    {
+      "page": 11,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0011_0000_710.jpg",
+      "bytes": 73605,
+      "sha256": "a9eb14183ac421eb634b9f0713779e9f14bc5bd587c43a867f860bfbecf703da"
+    },
+    {
+      "page": 12,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0012_0000_710.jpg",
+      "bytes": 67247,
+      "sha256": "d0db3597c58ac1d6ebf8bbd2eff99ba32931c0998749fdac9bba1bed586a09bb"
+    },
+    {
+      "page": 13,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0013_0000_710.jpg",
+      "bytes": 60650,
+      "sha256": "046bed1d34324c2a57f4cf88bb26e1cfeb02d7ce6a28b6e45d5381e8f2f70777"
+    },
+    {
+      "page": 14,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0014_0000_710.jpg",
+      "bytes": 61057,
+      "sha256": "ef37620aaeefc7b8725aa0184cff9c373b5718155fd3bc4a24f901ecb9c80698"
+    },
+    {
+      "page": 15,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0015_0000_710.jpg",
+      "bytes": 86526,
+      "sha256": "148e7f5ac12d2ea775157dfe93402ab250359e2f6dc2989d65ecba627d9a3900"
+    },
+    {
+      "page": 16,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0016_0000_710.jpg",
+      "bytes": 76347,
+      "sha256": "005caa671006c2e5b4367061197ef0712425a293db33ebc1c5eb3cffb6d82b09"
+    },
+    {
+      "page": 17,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0017_0000_710.jpg",
+      "bytes": 80070,
+      "sha256": "5e8040fa56b4079b41ba21082472ff3f324a5b350fcd36779e18f90b300fae8a"
+    },
+    {
+      "page": 18,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0018_0000_710.jpg",
+      "bytes": 61873,
+      "sha256": "86951e683b1fe32e0770ef54c471d99b024bebb4297513eb2fbe572728de4511"
+    },
+    {
+      "page": 19,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0019_0000_710.jpg",
+      "bytes": 79645,
+      "sha256": "f68c8f10f88395f4c75ca5809dd503392932a9f3e41be2c99e072a96722c273e"
+    },
+    {
+      "page": 20,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0020_0000_710.jpg",
+      "bytes": 67405,
+      "sha256": "cd0426b02f2f7a387128a92ef33e87d1148a3b96f8df046b96cd817a68d9e3fc"
+    },
+    {
+      "page": 21,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0021_0000_710.jpg",
+      "bytes": 64391,
+      "sha256": "ddef1edb2812829b8be9461eae66e2e03d1e60805b07bdad264056883e3faa27"
+    },
+    {
+      "page": 22,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0022_0000_710.jpg",
+      "bytes": 75201,
+      "sha256": "7aab92f7ac47111f49c67c08d8e417995659722fb595dd587698ebe64e410185"
+    },
+    {
+      "page": 23,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0023_0000_710.jpg",
+      "bytes": 48447,
+      "sha256": "ca206c512d7fc42fdd2131e7672e530be988a5a838db3d22e8441909f85fcf7d"
+    },
+    {
+      "page": 24,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0024_0000_710.jpg",
+      "bytes": 78098,
+      "sha256": "74fba6a46c96d2af5863df7d64953d4283d49b6b8f4234cd371c6dbbb4696b92"
+    },
+    {
+      "page": 25,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0025_0000_710.jpg",
+      "bytes": 78711,
+      "sha256": "b584acbe169fc9afb6d8a784829cd63012605f5a28da325356082c5fe8f1e68e"
+    },
+    {
+      "page": 26,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0026_0000_710.jpg",
+      "bytes": 82192,
+      "sha256": "31913323cae64530d616570d900e5fde3709b3d190ed81fb5c7b0f2a2a858a5b"
+    },
+    {
+      "page": 27,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0027_0000_710.jpg",
+      "bytes": 76170,
+      "sha256": "7d86ad39588b8049c35aab4b0c7045b6a788daa8460a753091b5e832d0075f27"
+    },
+    {
+      "page": 28,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0028_0000_710.jpg",
+      "bytes": 71539,
+      "sha256": "c6b49920acdab423822b2c20545886ba6bc53eb740073f03f452fee1ba712eac"
+    },
+    {
+      "page": 29,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0029_0000_710.jpg",
+      "bytes": 77416,
+      "sha256": "db565fa698abc6b62bfaa100c984fcf9535dd1f509a03ac7019f2054e13737e3"
+    },
+    {
+      "page": 30,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0030_0000_710.jpg",
+      "bytes": 62898,
+      "sha256": "acd29d2551708c719c8558f259626f8e2e4a54887ec1bef08f382ecab1fe46aa"
+    },
+    {
+      "page": 31,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0031_0000_710.jpg",
+      "bytes": 71345,
+      "sha256": "0ab02e72eb61f831ebc802948d63ac5ae2be359001155a2fb807078ab4ef5004"
+    },
+    {
+      "page": 32,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0032_0000_710.jpg",
+      "bytes": 153657,
+      "sha256": "261ea33231bcb5a28430c2812a61f715072317da445722eac92f78e38704c0fa"
+    },
+    {
+      "page": 33,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0033_0000_710.jpg",
+      "bytes": 154394,
+      "sha256": "41e82e77fd7ce09f5431783cb7b8ec3863fac638ef4711c1a7eaa885a4253e47"
+    },
+    {
+      "page": 34,
+      "url": "https://www.persee.fr/renderPage/bch_0007-4217_1975_num_99_1_2067/bch_0007-4217_1975_num_99_1_T1_0034_0000_710.jpg",
+      "bytes": 68299,
+      "sha256": "e0491193c2f94d33cb153612025e64d8471e9af97cfafb995284c53ef21e3d11"
+    }
+  ]
+}

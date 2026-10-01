@@ -77,5 +77,42 @@
     "record_license": "NOASSERTION",
     "redistribution": "PDF, full numeric transcription and images not redistributed. Only limited attributed factual disagreements are encoded.",
     "source_independence": "Unknown; neither photographic independence nor lineage from Evans is established."
+  },
+  {
+    "source_id": "olivier1975",
+    "author": "Jean-Pierre Olivier",
+    "title": "Le disque de Phaistos. Edition photographique",
+    "publication_year": 1975,
+    "doi": "10.3406/bch.1975.2067",
+    "url": "https://www.persee.fr/doc/bch_0007-4217_1975_num_99_1_2067",
+    "acquisition_status": "authenticated_publisher_page_images",
+    "manifest_path": "sources/olivier1975-page-manifest.json",
+    "manifest_sha256": "592bc34aa8691065162d66aaba0be7c523cb9f8cf2f1cc643faf71dac6867159",
+    "record_license": "NOASSERTION",
+    "redistribution": "Publisher photographs, page images and full article text are not bundled. Project comparison outcomes and limited source facts only.",
+    "lineage": "p6 footnote2 reports photography in February1971 at Heraklion Museum. p32/33 drawings are explicitly reproduced from Evans and are not a new witness.",
+    "review_scope": "Project slot accounting and coarse glyph compatibility at 710-pixel page-render resolution; not independent human epigraphic review."
+  },
+  {
+    "source_id": "pernier1908",
+    "author": "Luigi Pernier",
+    "title": "Il disco di Phaestos con caratteri pittografici, Ausonia III (1908), pp255–302, platesIX–XIII",
+    "publication_year": 1909,
+    "volume_year": 1908,
+    "url": "https://archive.org/details/ausonia03sociuoft",
+    "download_url": "https://archive.org/download/ausonia03sociuoft/ausonia03sociuoft.pdf",
+    "full_source_sha256": "a35ca871a54964f66d66a418e55ec772b3c147b7f697360f1f4ea13eef67cd98",
+    "bytes": 26863592,
+    "acquisition_status": "authenticated_bytes",
+    "record_license": "Public-domain historical edition",
+    "rights_evidence": "Archive metadata NOT_IN_COPYRIGHT. Scanned titlepages show volumeIII1908, imprintRome1909. Archive date1906 is retained as a conflicting catalogue assertion, not the publication date.",
+    "archive_metadata_date": "1906",
+    "locators": [
+      "printedp271/PDFpage289",
+      "plateXI/PDFpage431",
+      "plateXII/PDFpage433",
+      "plateXIII/PDFpage435"
+    ],
+    "review_scope": "Publication identity, count prose and historical plate context; no complete new numeric transcription."
   }
 ]

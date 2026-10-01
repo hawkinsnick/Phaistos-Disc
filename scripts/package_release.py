@@ -8,5 +8,8 @@ paths=subprocess.check_output(['git','-C',str(R),'ls-files','-z']).decode().spli
 with zipfile.ZipFile(a.out,'w',zipfile.ZIP_DEFLATED) as z:
     for rel in paths:
         if rel:z.write(R/rel,prefix+rel)
-    for image in sorted((R/'sources/images').glob('*.png')):z.write(image,prefix+str(image.relative_to(R)))
+    for name in ['signary','figure128','figure129','plate12','plate13']:
+        image=R/'sources/images'/('evans1909-'+name+'.png')
+        if not image.is_file():raise ValueError('missing authenticated public-domain release image: '+name)
+        z.write(image,prefix+str(image.relative_to(R)))
 print(a.out)

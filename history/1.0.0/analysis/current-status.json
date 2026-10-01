@@ -1,6 +1,6 @@
 {
-  "repository_version": "1.1.0",
-  "milestone": "PHOTOGRAPHIC_COMPARISON_AND_STROKE_AUDIT",
+  "repository_version": "1.0.0",
+  "milestone": "AUDITABLE_SOURCE_ATTRIBUTED_EDITION",
   "committed_evidence_counts": {
     "physical_objects": 1,
     "faces": 2,
@@ -9,8 +9,7 @@
     "source_checked_groups": 61,
     "source_checked_occurrence_slots": 242,
     "identified_slots": 241,
-    "unknown_slots": 1,
-    "project_checked_photographic_witnesses": 1
+    "unknown_slots": 1
   },
   "scientific_results": {
     "descriptive_analysis": "EXECUTED_SOURCE_CONDITIONAL",
@@ -33,7 +32,7 @@
     },
     {
       "path": "sources/sources.json",
-      "sha256": "942ea067831f90a6cd72c7f35bc668974a2b63e1de67d2759f74bf27456c5924"
+      "sha256": "8b5248c30b8148cae97ade455d2940e3a687244cc8ba71beb8aa06c2cccc334d"
     },
     {
       "path": "research/transcription-policy-v1.json",
@@ -57,7 +56,7 @@
     },
     {
       "path": "apparatus/witness-lineage.json",
-      "sha256": "9e6a161b637dcf01f287b4e7c3c3ff448f31caeb4b33cdb9c34ff02095ccc834"
+      "sha256": "003d4e3256391da34b27620724ca9163a633af7caf4e6039a7e8b8dc217cdc03"
     },
     {
       "path": "apparatus/stroke-assertions.json",
@@ -81,27 +80,11 @@
     },
     {
       "path": "research/family-readiness-v1.json",
-      "sha256": "6f4e4d7a18fda92f3131901458d4b230ed12429b65edfc1f90e7fefcca23a767"
+      "sha256": "4907b77da7c096b28bb542bc715500e5e94367202529b903fdb5ed35172d9072"
     },
     {
       "path": "analysis/acceptance-1.0.json",
       "sha256": "47960a8c688db295e38292e431e9deec9c6d67c51839a565578acdfd1a20071a"
-    },
-    {
-      "path": "sources/olivier1975-page-manifest.json",
-      "sha256": "592bc34aa8691065162d66aaba0be7c523cb9f8cf2f1cc643faf71dac6867159"
-    },
-    {
-      "path": "reviews/photographic-comparison-v1.json",
-      "sha256": "aa5805f010f7526217a4ae0af4ed0791a67b9898cea01b88ec24f9356f2edb4a"
-    },
-    {
-      "path": "reviews/stroke-photo-audit-v1.json",
-      "sha256": "de2e9ae53d3eb6a0f23d3304140227b5bead51232e54bea793d7e0e39b3bccc6"
-    },
-    {
-      "path": "signs/olivier1975-exemplar-crosswalk.json",
-      "sha256": "63ad4a0f4a09fdbcdc75e8476bb5e43ef09933cb9d6c89fa60f164babc0c6cbc"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved."

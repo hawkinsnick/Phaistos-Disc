@@ -1,4 +1,4 @@
-# Phaistos Disc — 1.0.0
+# Phaistos Disc — 1.1.0
 
 A source-attributed research corpus and reproducible workbench within the five-member Aegean corpus family.
 
@@ -6,7 +6,8 @@ A source-attributed research corpus and reproducible workbench within the five-m
 |---|---:|
 | Physical objects | 1 |
 | Faces of that object | 2 |
-| Checked graphical witnesses | 1 published witness |
+| Checked graphical witnesses | 1 published graphical baseline |
+| Project-compared photographic witnesses | 1 newer photographic acquisition |
 | Source-delimited graphical groups | 61 |
 | Project-transcribed occurrence slots | 242 |
 | Identified slots | 241 |
@@ -51,7 +52,7 @@ A source-byte mismatch stops acquisition; pins are never updated automatically. 
 
 ## Limits and remaining gates
 
-Project visual review and separate software accounting are documented; no independent human epigraphic review has occurred. Stroke coverage is incomplete and source assertions conflict. The modern university codification contributes only attributed disagreement observations; its full transcription and PDF are not redistributed. Museum inventory metadata remains pending a full catalogue check after access failures.
+Project visual review and separate software accounting are documented; no independent human epigraphic review has occurred. All 61 Olivier group panels have a bounded project comparison and stroke inspection record. Fine-detail certification, complete physical mark coverage and source conflicts remain unresolved. The modern university codification contributes only attributed disagreement observations; its full transcription and PDF are not redistributed. Museum inventory metadata remains pending a full catalogue check after access failures.
 
 Frequency summaries are conditional on this transcription. Software known-answer tests check arithmetic and reversible transforms; they do not replace LinearB linguistic gold. Cross-script inference, pooled analysis, stroke-semantic interpretation and decipherment remain blocked.
 
@@ -63,4 +64,4 @@ LinearA, LinearB, Cypro-Minoan, Cretan hieroglyphic and Phaistos Disc share prov
 
 Original code and project-created transcription records: MIT. Unicode-derived records: Unicode-3.0 (`licenses/Unicode-3.0.txt`). Historical Evans pages: public-domain edition, with author, publication and digitization attribution in `sources/sources.json`. These rights do not license modern museum photographs or scholarly editions. See `CITATION.cff` and cite the original evidence used.
 
-See `releases/` for milestone-specific scope and acceptance records. The next evidence milestone is external epigraphic review plus additional checked witnesses, keeping unresolved disagreements intact.
+See `releases/` for milestone-specific scope and acceptance records. The next evidence gate is independent epigraphic review; see `reviews/independent-review-brief.md`. The photograph comparison and source-exemplar crosswalk are under `reviews/` and `signs/`.

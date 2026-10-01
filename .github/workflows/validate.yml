@@ -19,7 +19,7 @@ jobs:
       - run: python scripts/test_foundation.py
       - name: Run available milestone checks
         run: |
-          for script in test_analysis.py test_exports.py test_release.py validate_family_readiness.py; do
+          for script in test_analysis.py test_exports.py test_release.py test_witness_audit.py validate_family_readiness.py; do
             if test -f "scripts/$script"; then python "scripts/$script"; fi
           done
   primary-source:
@@ -76,7 +76,7 @@ jobs:
           version=$(cat VERSION)
           tag="v$version"
           latest=false
-          if test "$version" = "1.0.0"; then latest=true; fi
+          latest=true
           if test "$version" = "1.0.0"; then bash scripts/publish_history.sh; fi
           python scripts/package_release.py --out /tmp/disc-release.zip
           python -c "import hashlib,pathlib; p=pathlib.Path('/tmp/disc-release.zip'); pathlib.Path(str(p)+'.sha256').write_text(hashlib.sha256(p.read_bytes()).hexdigest()+'  disc-release.zip\\n')"
