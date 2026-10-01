@@ -1,0 +1,89 @@
+{
+  "format": "descriptive-research-suite-v2",
+  "protocol_sha256": "8120bd9b732457ba74e762a7986b3754e30469d377f87514304f95d9f3734903",
+  "implementation_sha256": "638b7ea04fc21cb464bf736dbc4f2f391df51f162e74bb0aebf2edf29bf90e51",
+  "native_corpus_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+  "physical_objects": 1,
+  "faces": {
+    "A": {
+      "observed": {
+        "groups": 31,
+        "complete_groups": 30,
+        "incomplete_groups": 1,
+        "eligible_adjacent_pairs": 91,
+        "identical_adjacent_pairs": 3,
+        "identical_complete_group_pairs": 7,
+        "distinct_complete_group_sequences": 24
+      },
+      "reversed_group_sequences": {
+        "groups": 31,
+        "complete_groups": 30,
+        "incomplete_groups": 1,
+        "eligible_adjacent_pairs": 91,
+        "identical_adjacent_pairs": 3,
+        "identical_complete_group_pairs": 7,
+        "distinct_complete_group_sequences": 24
+      },
+      "shuffle_reference": {
+        "identical_adjacent_pairs": {
+          "mean": 4.253,
+          "minimum": 0,
+          "maximum": 12,
+          "q025": 1,
+          "q975": 8
+        },
+        "identical_complete_group_pairs": {
+          "mean": 0.019,
+          "minimum": 0,
+          "maximum": 1,
+          "q025": 0,
+          "q975": 0
+        }
+      }
+    },
+    "B": {
+      "observed": {
+        "groups": 30,
+        "complete_groups": 30,
+        "incomplete_groups": 0,
+        "eligible_adjacent_pairs": 89,
+        "identical_adjacent_pairs": 1,
+        "identical_complete_group_pairs": 1,
+        "distinct_complete_group_sequences": 29
+      },
+      "reversed_group_sequences": {
+        "groups": 30,
+        "complete_groups": 30,
+        "incomplete_groups": 0,
+        "eligible_adjacent_pairs": 89,
+        "identical_adjacent_pairs": 1,
+        "identical_complete_group_pairs": 1,
+        "distinct_complete_group_sequences": 29
+      },
+      "shuffle_reference": {
+        "identical_adjacent_pairs": {
+          "mean": 3.443,
+          "minimum": 0,
+          "maximum": 10,
+          "q025": 1,
+          "q975": 7
+        },
+        "identical_complete_group_pairs": {
+          "mean": 0.0,
+          "minimum": 0,
+          "maximum": 0,
+          "q025": 0,
+          "q975": 0
+        }
+      }
+    }
+  },
+  "seed": 20261001,
+  "replicates_per_face": 1000,
+  "reference_distribution": "Within each face, shuffle identified glyph labels among identified slots; hold unknown positions, per-face label counts and graphical group lengths fixed.",
+  "quantiles": "Sorted empirical reference values at floor(p*(n-1)); not population confidence intervals.",
+  "p_values": null,
+  "linguistic_inference_allowed": false,
+  "independent_replication": false,
+  "interpretation": "Diagnostic departures from this particular exchangeability model cannot establish words, morphology, language, reading direction or decipherment. A/B are parts of one object and are not independent replications."
+}

@@ -1,5 +1,5 @@
 {
-  "repository_version": "1.4.0",
+  "repository_version": "1.5.0",
   "milestone": "WITNESS_WORKBENCH_AND_ASSERTION_SENSITIVITY",
   "committed_evidence_counts": {
     "physical_objects": 1,
@@ -81,7 +81,7 @@
     },
     {
       "path": "research/family-readiness-v1.json",
-      "sha256": "04d36a9da346291ec668895fc1dbca8289c5578275986f38d3bd555658ec9c0a"
+      "sha256": "6636336ab148571c94d70564bc05345afa2458865bdb8d422114abfb7b430248"
     },
     {
       "path": "analysis/acceptance-1.0.json",
@@ -126,6 +126,18 @@
     {
       "path": "scripts/source_coverage.py",
       "sha256": "98c9c518993fef7db43ce238cc29900bf8c9d662c8574510f65e805a77a4b317"
+    },
+    {
+      "path": "research/descriptive-protocol-v2.json",
+      "sha256": "8120bd9b732457ba74e762a7986b3754e30469d377f87514304f95d9f3734903"
+    },
+    {
+      "path": "scripts/research_suite.py",
+      "sha256": "638b7ea04fc21cb464bf736dbc4f2f391df51f162e74bb0aebf2edf29bf90e51"
+    },
+    {
+      "path": "analysis/research-suite-v2.json",
+      "sha256": "56c10d4b69c0730f32db861696c148eb224e44281f0140a66e26ea1baa283ba5"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved.",

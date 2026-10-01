@@ -122,6 +122,9 @@ def validate(root=R):
     if (root/'analysis/source-coverage-v1.json').exists():
         from source_coverage import calculate as source_calculate
         require(load('analysis/source-coverage-v1.json')==source_calculate(root),'source coverage replay drift')
+    if (root/'analysis/research-suite-v2.json').exists():
+        from research_suite import calculate as research_calculate
+        require(load('analysis/research-suite-v2.json')==research_calculate(root),'research suite replay drift')
     return {'status':'PASS','version':version,'evidence_counts':counts,'external_review':'BLOCKED','decipherment':'BLOCKED'}
 if __name__=='__main__':
     try:print(json.dumps(validate()))

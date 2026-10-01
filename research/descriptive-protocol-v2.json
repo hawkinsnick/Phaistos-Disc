@@ -1,0 +1,16 @@
+{
+  "protocol_id": "disc-descriptive-v2",
+  "registration_scope": "retrospective_before_suite_execution_not_before_corpus_inspection",
+  "corpus_already_inspected": true,
+  "native_corpus_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+  "implementation_sha256": "638b7ea04fc21cb464bf736dbc4f2f391df51f162e74bb0aebf2edf29bf90e51",
+  "seed": 20261001,
+  "replicates": 1000,
+  "unknown_policy": "keep_unknown_slots_fixed",
+  "diagnostic_statistics": [
+    "identical_adjacent_pairs",
+    "identical_complete_group_pairs"
+  ],
+  "statistical_unit": "one physical Disc; faces reported separately without independence assumption",
+  "scope": "Descriptive software diagnostic, not a prospective hypothesis test. No p-values or population confidence intervals. Group boundaries are graphical, not linguistic words."
+}
