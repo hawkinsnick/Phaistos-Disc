@@ -8,7 +8,7 @@ from export_corpus import export_records
 assert validate()['status']=='PASS' and family_validate()['status']=='PASS'
 html=(R/'workbench/index.html').read_text();match=re.search(r'<script id="edition-data" type="application/json">(.*?)</script>',html,re.S);assert match
 embedded=json.loads(match.group(1).replace('<\\/','</'))
-for key,path in [('corpus','corpus/disc.json'),('claims','apparatus/claims.json'),('frames','spatial/frames.json'),('anchors','spatial/group-anchors.json')]:assert embedded[key]==json.loads((R/path).read_text()),'workbench/native drift '+key
+for key,path in [('corpus','corpus/disc.json'),('claims','apparatus/claims.json'),('frames','spatial/frames.json'),('anchors','spatial/group-anchors.json'),('photoAudit','reviews/photographic-comparison-v1.json'),('exemplars','signs/olivier1975-exemplar-crosswalk.json'),('strokeAudit','reviews/stroke-photo-audit-v1.json')]:assert embedded[key]==json.loads((R/path).read_text()),'workbench/native drift '+key
 assert 'No translation' not in html or 'phonetic' in html
 assert 'eval(' not in html and 'fetch(' not in html,'offline workbench must not require a server or eval data'
 assert html.count('id="face"')==1 and html.count('id="direction"')==1

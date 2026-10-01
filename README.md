@@ -1,4 +1,4 @@
-# Phaistos Disc — 1.1.0
+# Phaistos Disc — 1.2.0
 
 A source-attributed research corpus and reproducible workbench within the five-member Aegean corpus family.
 
@@ -48,7 +48,8 @@ A source-byte mismatch stops acquisition; pins are never updated automatically. 
 - Descriptive statistics and sensitivity to traversal/unknown readings
 - Five-member comparison-readiness report
 - Validated interchange and CSV exports
-- Offline research workbench
+- Offline research workbench with per-group photographic comparisons and exemplar IDs
+- Four explicit source-assertion sensitivity scenarios
 
 ## Limits and remaining gates
 

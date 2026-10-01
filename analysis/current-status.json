@@ -1,6 +1,6 @@
 {
-  "repository_version": "1.1.0",
-  "milestone": "PHOTOGRAPHIC_COMPARISON_AND_STROKE_AUDIT",
+  "repository_version": "1.2.0",
+  "milestone": "WITNESS_WORKBENCH_AND_ASSERTION_SENSITIVITY",
   "committed_evidence_counts": {
     "physical_objects": 1,
     "faces": 2,
@@ -81,7 +81,7 @@
     },
     {
       "path": "research/family-readiness-v1.json",
-      "sha256": "6f4e4d7a18fda92f3131901458d4b230ed12429b65edfc1f90e7fefcca23a767"
+      "sha256": "c6c6d4b219e6f7b2b7bab9a82f7bbf3aad1b5fc7f68f40e79500ea20be123200"
     },
     {
       "path": "analysis/acceptance-1.0.json",
@@ -102,6 +102,10 @@
     {
       "path": "signs/olivier1975-exemplar-crosswalk.json",
       "sha256": "63ad4a0f4a09fdbcdc75e8476bb5e43ef09933cb9d6c89fa60f164babc0c6cbc"
+    },
+    {
+      "path": "analysis/apparatus-sensitivity-v1.json",
+      "sha256": "04f98df480d533f3681468e01762f02ef898fbab90550ff6618ef981f8b23a9a"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved."

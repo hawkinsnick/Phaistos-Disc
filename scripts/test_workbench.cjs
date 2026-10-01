@@ -7,11 +7,14 @@ const root=path.resolve(__dirname,'..'),out=process.env.REVIEW_OUT||path.join(ro
  if(await page.locator('#groups tr').count()!==31)throw Error('face A group count');
  await page.getByRole('button',{name:'A24',exact:true}).click();
  if(await page.locator('.unknown').count()!==1)throw Error('unknown slot not preserved');
+ if(!(await page.locator('#witness-info').innerText()).includes('A24.1 → native PD-A-E24-S05'))throw Error('unknown source exemplar missing');
  await page.screenshot({path:path.join(out,'workbench-desktop.png'),fullPage:true});
  await page.selectOption('#direction','inner');if((await page.locator('#tokens').innerText()).trim().split(/\s+/)[0]!=='?')throw Error('reversed unknown position');
  await page.selectOption('#face','B');if(await page.locator('#groups tr').count()!==30)throw Error('face B group count');
  await page.getByRole('button',{name:'B3',exact:true}).click();
  if((await page.locator('#tokens').innerText()).trim().split(/\s+/)[0]!=='07')throw Error('B3 source reading');
+ await page.getByRole('button',{name:'B7',exact:true}).click();
+ if(!(await page.locator('#witness-info').innerText()).includes('PD-M002'))throw Error('candidate stroke panel missing');
  await page.fill('#search','07');const rows=await page.locator('#groups tr').count();if(!(rows>0&&rows<30))throw Error('sign filter');
  await page.setViewportSize({width:390,height:844});await page.screenshot({path:path.join(out,'workbench-mobile.png'),fullPage:true});
  const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);if(overflow)throw Error('mobile horizontal overflow');

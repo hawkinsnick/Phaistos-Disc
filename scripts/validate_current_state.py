@@ -113,6 +113,9 @@ def validate(root=R):
         from acceptance import calculate
         acceptance=load('analysis/acceptance-1.0.json')
         require(acceptance==calculate(root) and acceptance['status']=='PASS' and version=='1.0.0','1.0 acceptance drift')
+    if (root/'analysis/apparatus-sensitivity-v1.json').exists():
+        from apparatus_sensitivity import calculate as sensitivity_calculate
+        require(load('analysis/apparatus-sensitivity-v1.json')==sensitivity_calculate(root),'apparatus scenario replay drift')
     return {'status':'PASS','version':version,'evidence_counts':counts,'external_review':'BLOCKED','decipherment':'BLOCKED'}
 if __name__=='__main__':
     try:print(json.dumps(validate()))

@@ -19,7 +19,7 @@ jobs:
       - run: python scripts/test_foundation.py
       - name: Run available milestone checks
         run: |
-          for script in test_analysis.py test_exports.py test_release.py test_witness_audit.py validate_family_readiness.py; do
+          for script in test_analysis.py test_exports.py test_release.py test_witness_audit.py test_apparatus_sensitivity.py validate_family_readiness.py; do
             if test -f "scripts/$script"; then python "scripts/$script"; fi
           done
   primary-source:
