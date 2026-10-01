@@ -1,6 +1,6 @@
 {
-  "repository_version": "0.4.0",
-  "milestone": "SOURCE_FIGURE_SPATIAL_LAYER",
+  "repository_version": "0.5.0",
+  "milestone": "REPRODUCIBLE_DESCRIPTIVE_ANALYSIS",
   "committed_evidence_counts": {
     "physical_objects": 1,
     "faces": 2,
@@ -12,7 +12,7 @@
     "unknown_slots": 1
   },
   "scientific_results": {
-    "descriptive_analysis": "BLOCKED",
+    "descriptive_analysis": "EXECUTED_SOURCE_CONDITIONAL",
     "decipherment_claim_allowed": false,
     "external_peer_review_completed": false,
     "pooled_analysis_allowed": false
@@ -48,7 +48,7 @@
     },
     {
       "path": "research/experiment-gates.json",
-      "sha256": "cacf070d972ef0dce60f2f1776deafd93d55bdbbe559726926ba94123d761f47"
+      "sha256": "7c1431b81e3012b5a805ad22fa134363fe625bfe52d1cb4b4ce98e1973037269"
     },
     {
       "path": "apparatus/claims.json",
@@ -69,6 +69,10 @@
     {
       "path": "spatial/group-anchors.json",
       "sha256": "897d563ca46384c118322ba6352464021f90ccb9fc078bbb58ddec7665990fd1"
+    },
+    {
+      "path": "analysis/descriptive-v1.json",
+      "sha256": "3cbca455c910aad839c239b509935309dd526956914caf12b5764f61a8d224b2"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved."

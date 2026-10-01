@@ -15,10 +15,10 @@
     },
     {
       "id": "frequency-analysis",
-      "state": "BLOCKED",
-      "claim_allowed": false,
-      "claim_scope": null,
-      "result_ref": null,
+      "state": "READY_PROJECT_SCOPE",
+      "claim_allowed": true,
+      "claim_scope": "Source-attributed project description only",
+      "result_ref": "analysis/descriptive-v1.json",
       "requires": [
         "Checked occurrence slots",
         "Declared traversal, unknown-slot and graphical-group policies"
