@@ -1,0 +1,63 @@
+{
+  "target_release": "2.0.0",
+  "candidate_release": "2.0.0-rc.1",
+  "engineering_artifact_replay": "PASS",
+  "candidate_ready": true,
+  "final_2_0_allowed": false,
+  "status": "BLOCKED_FOR_FINAL_2_0",
+  "native_corpus_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+  "artifact_pins": [
+    {
+      "path": "reviews/occurrence-audit-v1.json",
+      "sha256": "288f5be9319178f690ad872bf5ff540d052ac3ac40306f8d62a9ff25ec70b161"
+    },
+    {
+      "path": "analysis/source-coverage-v1.json",
+      "sha256": "381188f9af2f6342b60663950dc4e2c379b3925256a582165f056057cc7de171"
+    },
+    {
+      "path": "analysis/research-suite-v2.json",
+      "sha256": "56c10d4b69c0730f32db861696c148eb224e44281f0140a66e26ea1baa283ba5"
+    },
+    {
+      "path": "reviews/review-packet-v1.json",
+      "sha256": "695c427dcde98e479ff0ad4cd12909735bf2c8c034a0b13d2aabdf4afa3d1a2b"
+    }
+  ],
+  "occurrence_audit_counts": {
+    "slots": 242,
+    "source_labeled_exemplars": 46,
+    "ordinal_not_individually_certified": 196,
+    "fine_detail_certified": 0,
+    "external_reviews": 0
+  },
+  "review_packet_status": "VALID_DRAFT",
+  "acceptance_requirements": [
+    {
+      "id": "source_linked_occurrence_ledger",
+      "state": "PASS",
+      "scope": "242 rows; bounded inherited evidence, not new certification"
+    },
+    {
+      "id": "reproducible_research_and_submission_tools",
+      "state": "PASS_ARTIFACT_REPLAY",
+      "scope": "Byte-pinned software descriptions and draft submission validation; CI verifies browser and adversarial tests separately"
+    },
+    {
+      "id": "independent_human_epigraphic_review",
+      "state": "BLOCKED",
+      "scope": "Identity, expertise, conflicts, independence and source scope must be verified by a human maintainer"
+    },
+    {
+      "id": "complete_occurrence_ordinal_and_detail_assessment",
+      "state": "BLOCKED",
+      "scope": "196 individual ordinals not yet certified; no exhaustive fine-detail assessment. An uncertainty decision is valid when supported and explicitly scoped"
+    },
+    {
+      "id": "complete_mark_coverage_assessment",
+      "state": "BLOCKED",
+      "scope": "Source-located stroke candidates are not a complete physical mark inventory"
+    }
+  ],
+  "claim_boundary": "This is a 2.0 release candidate for tools and evidence organization. It is not the independently reviewed critical edition proposed as final 2.0; no language, phonetic value or decipherment is established."
+}

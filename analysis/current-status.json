@@ -1,5 +1,5 @@
 {
-  "repository_version": "1.6.0",
+  "repository_version": "2.0.0-rc.1",
   "milestone": "WITNESS_WORKBENCH_AND_ASSERTION_SENSITIVITY",
   "committed_evidence_counts": {
     "physical_objects": 1,
@@ -16,7 +16,9 @@
     "descriptive_analysis": "EXECUTED_SOURCE_CONDITIONAL",
     "decipherment_claim_allowed": false,
     "external_peer_review_completed": false,
-    "pooled_analysis_allowed": false
+    "pooled_analysis_allowed": false,
+    "final_2_0_allowed": false,
+    "release_candidate_scope": "Engineering and evidence organization; independent critical review remains pending"
   },
   "evidence": [
     {
@@ -81,7 +83,7 @@
     },
     {
       "path": "research/family-readiness-v1.json",
-      "sha256": "164ce3bf5b70e24f0a937a3aa04c5c0a690a676c992f321bbc971aa17270c270"
+      "sha256": "c808ed517cb9421b011a293d8f6294365837bea5816ba12fd7143c321c8a2a49"
     },
     {
       "path": "analysis/acceptance-1.0.json",
@@ -146,6 +148,14 @@
     {
       "path": "scripts/review_packet.py",
       "sha256": "fe3e74488a68f07aa52395535ef20704742bebe98e7f9fa70cb5f8e8ff8934ab"
+    },
+    {
+      "path": "analysis/acceptance-2.0.json",
+      "sha256": "d1453ef80193bc2d22b111e5ef198f630669d211beb4c2dfec6f42141e9f800e"
+    },
+    {
+      "path": "scripts/acceptance_2.py",
+      "sha256": "89bc9a26c06da3e855564c6402ad1a81f50698eb09cebb92643e84c44d3b195a"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved.",

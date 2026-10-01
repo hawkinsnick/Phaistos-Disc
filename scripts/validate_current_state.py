@@ -129,6 +129,10 @@ def validate(root=R):
         from review_packet import calculate as packet_calculate, validate as packet_validate
         require(load('reviews/review-packet-v1.json')==packet_calculate(root),'review draft replay drift')
         require(packet_validate(load('reviews/review-packet-v1.json'),root)['status']=='VALID_DRAFT','unassigned draft promoted to review')
+    if (root/'analysis/acceptance-2.0.json').exists():
+        from acceptance_2 import calculate as acceptance_two
+        require(load('analysis/acceptance-2.0.json')==acceptance_two(root),'2.0 acceptance replay drift')
+        require(load('analysis/acceptance-2.0.json')['final_2_0_allowed'] is False,'unearned final 2.0 acceptance')
     return {'status':'PASS','version':version,'evidence_counts':counts,'external_review':'BLOCKED','decipherment':'BLOCKED'}
 if __name__=='__main__':
     try:print(json.dumps(validate()))
