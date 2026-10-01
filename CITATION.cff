@@ -2,7 +2,7 @@ cff-version: 1.2.0
 title: "Phaistos Disc evidence corpus"
 message: "Cite this repository and the primary witnesses actually used."
 type: dataset
-version: "1.0.0"
+version: "0.1.0"
 date-released: 2026-09-30
 license: MIT
 repository-code: "https://github.com/hawkinsnick/Phaistos-Disc"

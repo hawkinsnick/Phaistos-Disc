@@ -1,91 +1,35 @@
 {
-  "repository_version": "1.0.0",
-  "milestone": "AUDITABLE_SOURCE_ATTRIBUTED_EDITION",
+  "repository_version": "0.1.0",
+  "milestone": "EVIDENCE_FOUNDATION",
   "committed_evidence_counts": {
-    "physical_objects": 1,
+    "object_scaffolds": 1,
     "faces": 2,
-    "encoded_base_sign_types": 45,
-    "checked_graphical_witnesses": 1,
-    "source_checked_groups": 61,
-    "source_checked_occurrence_slots": 242,
-    "identified_slots": 241,
-    "unknown_slots": 1
+    "encoded_base_signs": 45,
+    "combining_marks": 1,
+    "source_checked_transcriptions": 0,
+    "source_checked_occurrences": 0
   },
   "scientific_results": {
-    "descriptive_analysis": "EXECUTED_SOURCE_CONDITIONAL",
-    "decipherment_claim_allowed": false,
-    "external_peer_review_completed": false,
-    "pooled_analysis_allowed": false
+    "frequency_analysis": "BLOCKED",
+    "cross_script_comparison": "BLOCKED",
+    "decipherment_claim_allowed": false
   },
   "evidence": [
     {
       "path": "corpus/disc.json",
-      "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee"
+      "sha256": "a2deacc1aae809142ab650f2e2430b3815ab9232f7a784c12d11b4d562c0af3d"
     },
     {
-      "path": "data/evans1909-groups.csv",
-      "sha256": "4379cfee7cbfc69c545e139ec3db9963504604510b30922a228720b4691019a1"
-    },
-    {
-      "path": "signs/evans-unicode-crosswalk.json",
-      "sha256": "2577b25783546d89f38de618e7520466fe6360b233234d656096d27cddd24439"
+      "path": "signs/unicode-registry.json",
+      "sha256": "b69e06cacd7f69e5ccb91e40a5ded337d1b7a734d8ccd745f98fc75dc22bdd5e"
     },
     {
       "path": "sources/sources.json",
-      "sha256": "8b5248c30b8148cae97ade455d2940e3a687244cc8ba71beb8aa06c2cccc334d"
-    },
-    {
-      "path": "research/transcription-policy-v1.json",
-      "sha256": "67a5471f9c720e8e197656b8352cc6b5e558a8f7f376cd222775cec1048ad144"
-    },
-    {
-      "path": "reviews/transcription-review-v1.json",
-      "sha256": "fe3db5256eeb59b35d010727e3573eba5ccd2edcd3e8bec275368381b1005f59"
-    },
-    {
-      "path": "research/count-assertions.json",
-      "sha256": "a8a2d0c510b10d2d6382201ffe2563155443dbf75870da01cef6b43679d01f97"
+      "sha256": "902417008c748e782c815f1e380f20099379bbd3638df1c972ef976573978daf"
     },
     {
       "path": "research/experiment-gates.json",
-      "sha256": "7c1431b81e3012b5a805ad22fa134363fe625bfe52d1cb4b4ce98e1973037269"
-    },
-    {
-      "path": "apparatus/claims.json",
-      "sha256": "8b94dc170ca025a8012da5dcb9cbe165d7019e75d83687cc0a535f27a04c43a7"
-    },
-    {
-      "path": "apparatus/witness-lineage.json",
-      "sha256": "003d4e3256391da34b27620724ca9163a633af7caf4e6039a7e8b8dc217cdc03"
-    },
-    {
-      "path": "apparatus/stroke-assertions.json",
-      "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c"
-    },
-    {
-      "path": "spatial/frames.json",
-      "sha256": "7bfdceb0b8a336880d16312bfe9c91802926068266e112863e79941f75e93410"
-    },
-    {
-      "path": "spatial/group-anchors.json",
-      "sha256": "897d563ca46384c118322ba6352464021f90ccb9fc078bbb58ddec7665990fd1"
-    },
-    {
-      "path": "exports/aegean-interop.json",
-      "sha256": "501c9e044e6472e03243a6d6237164106801dd6392b5932a910efe6012d35564"
-    },
-    {
-      "path": "analysis/descriptive-v1.json",
-      "sha256": "3cbca455c910aad839c239b509935309dd526956914caf12b5764f61a8d224b2"
-    },
-    {
-      "path": "research/family-readiness-v1.json",
-      "sha256": "4907b77da7c096b28bb542bc715500e5e94367202529b903fdb5ed35172d9072"
-    },
-    {
-      "path": "analysis/acceptance-1.0.json",
-      "sha256": "47960a8c688db295e38292e431e9deec9c6d67c51839a565578acdfd1a20071a"
+      "sha256": "15e4607043ba168fe560826ea1386f54e31065f0ad068aee6bfa22b747433ecd"
     }
-  ],
-  "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved."
+  ]
 }
