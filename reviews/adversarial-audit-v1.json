@@ -1,0 +1,11 @@
+{
+  "audit_type": "project_software_integrity",
+  "record_negative_controls": 22,
+  "family_negative_controls": 4,
+  "export_records_checked": 242,
+  "csv_unknown_round_trip": "PASS",
+  "descriptive_artifact_replay": "EXACT",
+  "workbench_embedded_evidence": "EXACT",
+  "external_epigraphic_review_completed": false,
+  "scope": "Software and source-attribution audit; no epigraphic truth certification."
+}

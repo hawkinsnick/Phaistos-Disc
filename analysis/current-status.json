@@ -1,6 +1,6 @@
 {
-  "repository_version": "0.8.0",
-  "milestone": "OFFLINE_RESEARCH_WORKBENCH",
+  "repository_version": "0.9.0",
+  "milestone": "ADVERSARIAL_RELEASE_AUDIT",
   "committed_evidence_counts": {
     "physical_objects": 1,
     "faces": 2,
@@ -80,7 +80,7 @@
     },
     {
       "path": "research/family-readiness-v1.json",
-      "sha256": "8a2c052eec00de3dbbcf6537ee89e40fd4319ab6e4a9562c616f966a97342e35"
+      "sha256": "07c802737a5516028754aeb94f8d9be240449c6e05bfe971ea5d3f050202a20c"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved."
