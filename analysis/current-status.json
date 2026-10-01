@@ -1,5 +1,5 @@
 {
-  "repository_version": "1.2.0",
+  "repository_version": "1.2.1",
   "milestone": "WITNESS_WORKBENCH_AND_ASSERTION_SENSITIVITY",
   "committed_evidence_counts": {
     "physical_objects": 1,
@@ -81,7 +81,7 @@
     },
     {
       "path": "research/family-readiness-v1.json",
-      "sha256": "c6c6d4b219e6f7b2b7bab9a82f7bbf3aad1b5fc7f68f40e79500ea20be123200"
+      "sha256": "3352f71d9c744e18623e5b2c967a9a64093b5e09649a2d5464c537e37b12a38b"
     },
     {
       "path": "analysis/acceptance-1.0.json",
@@ -108,5 +108,6 @@
       "sha256": "04f98df480d533f3681468e01762f02ef898fbab90550ff6618ef981f8b23a9a"
     }
   ],
-  "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved."
+  "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved.",
+  "checked": "2026-10-01"
 }

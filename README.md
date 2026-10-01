@@ -1,4 +1,4 @@
-# Phaistos Disc — 1.2.0
+# Phaistos Disc — 1.2.1
 
 A source-attributed research corpus and reproducible workbench within the five-member Aegean corpus family.
 
@@ -66,3 +66,5 @@ LinearA, LinearB, Cypro-Minoan, Cretan hieroglyphic and Phaistos Disc share prov
 Original code and project-created transcription records: MIT. Unicode-derived records: Unicode-3.0 (`licenses/Unicode-3.0.txt`). Historical Evans pages: public-domain edition, with author, publication and digitization attribution in `sources/sources.json`. These rights do not license modern museum photographs or scholarly editions. See `CITATION.cff` and cite the original evidence used.
 
 See `releases/` for milestone-specific scope and acceptance records. The next evidence gate is independent epigraphic review; see `reviews/independent-review-brief.md`. The photograph comparison and source-exemplar crosswalk are under `reviews/` and `signs/`.
+
+1.2.1 aligns the shared family evidence report with the checked companion milestones, including the first two-object CHIC source-access pilot. Corpus readings, photographic audit and sensitivity results retain their prior bytes and scope.
