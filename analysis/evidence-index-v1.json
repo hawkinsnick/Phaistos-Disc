@@ -1,0 +1,435 @@
+{
+  "format": "research-evidence-index-v1",
+  "workbench_version": "1.0.0",
+  "project": "Phaistos-Disc",
+  "repository_version": "2.0.0-rc.3",
+  "evidence": [
+    {
+      "path": "corpus/disc.json",
+      "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "bytes": 63422,
+      "category": "corpus",
+      "summary": {}
+    },
+    {
+      "path": "data/evans1909-groups.csv",
+      "sha256": "4379cfee7cbfc69c545e139ec3db9963504604510b30922a228720b4691019a1",
+      "bytes": 1219,
+      "category": "data",
+      "summary": {}
+    },
+    {
+      "path": "signs/evans-unicode-crosswalk.json",
+      "sha256": "2577b25783546d89f38de618e7520466fe6360b233234d656096d27cddd24439",
+      "bytes": 3296,
+      "category": "signs",
+      "summary": {
+        "scope": "Graphical sign numbering, no phonetic or cross-script equivalence",
+        "source_id": "evans1909"
+      }
+    },
+    {
+      "path": "sources/sources.json",
+      "sha256": "942ea067831f90a6cd72c7f35bc668974a2b63e1de67d2759f74bf27456c5924",
+      "bytes": 6394,
+      "category": "sources",
+      "summary": {}
+    },
+    {
+      "path": "research/transcription-policy-v1.json",
+      "sha256": "67a5471f9c720e8e197656b8352cc6b5e558a8f7f376cd222775cec1048ad144",
+      "bytes": 1020,
+      "category": "research",
+      "summary": {
+        "source_id": "evans1909"
+      }
+    },
+    {
+      "path": "reviews/transcription-review-v1.json",
+      "sha256": "fe3db5256eeb59b35d010727e3573eba5ccd2edcd3e8bec275368381b1005f59",
+      "bytes": 1629,
+      "category": "reviews",
+      "summary": {
+        "source_id": "evans1909"
+      }
+    },
+    {
+      "path": "research/count-assertions.json",
+      "sha256": "a8a2d0c510b10d2d6382201ffe2563155443dbf75870da01cef6b43679d01f97",
+      "bytes": 728,
+      "category": "research",
+      "summary": {}
+    },
+    {
+      "path": "research/experiment-gates.json",
+      "sha256": "7c1431b81e3012b5a805ad22fa134363fe625bfe52d1cb4b4ce98e1973037269",
+      "bytes": 1999,
+      "category": "research",
+      "summary": {}
+    },
+    {
+      "path": "apparatus/claims.json",
+      "sha256": "8b94dc170ca025a8012da5dcb9cbe165d7019e75d83687cc0a535f27a04c43a7",
+      "bytes": 2930,
+      "category": "apparatus",
+      "summary": {}
+    },
+    {
+      "path": "apparatus/witness-lineage.json",
+      "sha256": "9e6a161b637dcf01f287b4e7c3c3ff448f31caeb4b33cdb9c34ff02095ccc834",
+      "bytes": 1375,
+      "category": "apparatus",
+      "summary": {}
+    },
+    {
+      "path": "apparatus/stroke-assertions.json",
+      "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c",
+      "bytes": 5356,
+      "category": "apparatus",
+      "summary": {
+        "scope": "Source-listed/inferred claims, not a complete verified mark inventory"
+      }
+    },
+    {
+      "path": "spatial/frames.json",
+      "sha256": "7bfdceb0b8a336880d16312bfe9c91802926068266e112863e79941f75e93410",
+      "bytes": 1019,
+      "category": "spatial",
+      "summary": {}
+    },
+    {
+      "path": "spatial/group-anchors.json",
+      "sha256": "897d563ca46384c118322ba6352464021f90ccb9fc078bbb58ddec7665990fd1",
+      "bytes": 17154,
+      "category": "spatial",
+      "summary": {}
+    },
+    {
+      "path": "exports/aegean-interop.json",
+      "sha256": "501c9e044e6472e03243a6d6237164106801dd6392b5932a910efe6012d35564",
+      "bytes": 247113,
+      "category": "exports",
+      "summary": {}
+    },
+    {
+      "path": "analysis/descriptive-v1.json",
+      "sha256": "3cbca455c910aad839c239b509935309dd526956914caf12b5764f61a8d224b2",
+      "bytes": 55844,
+      "category": "analysis",
+      "summary": {}
+    },
+    {
+      "path": "research/family-readiness-v1.json",
+      "sha256": "e43686c4497875d0899920235b9b2e47315a19e8810ff610787dbb34bee57251",
+      "bytes": 13995,
+      "category": "research",
+      "summary": {
+        "scope": "Comparison readiness and software/governance alignment, not permission for cross-script inference. Exact snapshot commits pin native evidence; target versions describe the coordinated rollout. Snapshot versions may precede report-only maintenance."
+      }
+    },
+    {
+      "path": "analysis/acceptance-1.0.json",
+      "sha256": "47960a8c688db295e38292e431e9deec9c6d67c51839a565578acdfd1a20071a",
+      "bytes": 2802,
+      "category": "analysis",
+      "summary": {
+        "status": "PASS"
+      }
+    },
+    {
+      "path": "sources/olivier1975-page-manifest.json",
+      "sha256": "592bc34aa8691065162d66aaba0be7c523cb9f8cf2f1cc643faf71dac6867159",
+      "bytes": 8212,
+      "category": "sources",
+      "summary": {
+        "source_id": "olivier1975",
+        "record_license": "NOASSERTION"
+      }
+    },
+    {
+      "path": "reviews/photographic-comparison-v1.json",
+      "sha256": "aa5805f010f7526217a4ae0af4ed0791a67b9898cea01b88ec24f9356f2edb4a",
+      "bytes": 34821,
+      "category": "reviews",
+      "summary": {
+        "scope": "61 published group photographs visually checked for slot count and coarse glyph compatibility, allowing reversal. Image rotation is not treated as a reading direction. No exhaustive stamp-detail or within-group direction certification.",
+        "source_id": "olivier1975"
+      }
+    },
+    {
+      "path": "reviews/stroke-photo-audit-v1.json",
+      "sha256": "de2e9ae53d3eb6a0f23d3304140227b5bead51232e54bea793d7e0e39b3bccc6",
+      "bytes": 7758,
+      "category": "reviews",
+      "summary": {
+        "scope": "Every published group panel inspected at available resolution. Candidate strokes are not a complete physical mark inventory; non-detection is not physical absence. Historical assertion targets remain unchanged.",
+        "source_id": "olivier1975"
+      }
+    },
+    {
+      "path": "signs/olivier1975-exemplar-crosswalk.json",
+      "sha256": "63ad4a0f4a09fdbcdc75e8476bb5e43ef09933cb9d6c89fa60f164babc0c6cbc",
+      "bytes": 8718,
+      "category": "signs",
+      "summary": {
+        "scope": "45 source-labeled exemplars plus the unreadable exemplar. The reverse-index transform is checked against these printed labels; it is not a certification of every unillustrated within-group ordinal.",
+        "source_id": "olivier1975"
+      }
+    },
+    {
+      "path": "analysis/apparatus-sensitivity-v1.json",
+      "sha256": "04f98df480d533f3681468e01762f02ef898fbab90550ff6618ef981f8b23a9a",
+      "bytes": 7319,
+      "category": "analysis",
+      "summary": {
+        "scope": "Conditional description of four combinations of two attributed reading assertions; not a pooled edition, probability model or linguistic test."
+      }
+    },
+    {
+      "path": "reviews/occurrence-audit-v1.json",
+      "sha256": "288f5be9319178f690ad872bf5ff540d052ac3ac40306f8d62a9ff25ec70b161",
+      "bytes": 112535,
+      "category": "reviews",
+      "summary": {
+        "format": "occurrence-audit-v1",
+        "scope": "Evidence ledger for every native slot. Group-level compatibility does not certify individual stamp detail or every source ordinal. Exemplar mappings are inherited from the bounded project source check, not a new independent review."
+      }
+    },
+    {
+      "path": "scripts/occurrence_audit.py",
+      "sha256": "d187678b1a1d12b7a56fae14d584c33e452ea8932067e89e0dc8f077f26bb7bf",
+      "bytes": 2299,
+      "category": "scripts",
+      "summary": {}
+    },
+    {
+      "path": "sources/access-attempts-v2.json",
+      "sha256": "e2ff1a77e9cebb0da1575f0ddd92b89e32b3c442722070db4e07508bf831a2fe",
+      "bytes": 447,
+      "category": "sources",
+      "summary": {}
+    },
+    {
+      "path": "analysis/source-coverage-v1.json",
+      "sha256": "381188f9af2f6342b60663950dc4e2c379b3925256a582165f056057cc7de171",
+      "bytes": 4174,
+      "category": "analysis",
+      "summary": {
+        "format": "source-coverage-v1"
+      }
+    },
+    {
+      "path": "scripts/source_coverage.py",
+      "sha256": "98c9c518993fef7db43ce238cc29900bf8c9d662c8574510f65e805a77a4b317",
+      "bytes": 2861,
+      "category": "scripts",
+      "summary": {}
+    },
+    {
+      "path": "research/descriptive-protocol-v2.json",
+      "sha256": "8120bd9b732457ba74e762a7986b3754e30469d377f87514304f95d9f3734903",
+      "bytes": 840,
+      "category": "research",
+      "summary": {
+        "scope": "Descriptive software diagnostic, not a prospective hypothesis test. No p-values or population confidence intervals. Group boundaries are graphical, not linguistic words."
+      }
+    },
+    {
+      "path": "scripts/research_suite.py",
+      "sha256": "638b7ea04fc21cb464bf736dbc4f2f391df51f162e74bb0aebf2edf29bf90e51",
+      "bytes": 3861,
+      "category": "scripts",
+      "summary": {}
+    },
+    {
+      "path": "analysis/research-suite-v2.json",
+      "sha256": "56c10d4b69c0730f32db861696c148eb224e44281f0140a66e26ea1baa283ba5",
+      "bytes": 2989,
+      "category": "analysis",
+      "summary": {
+        "format": "descriptive-research-suite-v2",
+        "interpretation": "Diagnostic departures from this particular exchangeability model cannot establish words, morphology, language, reading direction or decipherment. A/B are parts of one object and are not independent replications."
+      }
+    },
+    {
+      "path": "reviews/review-packet-v1.json",
+      "sha256": "695c427dcde98e479ff0ad4cd12909735bf2c8c034a0b13d2aabdf4afa3d1a2b",
+      "bytes": 34474,
+      "category": "reviews",
+      "summary": {
+        "format": "PD-review-packet-v1"
+      }
+    },
+    {
+      "path": "scripts/review_packet.py",
+      "sha256": "79d9a521db1244c692c539473d819f882ef92324352e6f19f2f64d8c02601944",
+      "bytes": 4511,
+      "category": "scripts",
+      "summary": {}
+    },
+    {
+      "path": "analysis/acceptance-2.0.json",
+      "sha256": "aa6f1db547d5a90a04a8bc4ed8a79334a7db4fe152fd757817ef32878ad85b19",
+      "bytes": 3203,
+      "category": "analysis",
+      "summary": {
+        "status": "BLOCKED_FOR_FINAL_2_0"
+      }
+    },
+    {
+      "path": "scripts/acceptance_2.py",
+      "sha256": "505512a13377a4be3212b4a9391f6451f938399d8c8675ea25ddacc3a7464683",
+      "bytes": 4026,
+      "category": "scripts",
+      "summary": {}
+    },
+    {
+      "path": "reviews/review-packet-v2.json",
+      "sha256": "9f9606d4caac3c59b608503696275c02bab2d478c7c7394251cf1ca4dd656679",
+      "bytes": 44854,
+      "category": "reviews",
+      "summary": {
+        "format": "PD-review-packet-v2"
+      }
+    },
+    {
+      "path": "reviews/acceptance-record-template.json",
+      "sha256": "1bc83c0a3e202e8b9e2385abc83b270df5bb8331c595691afee12ecc238bf277",
+      "bytes": 485,
+      "category": "reviews",
+      "summary": {
+        "format": "PD-human-review-acceptance-v1"
+      }
+    },
+    {
+      "path": "scripts/review_acceptance.py",
+      "sha256": "08dae6c00f1cdcbc41d755a6614b7150e2e596ec9cc721d61954f6fcbc82cde6",
+      "bytes": 10654,
+      "category": "scripts",
+      "summary": {}
+    },
+    {
+      "path": "scripts/test_review_acceptance.py",
+      "sha256": "3d38b1224e6ea5d965074e547e4fc73861c29c8c98fb60e84a89b7e669436df1",
+      "bytes": 6581,
+      "category": "scripts",
+      "summary": {}
+    },
+    {
+      "path": "analysis/source-adequacy-v2.json",
+      "sha256": "5c5b83b87c5d4c7744d1bbc0760ed4ed718e8436daf71be2a10a862cf9276452",
+      "bytes": 2319,
+      "category": "analysis",
+      "summary": {
+        "source_id": "olivier1975"
+      }
+    },
+    {
+      "path": "scripts/edition_workbench.py",
+      "sha256": "1f2ef1cd6fa3cd71243f01b88ebd3108b5cb5d01e5f9a2d8126fb943b316811e",
+      "bytes": 6340,
+      "category": "scripts",
+      "summary": {}
+    },
+    {
+      "path": "scripts/test_edition_workbench.py",
+      "sha256": "358ccc57cf78c6adf6d74a5ac0098c96babd530dc5193fa0f0f3214e750f568a",
+      "bytes": 2871,
+      "category": "scripts",
+      "summary": {}
+    },
+    {
+      "path": "analysis/edition-workbench-v1.json",
+      "sha256": "0b584940b4772e324d298003c8c357dc0a563318877897fc2c74e9d53dd91e9f",
+      "bytes": 590671,
+      "category": "analysis",
+      "summary": {
+        "format": "disc-edition-workbench-v1",
+        "boundary": "One physical object. Faces are not independent replications. Graphical groups are not established words. Hypothesis bounds describe this enumerated space only; no optimal reading, language, decipherment or physical mark completeness is established."
+      }
+    },
+    {
+      "path": "reviews/occurrence-review-sheet.tsv",
+      "sha256": "eb9e1f41c0c3b1549d7093919ed3f7008cd1e0cfcdf447c07108030b6bff7fb5",
+      "bytes": 23686,
+      "category": "reviews",
+      "summary": {}
+    },
+    {
+      "path": "reviews/group-mark-review-sheet.tsv",
+      "sha256": "10d0f4e2fc3d1c20bbd49f74295ec4a3b436508c9d4e20f2008550bc5ff52a59",
+      "bytes": 4825,
+      "category": "reviews",
+      "summary": {}
+    },
+    {
+      "path": "research/workbench-guide.md",
+      "sha256": "4a898babc7a1d9ea2576a2ee8eddf9d36d3ac285c77a81006a489f4eb834e401",
+      "bytes": 3863,
+      "category": "research",
+      "summary": {}
+    },
+    {
+      "path": "examples/disc-workbench.ipynb",
+      "sha256": "04fb7b7ccf2a13dbba99cf7b8b6e9f39fe8f0bf4d0aabe3f5073efbf65788e02",
+      "bytes": 2357,
+      "category": "examples",
+      "summary": {}
+    }
+  ],
+  "scientific_results": {
+    "descriptive_analysis": "EXECUTED_SOURCE_CONDITIONAL",
+    "decipherment_claim_allowed": false,
+    "external_peer_review_completed": false,
+    "pooled_analysis_allowed": false,
+    "final_2_0_allowed": false,
+    "release_candidate_scope": "Engineering and evidence organization; independent critical review remains pending"
+  },
+  "blocking_dependencies": [
+    "Independent epigraphic review pending",
+    "Fine glyph detail and complete within-group ordinal certification incomplete",
+    "Complete physical stroke coverage and stroke semantics unresolved",
+    "One physical object; linguistic known-answer controls unavailable"
+  ],
+  "metrics": {
+    "physical_objects": {
+      "value": 1,
+      "unit": "physical_objects",
+      "definition": "One physical object; faces/groups/witness publications do not increase the cluster count.",
+      "status": "measured"
+    },
+    "faces": {
+      "value": 2,
+      "unit": "nested_faces",
+      "definition": "Two faces nested in one physical object.",
+      "status": "measured"
+    },
+    "graphical_slots": {
+      "value": 242,
+      "unit": "project_transcribed_graphical_slots",
+      "definition": "One graphical-witness project transcription; includes one erased slot.",
+      "status": "measured"
+    },
+    "identified_slots": {
+      "value": 241,
+      "unit": "project_identified_graphical_slots",
+      "definition": "Unknown slot excluded from frequency denominator.",
+      "status": "measured"
+    },
+    "external_peer_review": {
+      "value": null,
+      "unit": "independent_epigraphic_review",
+      "definition": "No independent human epigraphic review completed.",
+      "status": "unknown"
+    },
+    "photographic_comparison_groups": {
+      "value": 61,
+      "unit": "coarse_source_photo_compared_graphical_groups",
+      "definition": "Olivier 1975 page panels compared for slot accounting and coarse glyph compatibility up to reversal; fine detail and within-group ordinals not universally certified.",
+      "status": "measured"
+    }
+  },
+  "family_report_sha256": "e43686c4497875d0899920235b9b2e47315a19e8810ff610787dbb34bee57251",
+  "implementation_sha256": "3a567a5d8bdde774357c01636ed69e1699e892680e61ba94ada45dfffeca3c87",
+  "boundary": "Committed file integrity and attributed project records. Hashes do not establish epigraphic truth, image adequacy or independent human review. Native units stay separate; no pooled sign identities or linguistic inference."
+}

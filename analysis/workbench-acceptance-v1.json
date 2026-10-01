@@ -1,0 +1,15 @@
+{
+  "format": "research-workbench-acceptance-v1",
+  "milestone_version": "1.0.0",
+  "project": "Phaistos-Disc",
+  "status": "PASS_ARTIFACT_REPLAY",
+  "evidence_files": 46,
+  "index_sha256": "e7d0782b6c85641ab3f7ee52e5c6bea0c87ac710a403f10dafc41df40d4a40c8",
+  "viewer_sha256": "d8ca94bed27067bbc4abdeff6d7c1965f2e51a04061127f51e9f53db76562cc5",
+  "disc_comparison_rows": 242,
+  "disc_scenarios": 368,
+  "native_changes_applied": false,
+  "expert_review_granted": false,
+  "final_epigraphic_acceptance_granted": false,
+  "boundary": "Engineering milestone only. Browser behavior and adversarial controls are tested separately in CI."
+}

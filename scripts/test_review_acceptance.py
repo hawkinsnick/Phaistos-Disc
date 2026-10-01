@@ -60,7 +60,7 @@ class ReceiptTests(unittest.TestCase):
         from validate_current_state import validate
         (self.root/'VERSION').write_text('2.0.0\n')
         citation=self.root/'CITATION.cff'
-        citation.write_text(citation.read_text().replace('2.0.0-rc.2','2.0.0'))
+        citation.write_text(__import__('re').sub(r'2\.0\.0-rc\.\d+', '2.0.0', citation.read_text()))
         (self.root/'analysis/acceptance-2.0.json').unlink()
         with self.assertRaisesRegex(ValueError,'final 2.0 requires complete recorded human acceptance'):
             validate(self.root)

@@ -4,10 +4,10 @@
   "scope": "Comparison readiness and software/governance alignment, not permission for cross-script inference. Exact snapshot commits pin native evidence; target versions describe the coordinated rollout. Snapshot versions may precede report-only maintenance.",
   "target_versions": {
     "Linear-A": "3.0.15",
-    "Linear-B": "4.9.23",
+    "Linear-B": "4.9.24",
     "Cypro-Minoan": "5.2.8",
     "Cretan-hieroglpyhs": "5.2.6",
-    "Phaistos-Disc": "2.0.0-rc.2"
+    "Phaistos-Disc": "2.0.0-rc.3"
   },
   "members": [
     {
@@ -296,6 +296,7 @@
     "metadata_and_rights_alignment": "READY",
     "native_source_attributed_descriptions": "MEMBER_SPECIFIC",
     "pooled_structural_or_phonetic_inference": "BLOCKED",
-    "matched_linguistic_calibration": "BLOCKED"
+    "matched_linguistic_calibration": "BLOCKED",
+    "research_evidence_workbench": "1.0.0 engineering milestone; native evidence and scientific gates remain member-specific"
   }
 }

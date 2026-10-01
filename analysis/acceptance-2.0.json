@@ -1,6 +1,6 @@
 {
   "target_release": "2.0.0",
-  "candidate_release": "2.0.0-rc.2",
+  "candidate_release": "2.0.0-rc.3",
   "engineering_artifact_replay": "PASS",
   "candidate_ready": true,
   "final_2_0_allowed": false,

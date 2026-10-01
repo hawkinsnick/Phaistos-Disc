@@ -20,7 +20,7 @@ def calculate(root=R):
     expected_state='READY_RECORDED_HUMAN_REVIEW' if review['external_review_accepted'] else 'BLOCKED'
     expected_ref='reviews/accepted-review.json' if review['external_review_accepted'] else None
     if external['state']!=expected_state or external['claim_allowed']!=review['external_review_accepted'] or external['result_ref']!=expected_ref:raise ValueError('review gate does not match recorded acceptance')
-    return {'target_release':'2.0.0','candidate_release':'2.0.0-rc.2',
+    return {'target_release':'2.0.0','candidate_release':'2.0.0-rc.3',
             'engineering_artifact_replay':'PASS','candidate_ready':True,
             'final_2_0_allowed':review['final_2_0_allowed'],'status':'READY_FOR_FINAL_2_0' if review['final_2_0_allowed'] else 'BLOCKED_FOR_FINAL_2_0',
             'native_corpus_sha256':hashlib.sha256((root/'corpus/disc.json').read_bytes()).hexdigest(),

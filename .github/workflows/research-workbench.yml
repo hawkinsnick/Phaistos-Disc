@@ -1,0 +1,61 @@
+name: Research workbench milestone
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  workbench:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-validation.txt
+      - run: python scripts/validate_current_state.py
+      - run: python scripts/validate_family_readiness.py
+      - run: python scripts/evidence_workbench.py
+      - run: python scripts/test_evidence_workbench.py
+      - name: Check Disc conditional edition analysis when present
+        run: |
+          if test -f scripts/test_edition_workbench.py; then python scripts/test_edition_workbench.py; fi
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm install --no-save --ignore-scripts playwright@1.62.1
+      - run: node scripts/test_evidence_browser.cjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: research-workbench-browser-review
+          path: output/evidence-browser/*.png
+  publish:
+    if: github.event_name == 'push'
+    needs: workbench
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish immutable engineering milestone
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          tag="research-workbench-v1.0.0"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "Existing immutable workbench release retained."
+          else
+            existing=$(git ls-remote --tags origin "refs/tags/$tag" | cut -f1)
+            if test -n "$existing"; then
+              test "$existing" = "$GITHUB_SHA"
+            else
+              git tag "$tag" "$GITHUB_SHA"
+              git push origin "refs/tags/$tag"
+            fi
+            git archive --format=zip --output=research-workbench.zip "$GITHUB_SHA"
+            sha256sum research-workbench.zip > research-workbench.zip.sha256
+            gh release create "$tag" research-workbench.zip research-workbench.zip.sha256 --verify-tag --title "Research workbench 1.0 — engineering milestone" --notes-file releases/research-workbench-1.0.0.md --prerelease --latest=false
+          fi

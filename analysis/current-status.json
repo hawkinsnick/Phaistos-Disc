@@ -1,5 +1,5 @@
 {
-  "repository_version": "2.0.0-rc.2",
+  "repository_version": "2.0.0-rc.3",
   "milestone": "RECORDED_HUMAN_ACCEPTANCE_AND_SOURCE_ADEQUACY",
   "committed_evidence_counts": {
     "physical_objects": 1,
@@ -83,7 +83,7 @@
     },
     {
       "path": "research/family-readiness-v1.json",
-      "sha256": "955ddc697d4ce293a5c2d3d19bd89c33328401ca4473c7fe6768ad87dc5acb42"
+      "sha256": "e43686c4497875d0899920235b9b2e47315a19e8810ff610787dbb34bee57251"
     },
     {
       "path": "analysis/acceptance-1.0.json",
@@ -151,11 +151,11 @@
     },
     {
       "path": "analysis/acceptance-2.0.json",
-      "sha256": "26bd4ba44e2171c9da092ff39e93b74be028228a05d6780a44919962254ad094"
+      "sha256": "aa6f1db547d5a90a04a8bc4ed8a79334a7db4fe152fd757817ef32878ad85b19"
     },
     {
       "path": "scripts/acceptance_2.py",
-      "sha256": "e2843bfad869b77c3f8f7ce184193a507ecbfb307fa12f9dabaa476b4e67fad6"
+      "sha256": "505512a13377a4be3212b4a9391f6451f938399d8c8675ea25ddacc3a7464683"
     },
     {
       "path": "reviews/review-packet-v2.json",
@@ -171,11 +171,71 @@
     },
     {
       "path": "scripts/test_review_acceptance.py",
-      "sha256": "ed834d89883cac58b9569512f5ffd90b1422e819c0554090ce3467f341c56271"
+      "sha256": "3d38b1224e6ea5d965074e547e4fc73861c29c8c98fb60e84a89b7e669436df1"
     },
     {
       "path": "analysis/source-adequacy-v2.json",
       "sha256": "5c5b83b87c5d4c7744d1bbc0760ed4ed718e8436daf71be2a10a862cf9276452"
+    },
+    {
+      "path": "analysis/evidence-index-v1.json",
+      "sha256": "e7d0782b6c85641ab3f7ee52e5c6bea0c87ac710a403f10dafc41df40d4a40c8"
+    },
+    {
+      "path": "analysis/workbench-acceptance-v1.json",
+      "sha256": "d7e18285163fd921e8308a4031cc9877bdedce4b9419505779298517084d6fe8"
+    },
+    {
+      "path": "workbench/evidence.html",
+      "sha256": "d8ca94bed27067bbc4abdeff6d7c1965f2e51a04061127f51e9f53db76562cc5"
+    },
+    {
+      "path": "research/workbench-milestone-v1.json",
+      "sha256": "5525ea0f4d413740482ae1209533248eaa42939efdded99bdabaf46da1d37812"
+    },
+    {
+      "path": "scripts/evidence_workbench.py",
+      "sha256": "3a567a5d8bdde774357c01636ed69e1699e892680e61ba94ada45dfffeca3c87"
+    },
+    {
+      "path": "scripts/test_evidence_workbench.py",
+      "sha256": "a03a741f070cc1deda4c02182caca662819b0fdad476687871177990182d8385"
+    },
+    {
+      "path": "scripts/test_evidence_browser.cjs",
+      "sha256": "1bb199e91747e1f49171e03e703c9e5056dbbd73f74767650fea955decd6fc2c"
+    },
+    {
+      "path": "workbench/evidence-template.html",
+      "sha256": "f1636f0fa50debe8b71412e5dc6c9d3dcda037af538688de345faf7391d23c27"
+    },
+    {
+      "path": "scripts/edition_workbench.py",
+      "sha256": "1f2ef1cd6fa3cd71243f01b88ebd3108b5cb5d01e5f9a2d8126fb943b316811e"
+    },
+    {
+      "path": "scripts/test_edition_workbench.py",
+      "sha256": "358ccc57cf78c6adf6d74a5ac0098c96babd530dc5193fa0f0f3214e750f568a"
+    },
+    {
+      "path": "analysis/edition-workbench-v1.json",
+      "sha256": "0b584940b4772e324d298003c8c357dc0a563318877897fc2c74e9d53dd91e9f"
+    },
+    {
+      "path": "reviews/occurrence-review-sheet.tsv",
+      "sha256": "eb9e1f41c0c3b1549d7093919ed3f7008cd1e0cfcdf447c07108030b6bff7fb5"
+    },
+    {
+      "path": "reviews/group-mark-review-sheet.tsv",
+      "sha256": "10d0f4e2fc3d1c20bbd49f74295ec4a3b436508c9d4e20f2008550bc5ff52a59"
+    },
+    {
+      "path": "research/workbench-guide.md",
+      "sha256": "4a898babc7a1d9ea2576a2ee8eddf9d36d3ac285c77a81006a489f4eb834e401"
+    },
+    {
+      "path": "examples/disc-workbench.ipynb",
+      "sha256": "04fb7b7ccf2a13dbba99cf7b8b6e9f39fe8f0bf4d0aabe3f5073efbf65788e02"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved.",
