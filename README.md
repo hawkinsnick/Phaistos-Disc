@@ -1,4 +1,4 @@
-# Phaistos Disc — 1.2.1
+# Phaistos Disc — 1.3.0
 
 A source-attributed research corpus and reproducible workbench within the five-member Aegean corpus family.
 
@@ -68,3 +68,7 @@ Original code and project-created transcription records: MIT. Unicode-derived re
 See `releases/` for milestone-specific scope and acceptance records. The next evidence gate is independent epigraphic review; see `reviews/independent-review-brief.md`. The photograph comparison and source-exemplar crosswalk are under `reviews/` and `signs/`.
 
 1.2.1 aligns the shared family evidence report with the checked companion milestones, including the first two-object CHIC source-access pilot. Corpus readings, photographic audit and sensitivity results retain their prior bytes and scope.
+
+## Milestone 1.3.0
+
+Adds a source-linked evidence row for every one of the 242 native slots. Forty-six labeled photographic exemplars are distinguished from 196 ordinals not individually certified. Native readings and all unknown, position and review boundaries remain unchanged.

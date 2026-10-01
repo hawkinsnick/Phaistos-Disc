@@ -10,7 +10,7 @@ def require(ok,message):
 def validate(root=R):
     def load(p):return json.loads((root/p).read_text())
     def sha(p):return hashlib.sha256((root/p).read_bytes()).hexdigest()
-    version=(root/'VERSION').read_text().strip();require(re.fullmatch(r'(0\.[2-9]\.0|1\.[0-2]\.0|1\.2\.1)',version),'unsupported milestone version')
+    version=(root/'VERSION').read_text().strip();require(re.fullmatch(r'(0\.[2-9]\.0|1\.[0-6]\.0|1\.2\.1|2\.0\.0-rc\.1)',version),'unsupported milestone version')
     require(re.search(r'^version: "'+re.escape(version)+'"$',(root/'CITATION.cff').read_text(),re.M),'citation version drift')
     for p in root.rglob('*.json'):
         if '.git' not in p.parts and 'output' not in p.parts:json.loads(p.read_text())
@@ -116,6 +116,9 @@ def validate(root=R):
     if (root/'analysis/apparatus-sensitivity-v1.json').exists():
         from apparatus_sensitivity import calculate as sensitivity_calculate
         require(load('analysis/apparatus-sensitivity-v1.json')==sensitivity_calculate(root),'apparatus scenario replay drift')
+    if (root/'reviews/occurrence-audit-v1.json').exists():
+        from occurrence_audit import calculate as occurrence_calculate
+        require(load('reviews/occurrence-audit-v1.json')==occurrence_calculate(root),'occurrence evidence replay drift')
     return {'status':'PASS','version':version,'evidence_counts':counts,'external_review':'BLOCKED','decipherment':'BLOCKED'}
 if __name__=='__main__':
     try:print(json.dumps(validate()))

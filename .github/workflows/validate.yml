@@ -19,7 +19,7 @@ jobs:
       - run: python scripts/test_foundation.py
       - name: Run available milestone checks
         run: |
-          for script in test_analysis.py test_exports.py test_release.py test_witness_audit.py test_apparatus_sensitivity.py validate_family_readiness.py; do
+          for script in test_analysis.py test_exports.py test_release.py test_witness_audit.py test_apparatus_sensitivity.py validate_family_readiness.py test_occurrence_audit.py test_source_coverage.py test_research_suite.py test_review_packet.py test_acceptance_2.py; do
             if test -f "scripts/$script"; then python "scripts/$script"; fi
           done
   primary-source:
@@ -75,8 +75,9 @@ jobs:
         run: |
           version=$(cat VERSION)
           tag="v$version"
-          latest=false
           latest=true
+          prerelease=false
+          case "$version" in *-rc.*) latest=false; prerelease=true ;; esac
           if test "$version" = "1.0.0"; then bash scripts/publish_history.sh; fi
           python scripts/package_release.py --out /tmp/disc-release.zip
           python -c "import hashlib,pathlib; p=pathlib.Path('/tmp/disc-release.zip'); pathlib.Path(str(p)+'.sha256').write_text(hashlib.sha256(p.read_bytes()).hexdigest()+'  disc-release.zip\\n')"
@@ -86,5 +87,5 @@ jobs:
           else
             git tag "$tag" "$GITHUB_SHA"
             git push origin "refs/tags/$tag"
-            gh release create "$tag" /tmp/disc-release.zip /tmp/disc-release.zip.sha256 --verify-tag --latest="$latest" --title "Phaistos Disc $version" --notes-file "releases/$version.md"
+            gh release create "$tag" /tmp/disc-release.zip /tmp/disc-release.zip.sha256 --verify-tag --prerelease="$prerelease" --latest="$latest" --title "Phaistos Disc $version" --notes-file "releases/$version.md"
           fi
