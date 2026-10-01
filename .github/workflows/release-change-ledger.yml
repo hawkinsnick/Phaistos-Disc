@@ -1,0 +1,25 @@
+name: Release correction tracking
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/test_release_change_ledger.py
+      - name: Compare the published workbench baseline
+        run: python scripts/release_change_ledger.py --baseline research-workbench-v1.0.0 --output output/release-change-ledger.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-change-ledger
+          path: output/release-change-ledger.*
