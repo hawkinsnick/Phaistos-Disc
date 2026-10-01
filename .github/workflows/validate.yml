@@ -64,6 +64,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/download-artifact@v4
         with:
           name: checked-source-images
@@ -82,8 +84,11 @@ jobs:
           python scripts/package_release.py --out /tmp/disc-release.zip
           python -c "import hashlib,pathlib; p=pathlib.Path('/tmp/disc-release.zip'); pathlib.Path(str(p)+'.sha256').write_text(hashlib.sha256(p.read_bytes()).hexdigest()+'  disc-release.zip\\n')"
           if gh release view "$tag" >/dev/null 2>&1; then
-            actual=$(gh api "repos/$GH_REPO/git/ref/tags/$tag" --jq '.object.sha')
-            test "$actual" = "$GITHUB_SHA"
+            git fetch --no-tags origin "refs/tags/$tag:refs/tags/$tag"
+            released=$(git rev-parse "$tag^{commit}")
+            git merge-base --is-ancestor "$released" "$GITHUB_SHA"
+            test "$(git show "$released:VERSION")" = "$version"
+            echo "Existing immutable release retained at $released; current validated head is $GITHUB_SHA."
           else
             git tag "$tag" "$GITHUB_SHA"
             git push origin "refs/tags/$tag"
