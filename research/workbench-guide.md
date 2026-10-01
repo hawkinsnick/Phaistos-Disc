@@ -1,4 +1,4 @@
-# Research evidence workbench 1.0
+# Research evidence workbench 1.1
 
 This is an engineering milestone for Phaistos-Disc. Existing scientific gates remain in force.
 
@@ -31,3 +31,13 @@ Open `workbench/index.html` for the historical figure viewer. The native release
 Open `reviews/occurrence-review-sheet.tsv` and `reviews/group-mark-review-sheet.tsv` in a spreadsheet application, or read them as text. All 242 occurrences and 61 groups have stable IDs. Fill in observations with source locators and a written account of your method. The sheets start unreviewed/unassessed. Existing source references are navigation aids, not records of your inspection.
 
 For marks, report whether the evidence can support examining the entire group. An empty observed-mark list does not prove physical absence. Distinguish a source-resolution limitation from supported coverage. Final epigraphic 2.0 still needs the recorded human acceptance procedure in `research/acceptance-2.0.md`.
+
+## Portable inspection collections
+
+Add several observations to a collection, then download the collection before closing. Import restores or merges a previously exported collection only when the project, native version and evidence-index hash match exactly. A file from another snapshot is rejected without changing existing notes. Imported notes remain unverified and cannot complete expert review. Collections stay in this page and are not saved automatically. The limit is 200 observations of up to 4,000 characters each.
+
+Use `research/correction-tracking.md` to compare two immutable Git revisions. The tracker requires a checkout with Git history; it cannot run from the release ZIP alone.
+
+## Compare descriptive scenarios
+
+The scenario table compares the selected hypothesis to the native configuration. “Use current as comparison” lets you inspect changes against another hypothesis; “Reset comparison to native” restores the recorded configuration. Sign-frequency changes always refer to native counts, as the label states. Displayed entropy is rounded to six decimals; the exact record and downloaded scenario preserve full numerical values. Selected-scenario downloads include the evidence-index and edition-workbench hashes, the comparison ID and explicit unverified flags. None of these controls adopts a reading or changes the corpus.

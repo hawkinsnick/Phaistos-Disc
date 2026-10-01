@@ -44,7 +44,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: |
-          tag="research-workbench-v1.0.0"
+          tag="research-workbench-v1.1.0"
           if gh release view "$tag" >/dev/null 2>&1; then
             echo "Existing immutable workbench release retained."
           else
@@ -57,5 +57,5 @@ jobs:
             fi
             git archive --format=zip --output=research-workbench.zip "$GITHUB_SHA"
             sha256sum research-workbench.zip > research-workbench.zip.sha256
-            gh release create "$tag" research-workbench.zip research-workbench.zip.sha256 --verify-tag --title "Research workbench 1.0 — engineering milestone" --notes-file releases/research-workbench-1.0.0.md --prerelease --latest=false
+            gh release create "$tag" research-workbench.zip research-workbench.zip.sha256 --verify-tag --title "Research workbench 1.1 — inspection and comparison" --notes-file releases/research-workbench-1.1.0.md --prerelease --latest=false
           fi

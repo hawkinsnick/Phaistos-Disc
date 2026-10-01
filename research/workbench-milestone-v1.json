@@ -1,13 +1,15 @@
 {
   "milestone": "research-workbench",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scope": "Engineering and evidence inspection; independent epigraphic acceptance remains separate",
   "requirements": [
     "Replayable source-pinned evidence index",
     "Offline searchable evidence explorer",
     "Desktop/mobile browser controls and safe unverified note export",
     "Readable coverage, uncertainty and review guide",
-    "Disc: 242 bounded comparison rows and 368 exhaustive declared reading/order scenarios"
+    "Disc: 242 bounded comparison rows and 368 exhaustive declared reading/order scenarios",
+    "Snapshot-bound inspection collection export/import with atomic rejection",
+    "Release correction ledger comparing immutable Git revisions"
   ],
   "human_review_required_for_this_engineering_milestone": false,
   "expert_review_granted": false,

@@ -297,6 +297,6 @@
     "native_source_attributed_descriptions": "MEMBER_SPECIFIC",
     "pooled_structural_or_phonetic_inference": "BLOCKED",
     "matched_linguistic_calibration": "BLOCKED",
-    "research_evidence_workbench": "1.0.0 engineering milestone; native evidence and scientific gates remain member-specific"
+    "research_evidence_workbench": "1.1.0 engineering milestone; snapshot-bound inspection collections and Disc descriptive comparisons; native evidence and scientific gates remain member-specific"
   }
 }

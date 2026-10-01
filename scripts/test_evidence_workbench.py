@@ -5,6 +5,7 @@ class EvidenceTests(unittest.TestCase):
  def test_replay_and_embedded_identity(self):
   self.assertEqual(json.loads((R/'analysis/evidence-index-v1.json').read_text()),calculate());self.assertEqual((R/'workbench/evidence.html').read_text(),html());self.assertEqual(json.loads((R/'analysis/workbench-acceptance-v1.json').read_text()),acceptance())
   payload=json.loads(re.search(r'<script id="evidence-data" type="application/json">(.*?)</script>',html(),re.S)[1]);self.assertEqual(payload['index'],calculate());self.assertEqual(payload['index_sha256'],hashlib.sha256((R/'analysis/evidence-index-v1.json').read_bytes()).hexdigest());self.assertFalse(acceptance()['expert_review_granted'])
+  if payload['edition']:self.assertEqual(payload['edition']['edition_sha256'],hashlib.sha256((R/'analysis/edition-workbench-v1.json').read_bytes()).hexdigest())
  def test_tampered_pin_and_viewer_rejected(self):
   with tempfile.TemporaryDirectory() as td:
    root=pathlib.Path(td)/'repo';shutil.copytree(R,root,ignore=shutil.ignore_patterns('.git','images','output','node_modules','__pycache__'))

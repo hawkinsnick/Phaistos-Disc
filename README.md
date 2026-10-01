@@ -96,3 +96,7 @@ The rc.2 acceptance repair adds a source-pinned V2 human review submission and 6
 ### Research evidence workbench 1.0
 
 Download the research workbench ZIP, extract it, and open [workbench/evidence.html](workbench/evidence.html). It includes searchable pinned evidence, coverage definitions and unverified inspection-note export. See the [reading and review guide](research/workbench-guide.md). This engineering milestone grants no independent epigraphic acceptance.
+
+### Research workbench 1.1
+
+Download the [research workbench 1.1 package](https://github.com/hawkinsnick/Phaistos-Disc/releases/tag/research-workbench-v1.1.0), extract it, and open `workbench/evidence.html`. It adds snapshot-bound inspection collections and includes the immutable release correction tracker. The Disc explorer also presents readable scenario comparisons. This engineering release grants no scientific acceptance.

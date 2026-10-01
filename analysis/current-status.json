@@ -83,7 +83,7 @@
     },
     {
       "path": "research/family-readiness-v1.json",
-      "sha256": "e43686c4497875d0899920235b9b2e47315a19e8810ff610787dbb34bee57251"
+      "sha256": "e17625716660da70731459252e2b1bbca429d7183640b79f0733162313148b3e"
     },
     {
       "path": "analysis/acceptance-1.0.json",
@@ -179,35 +179,35 @@
     },
     {
       "path": "analysis/evidence-index-v1.json",
-      "sha256": "e7d0782b6c85641ab3f7ee52e5c6bea0c87ac710a403f10dafc41df40d4a40c8"
+      "sha256": "560103439243867ea8148baec076c5edeb72aaf9e17b046c02c0a473486a6600"
     },
     {
       "path": "analysis/workbench-acceptance-v1.json",
-      "sha256": "d7e18285163fd921e8308a4031cc9877bdedce4b9419505779298517084d6fe8"
+      "sha256": "449340bcf85c1e3b34c0995a6a9a2e2a9deaaf30026b2b5090efe5ca6d24be03"
     },
     {
       "path": "workbench/evidence.html",
-      "sha256": "d8ca94bed27067bbc4abdeff6d7c1965f2e51a04061127f51e9f53db76562cc5"
+      "sha256": "0a51edcba889d4ea8be2dc56bf29ddb3779dd3eb5497d8f5bbefedb82aa6c426"
     },
     {
       "path": "research/workbench-milestone-v1.json",
-      "sha256": "5525ea0f4d413740482ae1209533248eaa42939efdded99bdabaf46da1d37812"
+      "sha256": "6e73523259c9131bdda1f2237a120f59a402be8294fb2026076cd0e67c13a44e"
     },
     {
       "path": "scripts/evidence_workbench.py",
-      "sha256": "3a567a5d8bdde774357c01636ed69e1699e892680e61ba94ada45dfffeca3c87"
+      "sha256": "682a350d9457b1e88ff3a3c4d1263880e4fdf98e1012578580b7d2b9d877c916"
     },
     {
       "path": "scripts/test_evidence_workbench.py",
-      "sha256": "a03a741f070cc1deda4c02182caca662819b0fdad476687871177990182d8385"
+      "sha256": "071d52a7996556919876d35182f2fdcc1a4e46a6ad60c97c3508c639b259c1e4"
     },
     {
       "path": "scripts/test_evidence_browser.cjs",
-      "sha256": "1bb199e91747e1f49171e03e703c9e5056dbbd73f74767650fea955decd6fc2c"
+      "sha256": "8c007db6b2a96d7f686e55d7dd3e59cf05a8a9951d15921509e88c35fd3af091"
     },
     {
       "path": "workbench/evidence-template.html",
-      "sha256": "f1636f0fa50debe8b71412e5dc6c9d3dcda037af538688de345faf7391d23c27"
+      "sha256": "009519821451a9b8d90eb42e46c12e5c7b5f834d1b2fb5825872d94a1d3f3762"
     },
     {
       "path": "scripts/edition_workbench.py",
@@ -231,11 +231,27 @@
     },
     {
       "path": "research/workbench-guide.md",
-      "sha256": "4a898babc7a1d9ea2576a2ee8eddf9d36d3ac285c77a81006a489f4eb834e401"
+      "sha256": "a7ad795f05164f509ee71d3b3f0d23e171bb9f51816ae00f47f37b82c74fc78d"
     },
     {
       "path": "examples/disc-workbench.ipynb",
       "sha256": "04fb7b7ccf2a13dbba99cf7b8b6e9f39fe8f0bf4d0aabe3f5073efbf65788e02"
+    },
+    {
+      "path": "scripts/release_change_ledger.py",
+      "sha256": "e6a5c228421531c00fde3493b8f14606126447f5f561ddf226045395c50b8cee"
+    },
+    {
+      "path": "scripts/test_release_change_ledger.py",
+      "sha256": "268230c02e2555159362e6312563a65904771d57b2c7bb32cfbfc9562acc4c94"
+    },
+    {
+      "path": "research/correction-tracking.md",
+      "sha256": "24d551d7de6d497145ae30670cd8d29cfcc7172c329abd963863ae5dfed49e15"
+    },
+    {
+      "path": ".github/workflows/release-change-ledger.yml",
+      "sha256": "acad59395f7ff8b4353bc6eea69dfec6d8e6b342e08df87617c897dcd27d8a1f"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved.",
