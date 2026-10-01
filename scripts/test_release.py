@@ -25,3 +25,6 @@ with tempfile.TemporaryDirectory() as td:
     assert family_validate(root)['status']=='PASS'
 assert analyze()==json.loads((R/'analysis/descriptive-v1.json').read_text()) and export_records()==json.loads((R/'exports/aegean-interop.json').read_text())
 print(json.dumps({'status':'PASS','embedded_workbench_data':'EXACT','descriptive_replay':'EXACT','export_replay':'EXACT','family_negative_controls':4,'linguistic_gates':'BLOCKED'}))
+
+if (R/"reviews/review-packet-v1.json").exists():
+    assert embedded["reviewPacket"] == json.loads((R/"reviews/review-packet-v1.json").read_text()), "Embedded review template drift"

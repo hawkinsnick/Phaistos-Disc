@@ -1,5 +1,5 @@
 {
-  "repository_version": "1.5.0",
+  "repository_version": "1.6.0",
   "milestone": "WITNESS_WORKBENCH_AND_ASSERTION_SENSITIVITY",
   "committed_evidence_counts": {
     "physical_objects": 1,
@@ -81,7 +81,7 @@
     },
     {
       "path": "research/family-readiness-v1.json",
-      "sha256": "6636336ab148571c94d70564bc05345afa2458865bdb8d422114abfb7b430248"
+      "sha256": "164ce3bf5b70e24f0a937a3aa04c5c0a690a676c992f321bbc971aa17270c270"
     },
     {
       "path": "analysis/acceptance-1.0.json",
@@ -138,6 +138,14 @@
     {
       "path": "analysis/research-suite-v2.json",
       "sha256": "56c10d4b69c0730f32db861696c148eb224e44281f0140a66e26ea1baa283ba5"
+    },
+    {
+      "path": "reviews/review-packet-v1.json",
+      "sha256": "695c427dcde98e479ff0ad4cd12909735bf2c8c034a0b13d2aabdf4afa3d1a2b"
+    },
+    {
+      "path": "scripts/review_packet.py",
+      "sha256": "fe3e74488a68f07aa52395535ef20704742bebe98e7f9fa70cb5f8e8ff8934ab"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved.",

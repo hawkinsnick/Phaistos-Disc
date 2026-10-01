@@ -1,4 +1,4 @@
-# Phaistos Disc — 1.5.0
+# Phaistos Disc — 1.6.0
 
 A source-attributed research corpus and reproducible workbench within the five-member Aegean corpus family.
 
@@ -80,3 +80,7 @@ Adds a typed, replayable eight-source coverage ledger: encoding standards, histo
 ## Milestone 1.5.0
 
 Adds a retrospectively registered, byte-pinned descriptive suite with exact group repetition and adjacent-repeat counts, unknown exclusions, reversible group views, and 1000 deterministic within-face shuffle references. Graphical lengths, per-face glyph counts and unknown positions are preserved. No p-values, population confidence intervals or linguistic inference are produced.
+
+## Milestone 1.6.0
+
+Adds a complete 242-slot review draft, attributed submission validator and offline occurrence-note editor. Draft import/export preserves stable native IDs under view reversal and rejects source hash, missing-slot and review-state tampering. Submitted decisions are never automatically accepted as independent review or applied to native readings.

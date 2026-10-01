@@ -125,6 +125,10 @@ def validate(root=R):
     if (root/'analysis/research-suite-v2.json').exists():
         from research_suite import calculate as research_calculate
         require(load('analysis/research-suite-v2.json')==research_calculate(root),'research suite replay drift')
+    if (root/'reviews/review-packet-v1.json').exists():
+        from review_packet import calculate as packet_calculate, validate as packet_validate
+        require(load('reviews/review-packet-v1.json')==packet_calculate(root),'review draft replay drift')
+        require(packet_validate(load('reviews/review-packet-v1.json'),root)['status']=='VALID_DRAFT','unassigned draft promoted to review')
     return {'status':'PASS','version':version,'evidence_counts':counts,'external_review':'BLOCKED','decipherment':'BLOCKED'}
 if __name__=='__main__':
     try:print(json.dumps(validate()))
