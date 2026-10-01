@@ -1,4 +1,4 @@
-# Phaistos Disc — 1.0.0
+# Phaistos Disc — 0.5.0
 
 A source-attributed research corpus and reproducible workbench within the five-member Aegean corpus family.
 
@@ -18,8 +18,6 @@ This is a project transcription of Evans's 1909 Figures128/129, checked against 
 ## Use the release
 
 Download a versioned ZIP from [Releases](https://github.com/hawkinsnick/Phaistos-Disc/releases), extract it, and read the source, rights and evidence boundaries before analysis. Published ZIPs include faithful public-domain source-page images. Original sourcePDF and modern copyrighted editions are not bundled.
-
-Open `workbench/index.html` directly in a browser for face/group navigation and source-linked records. It works without a server.
 
 ## Reproduce the checks
 
@@ -45,9 +43,6 @@ A source-byte mismatch stops acquisition; pins are never updated automatically. 
 - Source-critical apparatus and separate stroke assertions
 - 61 approximate source-figure group anchors
 - Descriptive statistics and sensitivity to traversal/unknown readings
-- Five-member comparison-readiness report
-- Validated interchange and CSV exports
-- Offline research workbench
 
 ## Limits and remaining gates
 
