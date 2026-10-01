@@ -1,6 +1,6 @@
 {
-  "repository_version": "0.9.0",
-  "milestone": "ADVERSARIAL_RELEASE_AUDIT",
+  "repository_version": "1.0.0",
+  "milestone": "AUDITABLE_SOURCE_ATTRIBUTED_EDITION",
   "committed_evidence_counts": {
     "physical_objects": 1,
     "faces": 2,
@@ -80,7 +80,11 @@
     },
     {
       "path": "research/family-readiness-v1.json",
-      "sha256": "07c802737a5516028754aeb94f8d9be240449c6e05bfe971ea5d3f050202a20c"
+      "sha256": "4907b77da7c096b28bb542bc715500e5e94367202529b903fdb5ed35172d9072"
+    },
+    {
+      "path": "analysis/acceptance-1.0.json",
+      "sha256": "47960a8c688db295e38292e431e9deec9c6d67c51839a565578acdfd1a20071a"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved."

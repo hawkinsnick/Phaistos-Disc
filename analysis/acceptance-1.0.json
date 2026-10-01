@@ -1,0 +1,75 @@
+{
+  "release_version": "1.0.0",
+  "acceptance_scope": "Stable source-attributed project research edition and software; not an externally certified critical reading or decipherment.",
+  "status": "PASS",
+  "criteria": {
+    "source_and_transcription_identity_pinned": true,
+    "all_native_group_labels_reviewed": true,
+    "source_attributed_slot_coverage": true,
+    "unknown_slot_preserved": true,
+    "source_disagreements_preserved": true,
+    "source_figure_navigation_coverage": true,
+    "descriptive_and_export_checks_present": true,
+    "offline_workbench_present": true,
+    "family_claim_boundary_preserved": true,
+    "stronger_claims_not_promoted": true
+  },
+  "evidence": [
+    {
+      "path": "corpus/disc.json",
+      "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee"
+    },
+    {
+      "path": "data/evans1909-groups.csv",
+      "sha256": "4379cfee7cbfc69c545e139ec3db9963504604510b30922a228720b4691019a1"
+    },
+    {
+      "path": "reviews/transcription-review-v1.json",
+      "sha256": "fe3db5256eeb59b35d010727e3573eba5ccd2edcd3e8bec275368381b1005f59"
+    },
+    {
+      "path": "apparatus/claims.json",
+      "sha256": "8b94dc170ca025a8012da5dcb9cbe165d7019e75d83687cc0a535f27a04c43a7"
+    },
+    {
+      "path": "apparatus/stroke-assertions.json",
+      "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c"
+    },
+    {
+      "path": "spatial/group-anchors.json",
+      "sha256": "897d563ca46384c118322ba6352464021f90ccb9fc078bbb58ddec7665990fd1"
+    },
+    {
+      "path": "analysis/descriptive-v1.json",
+      "sha256": "3cbca455c910aad839c239b509935309dd526956914caf12b5764f61a8d224b2"
+    },
+    {
+      "path": "exports/aegean-interop.json",
+      "sha256": "501c9e044e6472e03243a6d6237164106801dd6392b5932a910efe6012d35564"
+    },
+    {
+      "path": "research/family-readiness-v1.json",
+      "sha256": "4907b77da7c096b28bb542bc715500e5e94367202529b903fdb5ed35172d9072"
+    },
+    {
+      "path": "workbench/index.html",
+      "sha256": "347909dd919cf906e4e8a232d61d8685f5b5438d2e08d339beb79d6fc431d05b"
+    }
+  ],
+  "publication_gates": [
+    "Native/adversarial tests pass",
+    "Exact primary source bytes reacquired in CI",
+    "Desktop/mobile browser interaction tests pass in CI",
+    "Release archive generated only after all CI jobs succeed"
+  ],
+  "remaining_evidence_gates": [
+    "External independent epigraphic review",
+    "Additional checked photographic witnesses",
+    "Complete source-checked stroke inventory and unresolved targets",
+    "Physical per-stamp coordinates",
+    "Legitimate linguistic known-answer control and compatible family target vectors",
+    "Independent linguistic evidence for decipherment"
+  ],
+  "external_peer_review_completed": false,
+  "physical_independent_documents": 1
+}

@@ -1,4 +1,4 @@
-# Phaistos Disc — 0.9.0
+# Phaistos Disc — 1.0.0
 
 A source-attributed research corpus and reproducible workbench within the five-member Aegean corpus family.
 

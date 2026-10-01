@@ -77,6 +77,7 @@ jobs:
           tag="v$version"
           latest=false
           if test "$version" = "1.0.0"; then latest=true; fi
+          if test "$version" = "1.0.0"; then bash scripts/publish_history.sh; fi
           python scripts/package_release.py --out /tmp/disc-release.zip
           python -c "import hashlib,pathlib; p=pathlib.Path('/tmp/disc-release.zip'); pathlib.Path(str(p)+'.sha256').write_text(hashlib.sha256(p.read_bytes()).hexdigest()+'  disc-release.zip\\n')"
           if gh release view "$tag" >/dev/null 2>&1; then
@@ -86,7 +87,4 @@ jobs:
             git tag "$tag" "$GITHUB_SHA"
             git push origin "refs/tags/$tag"
             gh release create "$tag" /tmp/disc-release.zip /tmp/disc-release.zip.sha256 --verify-tag --latest="$latest" --title "Phaistos Disc $version" --notes-file "releases/$version.md"
-          fi
-          if test "$version" = "0.2.0" && ! gh release view v0.1.0 >/dev/null 2>&1; then
-            gh release create v0.1.0 --target f29c767e88545f46359d5db2d02c7f930c3ce4aa --latest=false --title "Phaistos Disc 0.1.0" --notes "Historical foundation: one object scaffold, two faces, 45 Unicode base signs plus a combining mark, zero checked transcription records. Source archives are available through this tag."
           fi
