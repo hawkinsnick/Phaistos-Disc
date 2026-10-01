@@ -47,21 +47,6 @@ def validate(root=R):
     require({o['occurrence_id'] for o in occ if o['sign_id'] is None}=={'PD-A-E24-S05'},'erased-slot identity')
     require(next(o for o in occ if o['occurrence_id']=='PD-B-E03-S05')['sign_id']=='PD-U101D6','B3 published figure reading drift')
     assertions=load('research/count-assertions.json')['assertions'];require(assertions[0]['total']==241 and assertions[-1]['total']==242,'source/project count conflation')
-    if (root/'apparatus/claims.json').exists():
-        claims=load('apparatus/claims.json');require(len(claims)==len({c['claim_id'] for c in claims})==7,'apparatus claim identities')
-        for c in claims:
-            require(c['source_id'] in source and c['locator'] and c['kind'] in {'reading','stroke','count','traversal'},'apparatus provenance/type')
-            require(c['locus'] in gids|oids|{'PD-001'},'orphan apparatus locus')
-        marks=load('apparatus/stroke-assertions.json');require(marks['statistical_use_allowed'] is False,'unresolved marks promoted to statistics')
-        require(len(marks['marks'])==16 and sum(m['status']=='source_listed' for m in marks['marks'])==15,'source mark accounting')
-        by_occ={o['occurrence_id']:o for o in occ}
-        for m in marks['marks']:
-            require(m['group_id'] in gids and m['source_id'] in source and m['locator'] and m['meaning'] is None and m['physical_position'] is None,'mark identity/provenance/meaning promotion')
-            if m['target_occurrence_id'] is not None:
-                require(m['target_occurrence_id'] in by_occ,'orphan mark target')
-                target=by_occ[m['target_occurrence_id']]
-                require(target['group_id']==m['group_id'] and target['sign_id']==f"PD-U{0x101CF+m['asserted_evans_sign']:X}",'mark/occurrence disagreement hidden')
-        require([m['mark_id'] for m in marks['marks'] if m['target_occurrence_id'] is None]==marks['unresolved_target_assertions']==['PD-M002','PD-M004'],'unresolved mark target imputed')
     gates=load('research/experiment-gates.json')['experiments']
     for gate in gates:
         if gate['state']=='BLOCKED':require(gate['claim_allowed'] is False and gate['result_ref'] is None,'blocked gate leakage')
@@ -105,10 +90,6 @@ def validate(root=R):
     if (root/'research/family-readiness-v1.json').exists():
         readiness=load('research/family-readiness-v1.json');require(readiness['target_versions']['Phaistos-Disc']==version,'readiness member version')
         require(readiness['pooled_analysis_allowed'] is False and readiness['linguistic_known_answer_control']['state']=='BLOCKED','family readiness promotion')
-    if (root/'analysis/acceptance-1.0.json').exists():
-        from acceptance import calculate
-        acceptance=load('analysis/acceptance-1.0.json')
-        require(acceptance==calculate(root) and acceptance['status']=='PASS' and version=='1.0.0','1.0 acceptance drift')
     return {'status':'PASS','version':version,'evidence_counts':counts,'external_review':'BLOCKED','decipherment':'BLOCKED'}
 if __name__=='__main__':
     try:print(json.dumps(validate()))

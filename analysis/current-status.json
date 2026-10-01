@@ -1,6 +1,6 @@
 {
-  "repository_version": "1.0.0",
-  "milestone": "AUDITABLE_SOURCE_ATTRIBUTED_EDITION",
+  "repository_version": "0.7.0",
+  "milestone": "SOURCE_PRESERVING_EXPORTS",
   "committed_evidence_counts": {
     "physical_objects": 1,
     "faces": 2,
@@ -80,11 +80,7 @@
     },
     {
       "path": "research/family-readiness-v1.json",
-      "sha256": "4907b77da7c096b28bb542bc715500e5e94367202529b903fdb5ed35172d9072"
-    },
-    {
-      "path": "analysis/acceptance-1.0.json",
-      "sha256": "47960a8c688db295e38292e431e9deec9c6d67c51839a565578acdfd1a20071a"
+      "sha256": "08b483b1585235b604816ec9fdcdeac81324e7ce40087554177e2546d260609f"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved."
