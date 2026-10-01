@@ -1,4 +1,4 @@
-# Phaistos Disc — 0.3.0
+# Phaistos Disc — 0.4.0
 
 A source-attributed research corpus and reproducible workbench within the five-member Aegean corpus family.
 
@@ -41,6 +41,7 @@ A source-byte mismatch stops acquisition; pins are never updated automatically. 
 ## Available layers
 
 - Source-critical apparatus and separate stroke assertions
+- 61 approximate source-figure group anchors
 
 ## Limits and remaining gates
 

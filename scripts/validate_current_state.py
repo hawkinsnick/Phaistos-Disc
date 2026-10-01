@@ -76,7 +76,7 @@ def validate(root=R):
         anchors=load('spatial/group-anchors.json');frames={f['frame_id']:f for f in load('spatial/frames.json')}
         require(len(anchors)==len({a['group_id'] for a in anchors})==61 and {a['group_id'] for a in anchors}==gids,'anchor coverage')
         for a in anchors:
-            require(a['frame_id'] in frames and 0<=a['x']<=1 and 0<=a['y']<=1 and a['method']=='manual_group_label_anchor' and a['approximate'] is True and a['source_id']=='evans1909','anchor provenance/coordinate semantics')
+            require(a['frame_id'] in frames and 0<=a['x']<=1 and 0<=a['y']<=1 and a['method']=='manual_group_region_anchor' and a['approximate'] is True and a['source_id']=='evans1909','anchor provenance/coordinate semantics')
             require(a['frame_id'].endswith('-'+a['group_id'][3]),'anchor face mismatch')
         for frame in frames.values():require(frame['source_sha256']==e['full_source_sha256'] and frame['coordinate_scope']=='historical_figure_page','spatial source identity')
     if (root/'analysis/descriptive-v1.json').exists():

@@ -1,6 +1,6 @@
 {
-  "repository_version": "0.3.0",
-  "milestone": "SOURCE_CRITICAL_APPARATUS",
+  "repository_version": "0.4.0",
+  "milestone": "SOURCE_FIGURE_SPATIAL_LAYER",
   "committed_evidence_counts": {
     "physical_objects": 1,
     "faces": 2,
@@ -61,6 +61,14 @@
     {
       "path": "apparatus/stroke-assertions.json",
       "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c"
+    },
+    {
+      "path": "spatial/frames.json",
+      "sha256": "7bfdceb0b8a336880d16312bfe9c91802926068266e112863e79941f75e93410"
+    },
+    {
+      "path": "spatial/group-anchors.json",
+      "sha256": "897d563ca46384c118322ba6352464021f90ccb9fc078bbb58ddec7665990fd1"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved."

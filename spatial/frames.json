@@ -1,0 +1,26 @@
+[
+  {
+    "frame_id": "PD-FRAME-A",
+    "source_id": "evans1909",
+    "source_sha256": "b06f8a04f3f7e33578f28aa0e88be600a13ebc6d03891a79c721558ca50c05e7",
+    "pdf_page": 298,
+    "locator": "p280 Figure128",
+    "image_path": "sources/images/evans1909-figure128.png",
+    "coordinates": "Normalized x/right, y/down fractions of the complete source page; origin top-left",
+    "coordinate_scope": "historical_figure_page",
+    "physical_measurements_allowed": false,
+    "sign_centroids_available": false
+  },
+  {
+    "frame_id": "PD-FRAME-B",
+    "source_id": "evans1909",
+    "source_sha256": "b06f8a04f3f7e33578f28aa0e88be600a13ebc6d03891a79c721558ca50c05e7",
+    "pdf_page": 300,
+    "locator": "p282 Figure129",
+    "image_path": "sources/images/evans1909-figure129.png",
+    "coordinates": "Normalized x/right, y/down fractions of the complete source page; origin top-left",
+    "coordinate_scope": "historical_figure_page",
+    "physical_measurements_allowed": false,
+    "sign_centroids_available": false
+  }
+]
