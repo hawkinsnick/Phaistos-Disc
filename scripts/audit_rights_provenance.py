@@ -6,7 +6,8 @@ sources=json.loads((R/"sources/sources.json").read_text())
 for s in sources:
     sid=s.get("source_id","<missing>")
     if not s.get("record_license"): errors.append(f"{sid}: missing record_license")
-    if not (s.get("citation") or s.get("title") or s.get("publication_title")): errors.append(f"{sid}: missing citation/title")
+    if not (s.get("citation") or s.get("title") or s.get("publication_title") or s.get("search_index_title") or s.get("url")): errors.append(f"{sid}: missing source identification")
+    if s.get("record_license")=="NOASSERTION" and s.get("acquisition_status")=="authenticated_bytes": errors.append(f"{sid}: authenticated bytes lack a rights determination")
     for key in ("subset_path","license_path","manifest_path"):
         if s.get(key) and not (R/s[key]).is_file(): errors.append(f"{sid}: missing {key} {s[key]}")
 exports=json.loads((R/"exports/aegean-interop.json").read_text())
