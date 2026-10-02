@@ -1,7 +1,7 @@
 """Typed source coverage and lineage, with absence of review preserved."""
 import hashlib,json,pathlib
 R=pathlib.Path(__file__).resolve().parents[1]
-ROLES={'unicode17':'encoding_standard','unicode-proposal2006':'encoding_proposal','heraklion-catalogue':'museum_metadata_pending','heraklion-exhibit':'museum_metadata_pending','evans1909':'native_graphical_baseline','hmu-codification':'limited_competing_assertions','olivier1975':'bounded_photographic_comparison','pernier1908':'historical_identity_and_context'}
+ROLES={'unicode17':'encoding_standard','unicode-proposal2006':'encoding_proposal','heraklion-catalogue':'institutional_object_metadata','heraklion-exhibit':'institutional_exhibit_assertions','evans1909':'native_graphical_baseline','hmu-codification':'limited_competing_assertions','olivier1975':'bounded_photographic_comparison','pernier1908':'historical_identity_and_context'}
 def calculate(root=R):
     load=lambda p:json.loads((root/p).read_text())
     sources=load('sources/sources.json');ids=[s['source_id'] for s in sources]

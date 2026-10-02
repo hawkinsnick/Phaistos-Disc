@@ -1,6 +1,6 @@
 {
   "format": "source-coverage-v1",
-  "source_registry_sha256": "942ea067831f90a6cd72c7f35bc668974a2b63e1de67d2759f74bf27456c5924",
+  "source_registry_sha256": "6b53c8556e2a5bcd124e0ab1748b7b7012080b2b0521e63cf8818e46898a1b7d",
   "physical_objects": 1,
   "sources": [
     {
@@ -18,9 +18,9 @@
     },
     {
       "source_id": "heraklion-catalogue",
-      "role": "museum_metadata_pending",
+      "role": "institutional_object_metadata",
       "record_license": "NOASSERTION",
-      "recorded_access_status": "blocked_http_502",
+      "recorded_access_status": "verified_current_web_2026-10-02",
       "full_source_sha256": null,
       "coverage_units": null,
       "complete_object_autopsy": false,
@@ -28,9 +28,9 @@
     },
     {
       "source_id": "heraklion-exhibit",
-      "role": "museum_metadata_pending",
+      "role": "institutional_exhibit_assertions",
       "record_license": "NOASSERTION",
-      "recorded_access_status": "blocked_http_502",
+      "recorded_access_status": "verified_current_web_2026-10-02",
       "full_source_sha256": null,
       "coverage_units": null,
       "complete_object_autopsy": false,
