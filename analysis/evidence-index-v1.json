@@ -30,8 +30,8 @@
     },
     {
       "path": "sources/sources.json",
-      "sha256": "942ea067831f90a6cd72c7f35bc668974a2b63e1de67d2759f74bf27456c5924",
-      "bytes": 6394,
+      "sha256": "6b53c8556e2a5bcd124e0ab1748b7b7012080b2b0521e63cf8818e46898a1b7d",
+      "bytes": 6560,
       "category": "sources",
       "summary": {}
     },
@@ -211,8 +211,8 @@
     },
     {
       "path": "analysis/source-coverage-v1.json",
-      "sha256": "381188f9af2f6342b60663950dc4e2c379b3925256a582165f056057cc7de171",
-      "bytes": 4174,
+      "sha256": "e64c4458a02050585108b037a17f89f3e806a00e9b0d03d5f398bb8edabd012c",
+      "bytes": 4219,
       "category": "analysis",
       "summary": {
         "format": "source-coverage-v1"
@@ -220,8 +220,8 @@
     },
     {
       "path": "scripts/source_coverage.py",
-      "sha256": "98c9c518993fef7db43ce238cc29900bf8c9d662c8574510f65e805a77a4b317",
-      "bytes": 2861,
+      "sha256": "cf66bbd3e64071a6fe9857f85bbb9ea95cd0fffd91e33d9a72063f4ea63fd3b0",
+      "bytes": 2876,
       "category": "scripts",
       "summary": {}
     },
@@ -269,7 +269,7 @@
     },
     {
       "path": "analysis/acceptance-2.0.json",
-      "sha256": "aa6f1db547d5a90a04a8bc4ed8a79334a7db4fe152fd757817ef32878ad85b19",
+      "sha256": "fdef5433b2845def2e3acf84bd219379a8912c7ca5dc4f4c8d5acec1fd2b02cc",
       "bytes": 3203,
       "category": "analysis",
       "summary": {
@@ -340,7 +340,7 @@
     },
     {
       "path": "analysis/edition-workbench-v1.json",
-      "sha256": "0b584940b4772e324d298003c8c357dc0a563318877897fc2c74e9d53dd91e9f",
+      "sha256": "5a1bc2e9b8a4a22a759bc2c7c3838f2173f966df81fc5fddd74210e5185302cc",
       "bytes": 590671,
       "category": "analysis",
       "summary": {
@@ -402,6 +402,20 @@
       "sha256": "acad59395f7ff8b4353bc6eea69dfec6d8e6b342e08df87617c897dcd27d8a1f",
       "bytes": 732,
       "category": ".github",
+      "summary": {}
+    },
+    {
+      "path": "research/heraklion-museum-authority-v1.json",
+      "sha256": "15e125ad01a6a7a669d84a9751c0e8d9f363acf25488db88ea4d4f91f1bbe72f",
+      "bytes": 1054,
+      "category": "research",
+      "summary": {}
+    },
+    {
+      "path": "scripts/test_source_coverage.py",
+      "sha256": "edc48544e58dc7f9e4ac37f0ad40ebfd9ad2f220360abc667775b08dec41b888",
+      "bytes": 1578,
+      "category": "scripts",
       "summary": {}
     }
   ],

@@ -6,6 +6,13 @@ R=Path(__file__).resolve().parents[2]; O=R/"ai-skill"/"generated"; O.mkdir(paren
 sha=os.environ.get("SOURCE_COMMIT") or subprocess.check_output(["git","rev-parse","HEAD"],cwd=R,text=True).strip()
 c=[("current_status","analysis/current-status.json"),("acceptance","analysis/acceptance-2.0.json"),("disc","corpus/disc.json"),("sources","sources/sources.json"),("audit","exports/audit.json"),("coverage","data/coverage.json"),("claims","release/CLAIM-REGISTRY.csv"),("corpus_json","exports/corpus.json"),("corpus_jsonl","exports/corpus.jsonl"),("rights_matrix","DATA-LICENSE-MATRIX.md"),("rights","docs/RIGHTS.md"),("rights_and_licensing","docs/RIGHTS-AND-LICENSING.md"),("notice","NOTICE"),("third_party","THIRD-PARTY-NOTICES.md")]
 a=[]
+profile=json.loads((R/"ai-skill"/"references"/"authority-profile.json").read_text())
+indexed={rel for _,rel in c}
+for authority in profile["required_authorities"]:
+ if authority["path"] not in indexed:
+  c.append((authority["role"],authority["path"]));indexed.add(authority["path"])
+ if authority.get("required") and not (R/authority["path"]).is_file():
+  raise ValueError("missing required authority: "+authority["path"])
 for role,rel in c:
  p=R/rel
  if p.is_file():
