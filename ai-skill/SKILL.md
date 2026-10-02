@@ -1,7 +1,7 @@
 ---
 name: phaistos-disc-research
 description: Evidence-first AI research skill for the Phaistos Disc corpus.
-version: 0.1.0
+version: 0.3.1
 ---
 
 # Phaistos Disc Research Skill
@@ -26,3 +26,10 @@ Give the direct answer, followed as relevant by Evidence; Evidentiary status; Un
 
 ## Synchronization
 Read `ai-skill/generated/source-state.json` before substantive work. It records the corpus commit from which the AI-facing package was synchronized. Generated files are rebuildable views; canonical corpus files govern if a discrepancy is found.
+
+## Academic-scrutiny gates
+- One physical object with two faces is not two independent documents
+- Graphical groups are not assumed to be words
+- No phonetic values or decipherment are established
+- Final 2.0 and independent human epigraphic review remain blocked
+- Historical and project slot counts must remain distinct where they disagree
