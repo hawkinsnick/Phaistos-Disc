@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "corpus": "Phaistos-Disc",
+  "required_authorities": [
+    {
+      "role": "current_status",
+      "path": "analysis/current-status.json",
+      "required": true
+    },
+    {
+      "role": "acceptance",
+      "path": "analysis/acceptance-2.0.json",
+      "required": true
+    },
+    {
+      "role": "corpus",
+      "path": "corpus/disc.json",
+      "required": true
+    },
+    {
+      "role": "sources",
+      "path": "sources/sources.json",
+      "required": true
+    }
+  ],
+  "behavioral_gates": [
+    "One physical object with two faces is not two independent documents",
+    "Graphical groups are not assumed to be words",
+    "No phonetic values or decipherment are established",
+    "Final 2.0 and independent human epigraphic review remain blocked",
+    "Historical and project slot counts must remain distinct where they disagree"
+  ]
+}
