@@ -10,5 +10,5 @@ for role,rel in c:
  p=R/rel
  if p.is_file():
   b=p.read_bytes();a.append({"role":role,"path":rel,"sha256":hashlib.sha256(b).hexdigest(),"bytes":len(b)})
-d={"schema_version":"0.3.1","skill_version":"0.3.1","source_commit":sha,"canonical_repository":True,"generated_at_utc":datetime.now(timezone.utc).replace(microsecond=0).isoformat(),"contract":{"corpus_is_authoritative":True,"missing_means_unknown":True,"cross_corpus_equivalence_requires_explicit_evidence":True,"preserve_uncertainty":True,"preserve_source_independence":True,"preserve_rights":True},"artifacts":a}
-(O/"research-bundle-index.json").write_text(json.dumps(d,indent=2)+"\n");(O/"source-state.json").write_text(json.dumps({"schema_version":"1.0","source_commit":sha,"skill_version":"0.3.1","bundle_index":"ai-skill/generated/research-bundle-index.json"},indent=2)+"\n")
+d={"schema_version":"0.3.2","skill_version":"0.3.2","source_commit":sha,"canonical_repository":True,"generated_at_utc":datetime.now(timezone.utc).replace(microsecond=0).isoformat(),"contract":{"corpus_is_authoritative":True,"missing_means_unknown":True,"cross_corpus_equivalence_requires_explicit_evidence":True,"preserve_uncertainty":True,"preserve_source_independence":True,"preserve_rights":True},"artifacts":a}
+(O/"research-bundle-index.json").write_text(json.dumps(d,indent=2)+"\n");(O/"source-state.json").write_text(json.dumps({"schema_version":"1.0","source_commit":sha,"skill_version":"0.3.2","bundle_index":"ai-skill/generated/research-bundle-index.json"},indent=2)+"\n")
