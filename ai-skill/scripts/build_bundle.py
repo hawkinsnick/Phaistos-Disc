@@ -4,7 +4,7 @@ from datetime import datetime,timezone
 from pathlib import Path
 R=Path(__file__).resolve().parents[2]; O=R/"ai-skill"/"generated"; O.mkdir(parents=True,exist_ok=True)
 sha=os.environ.get("SOURCE_COMMIT") or subprocess.check_output(["git","rev-parse","HEAD"],cwd=R,text=True).strip()
-c=[("current_status","analysis/current-status.json"),("acceptance","analysis/acceptance-2.0.json"),("disc","corpus/disc.json"),("sources","sources/sources.json"),("audit","exports/audit.json"),("coverage","data/coverage.json"),("claims","release/CLAIM-REGISTRY.csv"),("corpus_json","exports/corpus.json"),("corpus_jsonl","exports/corpus.jsonl"),("rights_matrix","DATA-LICENSE-MATRIX.md"),("rights","docs/RIGHTS.md"),("rights_and_licensing","docs/RIGHTS-AND-LICENSING.md"),("notice","NOTICE"),("third_party","THIRD-PARTY-NOTICES.md")]
+c=[("current_status","analysis/current-status.json"),("acceptance","analysis/acceptance-2.0.json"),("disc","corpus/disc.json"),("sources","sources/sources.json"),("audit","exports/audit.json"),("coverage","data/coverage.json"),("claims","release/CLAIM-REGISTRY.csv"),("corpus_json","exports/corpus.json"),("corpus_jsonl","exports/corpus.jsonl"),("rights_matrix","DATA-LICENSE-MATRIX.md"),("rights","docs/RIGHTS.md"),("rights_and_licensing","docs/RIGHTS-AND-LICENSING.md"),("notice","NOTICE"),("third_party","THIRD-PARTY-NOTICES.md"),("museum_authority","research/heraklion-museum-authority-v1.json")]
 a=[]
 for role,rel in c:
  p=R/rel
