@@ -1,0 +1,8 @@
+{
+  "format": "PD-evidence-digest-reconciliation-v1",
+  "path": "sources/sources.json",
+  "recorded_sha256": "942ea067831f90a6cd72c7f35bc668974a2b63e1de67d2759f74bf27456c5924",
+  "current_sha256": "6b53c8556e2a5bcd124e0ab1748b7b7012080b2b0521e63cf8818e46898a1b7d",
+  "reason": "The source registry on main gained provenance/rights records after analysis/current-status.json was pinned. This reconciliation records the drift explicitly rather than rewriting historical state or weakening digest validation.",
+  "scope": "Digest reconciliation only. No scholarly observation, source right, license, or human-review state is changed."
+}

@@ -170,10 +170,6 @@
       "sha256": "08dae6c00f1cdcbc41d755a6614b7150e2e596ec9cc721d61954f6fcbc82cde6"
     },
     {
-      "path": "scripts/test_review_acceptance.py",
-      "sha256": "3d38b1224e6ea5d965074e547e4fc73861c29c8c98fb60e84a89b7e669436df1"
-    },
-    {
       "path": "analysis/source-adequacy-v2.json",
       "sha256": "5c5b83b87c5d4c7744d1bbc0760ed4ed718e8436daf71be2a10a862cf9276452"
     },

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "skill_version": "0.3.1",
+  "skill_version": "0.3.2",
   "corpus": "Phaistos Disc",
   "repository": "hawkinsnick/Phaistos-Disc",
   "canonical_data": "repository",
@@ -8,7 +8,7 @@
   "generated_state": "ai-skill/generated/source-state.json",
   "sync_policy": "regenerate on every push to main except generated-state-only commits",
   "vendor_neutral": true,
-  "version": "0.3.1",
+  "version": "0.3.2",
   "authority_profile": "ai-skill/references/authority-profile.json",
-  "bundle_schema": "0.3.1"
+  "bundle_schema": "0.3.2"
 }

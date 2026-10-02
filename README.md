@@ -38,6 +38,8 @@ Open `workbench/index.html` directly in a browser for face/group navigation and 
 python -m pip install -r requirements-validation.txt
 python scripts/validate_current_state.py
 python scripts/test_foundation.py
+python scripts/audit_rights_provenance.py
+python scripts/reproduce_all.py
 python scripts/build_corpus.py
 ```
 
@@ -75,7 +77,7 @@ LinearA, LinearB, Cypro-Minoan, Cretan hieroglyphic and Phaistos Disc share prov
 
 Original code and project-created transcription records: MIT. Unicode-derived records: Unicode-3.0 (`licenses/Unicode-3.0.txt`). Historical Evans pages: public-domain edition, with author, publication and digitization attribution in `sources/sources.json`. These rights do not license modern museum photographs or scholarly editions. See `CITATION.cff` and cite the original evidence used.
 
-See `releases/` for milestone-specific scope and acceptance records. The next evidence gate is independent epigraphic review; see `reviews/independent-review-brief.md`. The photograph comparison and source-exemplar crosswalk are under `reviews/` and `signs/`.
+See `releases/` for milestone-specific scope and acceptance records. The next evidence gate is independent epigraphic review; see `reviews/independent-review-brief.md`. Engineering work up to that boundary is tracked in `research/pre-epigrapher-ceiling.md`, with a zero-code reviewer handoff in `reviews/INDEPENDENT-REVIEW-HANDOFF.md` and evidence-preserving ingestion in `research/review-ingestion-runbook.md`. The photograph comparison and source-exemplar crosswalk are under `reviews/` and `signs/`.
 
 1.2.1 aligns the shared family evidence report with the checked companion milestones, including the first two-object CHIC source-access pilot. Corpus readings, photographic audit and sensitivity results retain their prior bytes and scope.
 
