@@ -16,18 +16,20 @@
     "source_id": "heraklion-catalogue",
     "url": "https://ca.heraklionmuseum.gr/ca/pawtucket/index.php/Detail/objects/336",
     "retrieval_attempt": "2026-09-30",
-    "acquisition_status": "blocked_http_502",
+    "acquisition_status": "verified_current_web_2026-10-02",
     "search_index_title": "The Phaistos Disc. Clay disc with impressed pictorial signs in a spiral pattern [Π-Ν1358]",
     "record_license": "NOASSERTION",
-    "scope": "Primary publisher search metadata only; full catalogue record not checked. No images redistributed."
+    "scope": "Institutional object identity, provenance, dimensions, date and 241-sign count; images not redistributed.",
+    "last_verified": "2026-10-02"
   },
   {
     "source_id": "heraklion-exhibit",
     "url": "https://www.heraklionmuseum.gr/en/exhibit/the-phaistos-disc/",
     "retrieval_attempt": "2026-09-30",
-    "acquisition_status": "blocked_http_502",
+    "acquisition_status": "verified_current_web_2026-10-02",
     "record_license": "NOASSERTION",
-    "scope": "Full exhibit page unavailable; not a checked transcription witness."
+    "scope": "Institutional exhibit metadata, 241-sign and 61-group assertions, direction statement; interpretive wording remains attributed.",
+    "last_verified": "2026-10-02"
   },
   {
     "source_id": "evans1909",
