@@ -17,6 +17,10 @@ jobs:
       - run: python -m pip install -r requirements-validation.txt
       - run: python scripts/validate_current_state.py
       - run: python scripts/test_foundation.py
+      - name: Audit rights and provenance declarations
+        run: python scripts/audit_rights_provenance.py
+      - name: Replay deterministic research stack
+        run: python scripts/reproduce_all.py
       - name: Run available milestone checks
         run: |
           for script in test_analysis.py test_exports.py test_release.py test_witness_audit.py test_apparatus_sensitivity.py validate_family_readiness.py test_occurrence_audit.py test_source_coverage.py test_research_suite.py test_review_packet.py test_acceptance_2.py test_review_acceptance.py; do
