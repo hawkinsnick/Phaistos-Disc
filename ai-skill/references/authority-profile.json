@@ -21,6 +21,11 @@
       "role": "sources",
       "path": "sources/sources.json",
       "required": true
+    },
+    {
+      "role": "museum_authority",
+      "path": "research/heraklion-museum-authority-v1.json",
+      "required": true
     }
   ],
   "behavioral_gates": [
@@ -28,6 +33,7 @@
     "Graphical groups are not assumed to be words",
     "No phonetic values or decipherment are established",
     "Final 2.0 and independent human epigraphic review remain blocked",
-    "Historical and project slot counts must remain distinct where they disagree"
+    "Historical and project slot counts must remain distinct where they disagree",
+    "Preserve the Heraklion Museum 241-sign assertion separately from the project's 242-slot encoding with one unresolved slot; do not silently harmonize count conventions."
   ]
 }
