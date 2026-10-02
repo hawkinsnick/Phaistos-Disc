@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
 """Acquire pinned sources; modern publisher pages stay in the private cache."""
-import argparse,concurrent.futures,hashlib,json,pathlib,subprocess,time,urllib.request
+import argparse,concurrent.futures,hashlib,json,pathlib,subprocess,time,urllib.error,urllib.request
 R=pathlib.Path(__file__).resolve().parents[1]
-def acquire(url,dest,digest,size):
+def acquire(url,dest,digest,size,max_attempts=6):
  if not dest.exists():
-  for attempt in range(3):
+  for attempt in range(max_attempts):
    try:
-    request=urllib.request.Request(url,headers={'User-Agent':'Phaistos-Disc-source-verification/1.1'})
-    with urllib.request.urlopen(request,timeout=45) as response:data=response.read(32*1024*1024+1)
+    request=urllib.request.Request(url,headers={'User-Agent':'Phaistos-Disc-source-verification/1.2'})
+    with urllib.request.urlopen(request,timeout=60) as response:data=response.read(32*1024*1024+1)
     if len(data)>32*1024*1024:raise ValueError('source exceeds maximum')
     if len(data)!=size or hashlib.sha256(data).hexdigest()!=digest:raise ValueError('source bytes differ; pins cannot update automatically')
     dest.write_bytes(data);break
-   except Exception:
-    if attempt==2:raise
-    time.sleep(2)
+   except ValueError:
+    raise
+   except (urllib.error.HTTPError,urllib.error.URLError,TimeoutError,OSError):
+    if attempt==max_attempts-1:raise
+    time.sleep(min(60,2**(attempt+1)))
  if dest.stat().st_size!=size or hashlib.sha256(dest.read_bytes()).hexdigest()!=digest:raise ValueError('cached source differs')
  return dest
 def run(cache,render=False):
