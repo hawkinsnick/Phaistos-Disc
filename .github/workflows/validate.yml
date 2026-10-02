@@ -19,6 +19,8 @@ jobs:
       - run: python scripts/test_foundation.py
       - name: Audit rights and provenance declarations
         run: python scripts/audit_rights_provenance.py
+      - name: Test rights audit semantics
+        run: python scripts/test_rights_provenance.py
       - name: Replay deterministic research stack
         run: python scripts/reproduce_all.py
       - name: Run available milestone checks
