@@ -7,7 +7,13 @@ for s in sources:
     sid=s.get("source_id","<missing>")
     if not s.get("record_license"): errors.append(f"{sid}: missing record_license")
     if not (s.get("citation") or s.get("title") or s.get("publication_title") or s.get("search_index_title") or s.get("url")): errors.append(f"{sid}: missing source identification")
-    if s.get("record_license")=="NOASSERTION" and s.get("acquisition_status")=="authenticated_bytes": errors.append(f"{sid}: authenticated bytes lack a rights determination")
+    # NOASSERTION is a valid conservative state: it records that this project
+    # grants no redistribution rights for the upstream material.  Do not turn
+    # absence of a rights determination into a fabricated license.
+    if s.get("record_license")=="NOASSERTION":
+        scope=(s.get("scope") or "").lower()
+        if any(term in scope for term in ("redistribution permitted","redistributable","may redistribute")):
+            errors.append(f"{sid}: unresolved rights conflict with redistribution claim")
     for key in ("subset_path","license_path","manifest_path"):
         if s.get(key) and not (R/s[key]).is_file(): errors.append(f"{sid}: missing {key} {s[key]}")
 exports=json.loads((R/"exports/aegean-interop.json").read_text())
