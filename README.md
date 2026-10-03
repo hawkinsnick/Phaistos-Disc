@@ -73,7 +73,7 @@ LinearA, LinearB, Cypro-Minoan, Cretan hieroglyphic and Phaistos Disc share prov
 
 ## Rights and citation
 
-Original code and project-created transcription records: MIT. Unicode-derived records: Unicode-3.0 (`licenses/Unicode-3.0.txt`). Historical Evans pages: public-domain edition, with author, publication and digitization attribution in `sources/sources.json`. These rights do not license modern museum photographs or scholarly editions. See `CITATION.cff` and cite the original evidence used.
+Current project-original code: PolyForm Noncommercial 1.0.0. Current project-created copyrightable corpus content/documentation: CC BY-NC 4.0. Unicode-derived records retain Unicode-3.0 (`licenses/Unicode-3.0.txt`). Historical Evans pages remain public-domain edition material, with author, publication and digitization attribution in `sources/sources.json`. Earlier grants, if any, remain effective for material already distributed under them. These rights do not license modern museum photographs or scholarly editions. See `CITATION.cff` and cite the original evidence used.
 
 See `releases/` for milestone-specific scope and acceptance records. The next evidence gate is independent epigraphic review; see `reviews/independent-review-brief.md`. The photograph comparison and source-exemplar crosswalk are under `reviews/` and `signs/`.
 
