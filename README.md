@@ -108,3 +108,8 @@ Download the research workbench ZIP, extract it, and open [workbench/evidence.ht
 ### Research workbench 1.1
 
 Download the [research workbench 1.1 package](https://github.com/hawkinsnick/Phaistos-Disc/releases/tag/research-workbench-v1.1.0), extract it, and open `workbench/evidence.html`. It adds snapshot-bound inspection collections and includes the immutable release correction tracker. The Disc explorer also presents readable scenario comparisons. This engineering release grants no scientific acceptance.
+
+
+## Fleet admission
+
+This corpus participates in the Combined Corpus Research AI fleet. Fleet admission requires the repository's component-specific licensing architecture, its individual `ai-skill` research contract and generated bundle, explicit master-registry membership, and passing member/master validation. Third-party material retains its upstream rights.
