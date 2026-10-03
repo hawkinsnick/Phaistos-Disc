@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.3.1",
+  "skill_version": "0.3.1",
+  "source_commit": "86a3c1eb24230495c4c33d31c5b3f652a47a1f31",
+  "canonical_repository": true,
+  "generated_at_utc": "2026-10-03T17:39:55+00:00",
+  "contract": {
+    "corpus_is_authoritative": true,
+    "missing_means_unknown": true,
+    "cross_corpus_equivalence_requires_explicit_evidence": true,
+    "preserve_uncertainty": true,
+    "preserve_source_independence": true,
+    "preserve_rights": true
+  },
+  "artifacts": [
+    {
+      "role": "current_status",
+      "path": "analysis/current-status.json",
+      "sha256": "f1b046bd4f74de049c39a031f455552192cd202ad763291d36d15533aa162b09",
+      "bytes": 9431
+    },
+    {
+      "role": "acceptance",
+      "path": "analysis/acceptance-2.0.json",
+      "sha256": "29e83a1c403e6609a50db7b2555c4a9fb74ae2ddac897f7567ea69c32d4ccf9d",
+      "bytes": 3203
+    },
+    {
+      "role": "disc",
+      "path": "corpus/disc.json",
+      "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "bytes": 63422
+    },
+    {
+      "role": "sources",
+      "path": "sources/sources.json",
+      "sha256": "ca56bc3067ef3b0967270a3d2c153c92db3306e413e7280549c71937801c4ad3",
+      "bytes": 6651
+    },
+    {
+      "role": "notice",
+      "path": "NOTICE",
+      "sha256": "cc5120da762ed398aac92590de299e5f07114af48ec2766259df03dc81c98cdb",
+      "bytes": 918
+    },
+    {
+      "role": "heraklion_museum_authority",
+      "path": "research/heraklion-museum-authority-v1.json",
+      "sha256": "15e125ad01a6a7a669d84a9751c0e8d9f363acf25488db88ea4d4f91f1bbe72f",
+      "bytes": 1054
+    }
+  ]
+}
