@@ -151,7 +151,7 @@
     },
     {
       "path": "analysis/acceptance-2.0.json",
-      "sha256": "aa6f1db547d5a90a04a8bc4ed8a79334a7db4fe152fd757817ef32878ad85b19"
+      "sha256": "29e83a1c403e6609a50db7b2555c4a9fb74ae2ddac897f7567ea69c32d4ccf9d"
     },
     {
       "path": "scripts/acceptance_2.py",
