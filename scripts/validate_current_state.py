@@ -110,7 +110,7 @@ def validate(root=R):
         require(load('analysis/descriptive-v1.json')==analyze(root),'descriptive replay drift')
     if (root/'exports/aegean-interop.json').exists():
         records=load('exports/aegean-interop.json');require(len(records)==242,'export coverage')
-        for record in records:v.validate(record);require(record['rights']['record_license']=='MIT' and len(record['rights']['third_party_material'])==2,'export rights lost')
+        for record in records:v.validate(record);require(record['rights']['record_license']=='CC-BY-NC-4.0' and len(record['rights']['third_party_material'])==2,'export rights lost')
         from export_corpus import export_records
         require(records==export_records(root),'export/native mismatch')
     if (root/'research/family-readiness-v1.json').exists():
