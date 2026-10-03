@@ -80,7 +80,9 @@ def validate(root=R):
         counts['project_checked_photographic_witnesses']=1
     require(state['committed_evidence_counts']==counts,'evidence count drift')
     require(state['scientific_results']['decipherment_claim_allowed'] is False and state['scientific_results']['external_peer_review_completed']==recorded_review['external_review_accepted'],'scientific claim promotion')
-    for item in state['evidence']:require(sha(item['path'])==item['sha256'],'evidence digest drift: '+item['path'])
+    for item in state['evidence']:
+        actual=sha(item['path'])
+        require(actual==item['sha256'],'evidence digest drift: '+item['path']+' expected='+item['sha256']+' actual='+actual)
     family=load('research/family-compatibility-v1.json');suite=load('research/family-compatibility-suite-v1.json')
     require(family['contract_version']==suite['required_contract_version']==suite['suite_version'] and family['contract_version'] in ['1.1.0','1.2.0'],'family version')
     require(set(family['members'])==set(suite['required_members'])==MEMBERS and len(family['members'])==5,'family membership')
