@@ -33,3 +33,7 @@ Read `ai-skill/generated/source-state.json` before substantive work. It records 
 - No phonetic values or decipherment are established
 - Final 2.0 and independent human epigraphic review remain blocked
 - Historical and project slot counts must remain distinct where they disagree
+
+
+## Offline corpus browser
+Run `python scripts/build_corpus_browser.py` to generate `workbench/corpus-browser.html`. The browser is self-contained and searches only the explicitly allowlisted files in `research/browser-sources.json`. Adding a file to the browser requires a rights/provenance check; never recursively ingest repository data or restricted upstream material. Browser display does not establish decipherment, source independence, or expert validation.
