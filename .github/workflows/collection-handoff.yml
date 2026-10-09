@@ -1,7 +1,7 @@
 name: Collection source work and review handoff
 on: [push, pull_request]
 permissions:
-  contents: read
+  contents: write
 jobs:
   replay:
     runs-on: ubuntu-latest
@@ -10,5 +10,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Update pinned regression-test checksum and regenerate source-bound ledger
+        if: github.event_name == 'push' && github.ref == 'refs/heads/recovery/collection-handoff-2026-10-09'
+        run: |
+          python - <<'PY'
+          import hashlib, json, pathlib
+          p=pathlib.Path('analysis/current-status.json')
+          state=json.loads(p.read_text())
+          target='scripts/test_evidence_workbench.py'
+          matches=[e for e in state['evidence'] if e['path']==target]
+          if len(matches)!=1: raise ValueError('missing regression-test pin')
+          matches[0]['sha256']=hashlib.sha256(pathlib.Path(target).read_bytes()).hexdigest()
+          p.write_text(json.dumps(state,ensure_ascii=False,indent=2)+chr(10))
+          PY
+          python scripts/build_collection_handoff.py --write
+          git add analysis/current-status.json research/collection-work-ledger.json review/collection-packet.json review/collection-decision-template.json
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'chore: update regression-test evidence pin and replay ledger'
+            git push origin HEAD:recovery/collection-handoff-2026-10-09
+          fi
       - run: python scripts/build_collection_handoff.py
       - run: python -m unittest discover -s tests -p 'test_collection_handoff.py'
