@@ -195,7 +195,7 @@
     },
     {
       "path": "scripts/evidence_workbench.py",
-      "sha256": "682a350d9457b1e88ff3a3c4d1263880e4fdf98e1012578580b7d2b9d877c916"
+      "sha256": "9fefde8c7f3dac7b555250e1ca1688910599e6744d66bdba4ab0a8210f535c89"
     },
     {
       "path": "scripts/test_evidence_workbench.py",
