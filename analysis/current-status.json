@@ -179,15 +179,15 @@
     },
     {
       "path": "analysis/evidence-index-v1.json",
-      "sha256": "560103439243867ea8148baec076c5edeb72aaf9e17b046c02c0a473486a6600"
+      "sha256": "a845f3e91833f2b824e5f578b22393da8d74bac2b6cb9491fc45f6846b08ee83"
     },
     {
       "path": "analysis/workbench-acceptance-v1.json",
-      "sha256": "449340bcf85c1e3b34c0995a6a9a2e2a9deaaf30026b2b5090efe5ca6d24be03"
+      "sha256": "e2b618c5530f4c3c0f3337fade51a4d76d0e83083e18a37b1fe52105877cc10a"
     },
     {
       "path": "workbench/evidence.html",
-      "sha256": "0a51edcba889d4ea8be2dc56bf29ddb3779dd3eb5497d8f5bbefedb82aa6c426"
+      "sha256": "f094a0f0676d19ae5ab744ee776219799fd9c34db56435ebcde51b584ed0d469"
     },
     {
       "path": "research/workbench-milestone-v1.json",
