@@ -31,7 +31,11 @@ def acceptance(root=R):
  if spec['milestone']!='research-workbench' or spec['version']!='1.1.0' or spec['expert_review_granted'] is not False or spec['native_changes_applied'] is not False or spec['human_review_required_for_this_engineering_milestone'] is not False:raise ValueError('engineering milestone scope drift')
  if not (root/'research/workbench-guide.md').is_file():raise ValueError('missing readable review guide')
  index=calculate(root)
- if json.loads((root/'analysis/evidence-index-v1.json').read_text())!=index:raise ValueError('index replay drift')
+ if json.loads((root/'analysis/evidence-index-v1.json').read_text())!=index:
+  stored=json.loads((root/'analysis/evidence-index-v1.json').read_text())
+  previous={e['path']:e['sha256'] for e in stored['evidence']}
+  changed=[e['path'] for e in index['evidence'] if previous.get(e['path'])!=e['sha256']]
+  raise ValueError('index replay drift; changed evidence: '+', '.join(changed))
  if (root/'workbench/evidence.html').read_text()!=html(root):raise ValueError('offline viewer replay drift')
  edition=None
  if index['project']=='Phaistos-Disc':
