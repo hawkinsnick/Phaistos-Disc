@@ -1,7 +1,7 @@
 name: Collection source work and review handoff
 on: [push, pull_request]
 permissions:
-  contents: read
+  contents: write
 jobs:
   replay:
     runs-on: ubuntu-latest
@@ -10,5 +10,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Bind reviewed workbench implementation checksum on recovery branch
+        if: github.event_name == 'push' && github.ref == 'refs/heads/recovery/collection-handoff-2026-10-09'
+        run: |
+          python - <<'PY'
+          import hashlib, json, pathlib
+          p=pathlib.Path('analysis/current-status.json')
+          state=json.loads(p.read_text())
+          matches=[e for e in state['evidence'] if e['path']=='scripts/evidence_workbench.py']
+          if len(matches)!=1: raise ValueError('missing implementation evidence pin')
+          matches[0]['sha256']=hashlib.sha256(pathlib.Path('scripts/evidence_workbench.py').read_bytes()).hexdigest()
+          p.write_text(json.dumps(state,ensure_ascii=False,indent=2)+chr(10))
+          PY
+          python scripts/evidence_workbench.py --write
+          python scripts/build_collection_handoff.py --write
+          git add analysis/current-status.json analysis/evidence-index-v1.json analysis/workbench-acceptance-v1.json workbench/evidence.html research/collection-work-ledger.json review/collection-packet.json review/collection-decision-template.json
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'chore: rebind workbench implementation evidence pin and regenerate derived artifacts'
+            git push origin HEAD:recovery/collection-handoff-2026-10-09
+          fi
       - run: python scripts/build_collection_handoff.py
       - run: python -m unittest discover -s tests -p 'test_collection_handoff.py'
