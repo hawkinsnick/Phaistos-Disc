@@ -10,7 +10,7 @@ def calculate(root=R):
   p=(root/e['path']).resolve()
   if not p.is_relative_to(root.resolve()) or not p.is_file():raise ValueError('invalid evidence path')
   actual=digest(p)
-  if actual!=e['sha256']:raise ValueError('evidence pin mismatch: '+e['path']+' (expected '+e['sha256']+', actual '+actual+')')
+  if actual!=e['sha256']:raise ValueError('evidence pin mismatch: '+e['path']+' (expected '+e['sha256']+', actual '+actual+'); regenerate evidence pins only after independently verifying the changed source')
   value=json.loads(p.read_text()) if p.suffix=='.json' else None
   summary={k:value[k] for k in ['format','scope','boundary','status','source_id','record_license','acquisition_status','interpretation'] if isinstance(value,dict) and k in value}
   rows.append({'path':e['path'],'sha256':actual,'bytes':p.stat().st_size,'category':e['path'].split('/')[0],'summary':summary})
