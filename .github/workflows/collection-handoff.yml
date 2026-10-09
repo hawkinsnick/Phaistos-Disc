@@ -18,7 +18,7 @@ jobs:
           import json, pathlib, sys
           sys.path.insert(0, 'scripts')
           from edition_workbench import calculate
-          pathlib.Path('analysis/edition-workbench-v1.json').write_text(json.dumps(calculate(), ensure_ascii=False, indent=2)+'\\n')
+          pathlib.Path('analysis/edition-workbench-v1.json').write_text(json.dumps(calculate(), ensure_ascii=False, indent=2) + chr(10))
           PY
           python - <<'PY'
           import hashlib, json, pathlib
@@ -29,7 +29,7 @@ jobs:
           matches=[e for e in state['evidence'] if e['path']=='analysis/edition-workbench-v1.json']
           if len(matches)!=1: raise ValueError('expected exactly one generated edition evidence pin')
           matches[0]['sha256']=pin
-          p.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\\n')
+          p.write_text(json.dumps(state,ensure_ascii=False,indent=2) + chr(10))
           PY
           python scripts/evidence_workbench.py --write
           git add analysis/current-status.json research/collection-work-ledger.json review/collection-packet.json review/collection-decision-template.json analysis/edition-workbench-v1.json analysis/evidence-index-v1.json analysis/workbench-acceptance-v1.json workbench/evidence.html
