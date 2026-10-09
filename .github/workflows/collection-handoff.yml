@@ -14,8 +14,14 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/recovery/collection-handoff-2026-10-09'
         run: |
           python scripts/build_collection_handoff.py --write
+          python - <<'PY'
+          import json, pathlib, sys
+          sys.path.insert(0, 'scripts')
+          from edition_workbench import calculate
+          pathlib.Path('analysis/edition-workbench-v1.json').write_text(json.dumps(calculate(), ensure_ascii=False, indent=2)+'\\n')
+          PY
           python scripts/evidence_workbench.py --write
-          git add research/collection-work-ledger.json review/collection-packet.json review/collection-decision-template.json analysis/evidence-index-v1.json analysis/workbench-acceptance-v1.json workbench/evidence.html
+          git add research/collection-work-ledger.json review/collection-packet.json review/collection-decision-template.json analysis/edition-workbench-v1.json analysis/evidence-index-v1.json analysis/workbench-acceptance-v1.json workbench/evidence.html
           if ! git diff --cached --quiet; then
             git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'chore: replay pinned evidence and collection handoff on recovery branch'
             git push origin HEAD:recovery/collection-handoff-2026-10-09
