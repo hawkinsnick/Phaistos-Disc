@@ -199,7 +199,7 @@
     },
     {
       "path": "scripts/test_evidence_workbench.py",
-      "sha256": "071d52a7996556919876d35182f2fdcc1a4e46a6ad60c97c3508c639b259c1e4"
+      "sha256": "a9742395c2e0523f563570ea4f87416c1119acc2dbd9038d7df3354a4d4a726c"
     },
     {
       "path": "scripts/test_evidence_browser.cjs",
