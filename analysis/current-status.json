@@ -179,15 +179,15 @@
     },
     {
       "path": "analysis/evidence-index-v1.json",
-      "sha256": "560103439243867ea8148baec076c5edeb72aaf9e17b046c02c0a473486a6600"
+      "sha256": "a845f3e91833f2b824e5f578b22393da8d74bac2b6cb9491fc45f6846b08ee83"
     },
     {
       "path": "analysis/workbench-acceptance-v1.json",
-      "sha256": "449340bcf85c1e3b34c0995a6a9a2e2a9deaaf30026b2b5090efe5ca6d24be03"
+      "sha256": "e2b618c5530f4c3c0f3337fade51a4d76d0e83083e18a37b1fe52105877cc10a"
     },
     {
       "path": "workbench/evidence.html",
-      "sha256": "0a51edcba889d4ea8be2dc56bf29ddb3779dd3eb5497d8f5bbefedb82aa6c426"
+      "sha256": "f094a0f0676d19ae5ab744ee776219799fd9c34db56435ebcde51b584ed0d469"
     },
     {
       "path": "research/workbench-milestone-v1.json",
@@ -195,11 +195,11 @@
     },
     {
       "path": "scripts/evidence_workbench.py",
-      "sha256": "682a350d9457b1e88ff3a3c4d1263880e4fdf98e1012578580b7d2b9d877c916"
+      "sha256": "9fefde8c7f3dac7b555250e1ca1688910599e6744d66bdba4ab0a8210f535c89"
     },
     {
       "path": "scripts/test_evidence_workbench.py",
-      "sha256": "071d52a7996556919876d35182f2fdcc1a4e46a6ad60c97c3508c639b259c1e4"
+      "sha256": "a9742395c2e0523f563570ea4f87416c1119acc2dbd9038d7df3354a4d4a726c"
     },
     {
       "path": "scripts/test_evidence_browser.cjs",
@@ -219,7 +219,7 @@
     },
     {
       "path": "analysis/edition-workbench-v1.json",
-      "sha256": "0b584940b4772e324d298003c8c357dc0a563318877897fc2c74e9d53dd91e9f"
+      "sha256": "3721043a85e5e6c61d17e16795ae53a65971e9e0e7ef1f502cec70200115c5f6"
     },
     {
       "path": "reviews/occurrence-review-sheet.tsv",

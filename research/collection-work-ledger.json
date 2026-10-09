@@ -1,0 +1,2046 @@
+{
+  "builder_sha256": "4b61ca559d0817b09e869f6c3ca38ae7478071a0466f89861e71954d1bb499d6",
+  "completion_rule": "Enumeration is a completed work map, not completed collation. Resolve every open task using exact inspected evidence or a documented access/rights dependency; leave scientific adjudication to independent review.",
+  "config_sha256": "04a364c36c5260d05a3033b8a1ec566a28a188e913792a375e9707358f008368",
+  "evidence_fingerprint": "6c612163c26274733c19301904f726ff1ad8323e997cbb97d0ea09ee7ee2539e",
+  "input_sha256": {
+    "analysis/current-status.json": "742ef7366b102dd2a415d00c97a548fcbb5d4d1c31877f0ced27812c532c5c4e",
+    "analysis/source-coverage-v1.json": "f61ea5e31a15ca87f265fb0a12ecb9414ee13a9d9b6c9ce83efc347731b3de0a",
+    "corpus/disc.json": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+    "sources/sources.json": "ca56bc3067ef3b0967270a3d2c153c92db3306e413e7280549c71937801c4ad3"
+  },
+  "native_review_links": [
+    "reviews/review-packet-v1.json",
+    "LICENSING.md"
+  ],
+  "question_definitions": {
+    "language_or_script_classification": "Attribute membership and classification to named authorities; preserve disagreement.",
+    "object_identity": "Confirm the object, face and inventory concordance; distinguish source entries from physical objects.",
+    "reading_and_layout": "Compare the exact edition rows, figures and layout; preserve competing readings with page/line locators.",
+    "reuse_rights": "Check the applicable license or permission for each component; project terms do not override upstream rights.",
+    "source_independence": "Identify shared editorial and photographic lineage; a derivative is not an independent witness.",
+    "uncertainty": "Retain damage, restorations, unreadable signs and competing segmentations; do not silently normalize them."
+  },
+  "record_identity_is_not_object_identity": true,
+  "record_views": [
+    {
+      "enumerated": 1,
+      "representation": "PUBLIC_NATIVE_IDENTIFIERS_AND_POINTERS_ONLY",
+      "unit": "physical_object",
+      "view": "disc-object"
+    },
+    {
+      "enumerated": 61,
+      "representation": "PUBLIC_NATIVE_IDENTIFIERS_AND_POINTERS_ONLY",
+      "unit": "graphical_group",
+      "view": "disc-groups"
+    }
+  ],
+  "records": [
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "",
+      "native_id": "PD-001",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-object:PD-001",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/witnesses/0/source_id",
+        "/groups/0/provenance/source_id",
+        "/groups/1/provenance/source_id",
+        "/groups/2/provenance/source_id",
+        "/groups/3/provenance/source_id",
+        "/groups/4/provenance/source_id",
+        "/groups/5/provenance/source_id",
+        "/groups/6/provenance/source_id",
+        "/groups/7/provenance/source_id",
+        "/groups/8/provenance/source_id",
+        "/groups/9/provenance/source_id",
+        "/groups/10/provenance/source_id",
+        "/groups/11/provenance/source_id",
+        "/groups/12/provenance/source_id",
+        "/groups/13/provenance/source_id",
+        "/groups/14/provenance/source_id",
+        "/groups/15/provenance/source_id",
+        "/groups/16/provenance/source_id",
+        "/groups/17/provenance/source_id",
+        "/groups/18/provenance/source_id",
+        "/groups/19/provenance/source_id",
+        "/groups/20/provenance/source_id",
+        "/groups/21/provenance/source_id",
+        "/groups/22/provenance/source_id",
+        "/groups/23/provenance/source_id",
+        "/groups/24/provenance/source_id",
+        "/groups/25/provenance/source_id",
+        "/groups/26/provenance/source_id",
+        "/groups/27/provenance/source_id",
+        "/groups/28/provenance/source_id",
+        "/groups/29/provenance/source_id",
+        "/groups/30/provenance/source_id",
+        "/groups/31/provenance/source_id",
+        "/groups/32/provenance/source_id",
+        "/groups/33/provenance/source_id",
+        "/groups/34/provenance/source_id",
+        "/groups/35/provenance/source_id",
+        "/groups/36/provenance/source_id",
+        "/groups/37/provenance/source_id",
+        "/groups/38/provenance/source_id",
+        "/groups/39/provenance/source_id",
+        "/groups/40/provenance/source_id",
+        "/groups/41/provenance/source_id",
+        "/groups/42/provenance/source_id",
+        "/groups/43/provenance/source_id",
+        "/groups/44/provenance/source_id",
+        "/groups/45/provenance/source_id",
+        "/groups/46/provenance/source_id",
+        "/groups/47/provenance/source_id",
+        "/groups/48/provenance/source_id",
+        "/groups/49/provenance/source_id",
+        "/groups/50/provenance/source_id",
+        "/groups/51/provenance/source_id",
+        "/groups/52/provenance/source_id",
+        "/groups/53/provenance/source_id",
+        "/groups/54/provenance/source_id",
+        "/groups/55/provenance/source_id",
+        "/groups/56/provenance/source_id",
+        "/groups/57/provenance/source_id",
+        "/groups/58/provenance/source_id",
+        "/groups/59/provenance/source_id",
+        "/groups/60/provenance/source_id",
+        "/rights/third_party_material/0/source_id",
+        "/rights/third_party_material/1/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "c47c90802e988c80fd9e8b07cc1794622f9f12a32c96e9d7abc0567fe1baf4f7",
+      "unit": "physical_object"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/0",
+      "native_id": "PD-A-E31",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E31",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/0/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "61d2262eab4f120273b0ae9539df0d965b54f0807fa238c24288ffaa6d123393",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/1",
+      "native_id": "PD-A-E30",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E30",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/1/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "6397bb54f503d6ef56a03a83d55973d7ca4a8067e1feee488faf0588090e71cf",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/2",
+      "native_id": "PD-A-E29",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E29",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/2/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "abc5576e33e08c539de832375808488687a55818cb67ff482d94fc4a5815ad52",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/3",
+      "native_id": "PD-A-E28",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E28",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/3/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "ce8add0c4ae052f4a16ba79b8fe981ad5cce39e93b85763b9bc3c8d8c5df9feb",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/4",
+      "native_id": "PD-A-E27",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E27",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/4/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "f5d97a2b269b122649a9bad01201b1b5659171e93d0725ac9bb3f542bb628530",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/5",
+      "native_id": "PD-A-E26",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E26",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/5/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "0e1df6db9708e1066e4f5fef5a5f4241a7e13697a2717f83bf5d630c2d9ef376",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/6",
+      "native_id": "PD-A-E25",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E25",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/6/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "9919a46b4821dfbfea96b574ed66809850ff1ca1adc6a6dcfe2cacf0141a123a",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/7",
+      "native_id": "PD-A-E24",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E24",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/7/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "c4b1e62b66f4eaa53dde60c8f6279029805f65046352bec35e895bd1212496ed",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/8",
+      "native_id": "PD-A-E23",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E23",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/8/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "633acbe92fa14da51ad5545d316986c554262448b5c1b965bc9bd8e7ace3161f",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/9",
+      "native_id": "PD-A-E22",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E22",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/9/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "2d5e3fcf3d30b6ddb5aac98eac71c000b5cb3c63558aaa18b4359a8ef140ca19",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/10",
+      "native_id": "PD-A-E21",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E21",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/10/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "3b45f51385cd7007abced5b7f8beeae86f2b9e2b952037da63bf8ac0e1ec7deb",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/11",
+      "native_id": "PD-A-E20",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E20",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/11/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "23635f5362c071f600efd13eb32271adddd126d758b0935cb2c1b26e53dfff8a",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/12",
+      "native_id": "PD-A-E19",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E19",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/12/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "2f61e160b18b26ea17b5c03909e76f49979c6f3b7fe444df9a439d790573c405",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/13",
+      "native_id": "PD-A-E18",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E18",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/13/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "e9e7797e0515d62cc0b56e2adff572d8ab59fe9f20701b0e1a12bb23470d3c9f",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/14",
+      "native_id": "PD-A-E17",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E17",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/14/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "d47f9e89c3b36a8dc32b5905170ae0f2e3e450721f677bd58c6bed1d5a2a34ef",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/15",
+      "native_id": "PD-A-E16",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E16",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/15/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "7cdb778c36666622d7fdf3b3365dfc57c8f17e4be98cf38f4df4226894811ce9",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/16",
+      "native_id": "PD-A-E15",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E15",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/16/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "5384b15013e21b24c1ed185d8b289a59b69cfbeb8ca1da771625024354277b16",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/17",
+      "native_id": "PD-A-E14",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E14",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/17/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "8c63e43c86f47460711f04a0d237e2c8f132c4b8dc5303b569188b0821df0d83",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/18",
+      "native_id": "PD-A-E13",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E13",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/18/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "ac8c5dda35d00cbc0cd67eaf1da02e9c8e99514080b92f165d011e66bb3364f9",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/19",
+      "native_id": "PD-A-E12",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E12",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/19/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "8316d5fd165349d29b156983fa3bf0ab2697c435fb47fc285667f762b97903bc",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/20",
+      "native_id": "PD-A-E11",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E11",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/20/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "53b4651d0133243a52bfac4245ef7678ff1ecb1b8e7f5e7d3ec0ff63c3f1e5db",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/21",
+      "native_id": "PD-A-E10",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E10",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/21/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "11691d4320df6209257620df4a59f7ab5e78b4142d82f5762f609c8ebf2ec013",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/22",
+      "native_id": "PD-A-E09",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E09",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/22/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "5de3234c83f5d05ab5f90aa39c7b6bd30e9809f1f9c706ff2fce0fa848f0f56d",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/23",
+      "native_id": "PD-A-E08",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E08",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/23/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "7a49ea8e312cd9676900c73cb42b37268192d4ffb5aa552090c1c5fc35793c86",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/24",
+      "native_id": "PD-A-E07",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E07",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/24/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "76b400373e01ea7aac939a0c9b225c72895d0bdb7cda07c4fc63f502f2f21498",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/25",
+      "native_id": "PD-A-E06",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E06",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/25/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "aac27891312ae0412977b905b111ceae711a556487f47cb877e42fd9bf44aea1",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/26",
+      "native_id": "PD-A-E05",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E05",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/26/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "22b499df6769fe3df8ad3d404ead981d0cc2fa61448ccfc737e1d2269eb25694",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/27",
+      "native_id": "PD-A-E04",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E04",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/27/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "e7700d119238db19807595c4fb2190705fa8f137b597a12f3c9f5de8ee10c01a",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/28",
+      "native_id": "PD-A-E03",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E03",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/28/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "e663235836d8df22b739f84dfa3142d624fe919a5aef5447e278e59846e4465b",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/29",
+      "native_id": "PD-A-E02",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E02",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/29/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "f98c6ee1908580e747c1809e3800afbfce76c85899281a3dccae86880f617435",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/30",
+      "native_id": "PD-A-E01",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-A-E01",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/30/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "1aabb38219d1510fee5587cdb5552f059319a211cbc50051619a70cfd677ffff",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/31",
+      "native_id": "PD-B-E30",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E30",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/31/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "51ebfea736116ac5a2408ed3856cd268771bc2646d223372e8988ca59196e778",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/32",
+      "native_id": "PD-B-E29",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E29",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/32/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "0cfd17ae5383d57577b83312dfef2dc28018d4a4c6a98cfa8842604634a43323",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/33",
+      "native_id": "PD-B-E28",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E28",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/33/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "22af4e01b283de5564d8eb9819871621ea9dfec02b42c0b9ab18ea0155be8141",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/34",
+      "native_id": "PD-B-E27",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E27",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/34/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "8bc2079f6b6773730971bfb5a459a2884fb1ccc2a4ba70a1f2087f9d8bbd9d4e",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/35",
+      "native_id": "PD-B-E26",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E26",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/35/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "1be9ece9aef071078aedd6811531923701cfed2183fc99685c1088b2325aafe3",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/36",
+      "native_id": "PD-B-E25",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E25",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/36/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "6e3b6fb6f2f59bfac6b6000c0655eb493daa6fb8a558d3f4dad1f4fb750b3793",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/37",
+      "native_id": "PD-B-E24",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E24",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/37/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "9e5ee9251ce38553af409a8369689fd430d845bc564b2e23fdf68123a55f11c4",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/38",
+      "native_id": "PD-B-E23",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E23",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/38/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "1e5eab4b962d0b752e92f171c5bd4eec5bc761cc2ebc73fa89618bac0ade2ff3",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/39",
+      "native_id": "PD-B-E22",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E22",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/39/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "f0e0564a4773071b2d79f651995b8ab2f608f36b9b2ba8ed5735b99d3a1fe7ce",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/40",
+      "native_id": "PD-B-E21",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E21",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/40/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "65c13db4a976a0fc32c7db78b3e8c8a56d7af12df01e44d9d442352c65697fa4",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/41",
+      "native_id": "PD-B-E20",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E20",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/41/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "dba270d119688df4e4eb457cc28a50231fd2a44b65a3ce8b78be62ba44d3f17d",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/42",
+      "native_id": "PD-B-E19",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E19",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/42/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "3736edc6f11dd0b24ece12a94c887514825ae7db888ab731b15442ed9d9474ad",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/43",
+      "native_id": "PD-B-E18",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E18",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/43/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "e877ba8412134e8aaa39d09545550a10cca20640fed932c46ab726e2bcd2074f",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/44",
+      "native_id": "PD-B-E17",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E17",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/44/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "b6f61f0ec33e65a3222dc39d16fff4d552576762c229b88b7bcfef62de107aaa",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/45",
+      "native_id": "PD-B-E16",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E16",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/45/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "213e864fcff237cb08412ce8ebc8ad42ab6bd386c7f6fbfe261c09499bfd65ee",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/46",
+      "native_id": "PD-B-E15",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E15",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/46/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "59123d947502a8e4463851110fd6b853030a9fd75d9f53a7c4061d10f69a07ab",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/47",
+      "native_id": "PD-B-E14",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E14",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/47/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "5cdb15c8422e28127bd5e5f6392ae36a8561338ced8d1e247e09cb2b1779b276",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/48",
+      "native_id": "PD-B-E13",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E13",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/48/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "34e6cd0a71ee2f14108f6934507d156c4921f322c54fb1b40bd01858291d0159",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/49",
+      "native_id": "PD-B-E12",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E12",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/49/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "4676a0dd358d1651f9cd9abe63db5b7ae6d34c7e08e3bcbbe8285a734d1ffd99",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/50",
+      "native_id": "PD-B-E11",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E11",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/50/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "28b1d32163702f60ec629f3921aacd7ad6e5c31c0e510b385d498fed92a7dff4",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/51",
+      "native_id": "PD-B-E10",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E10",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/51/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "92103ff06a415c2d5a90ff3c4f8794a413551e5c6d778e4969e614a115cef75a",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/52",
+      "native_id": "PD-B-E09",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E09",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/52/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "c807d527802e5396fb3d97bd0a1ae7b5c0df43d8fafcbfb3ed7c092d0b7ea9a2",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/53",
+      "native_id": "PD-B-E08",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E08",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/53/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "7a0f715c9a7eb7efd3839042fd86e389295438bbe349528e40f6840b040ab751",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/54",
+      "native_id": "PD-B-E07",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E07",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/54/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "617b598e4d2cc2e9d243bd24b9c5848ced41d4eaee6af43ce96d796ab3c1fa07",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/55",
+      "native_id": "PD-B-E06",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E06",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/55/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "10a56b67e18f42c59678544a2117ce69eb8f2118f45c5dfb3258b6219169111c",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/56",
+      "native_id": "PD-B-E05",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E05",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/56/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "280c554a8c102082e2171d8630b2bc6c3fab83af830109b00fcfc6a9d7d4edcb",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/57",
+      "native_id": "PD-B-E04",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E04",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/57/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "092464937aa3f6528225898ab1111f0cc6b212604cd6a907813848bee038c1c3",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/58",
+      "native_id": "PD-B-E03",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E03",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/58/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "cae6e7860824bd75888d67d7446a28416d3a8ce69b421d761d7637107b823d68",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/59",
+      "native_id": "PD-B-E02",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E02",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/59/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "4d966453a0adccef9ca391dffae7a853b2a789bc26e35759c84a9ccea6299acc",
+      "unit": "graphical_group"
+    },
+    {
+      "assessment": "NOT_ADJUDICATED_BY_COLLECTION_BUILDER",
+      "json_pointer": "/groups/60",
+      "native_id": "PD-B-E01",
+      "questions": [
+        "object_identity",
+        "reading_and_layout",
+        "uncertainty",
+        "language_or_script_classification",
+        "source_independence",
+        "reuse_rights"
+      ],
+      "record_key": "disc-groups:PD-B-E01",
+      "source_file_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "source_lead_pointers": [
+        "/groups/60/provenance/source_id"
+      ],
+      "source_path": "corpus/disc.json",
+      "source_record_sha256": "0fd2b018d38e08736ad7197b25bf27f902a43264c80dfe2c429ce5b1013e87e9",
+      "unit": "graphical_group"
+    }
+  ],
+  "repository": "hawkinsnick/Phaistos-Disc",
+  "review_dimensions": [
+    "object_identity",
+    "reading_and_layout",
+    "uncertainty",
+    "language_or_script_classification",
+    "source_independence",
+    "reuse_rights"
+  ],
+  "schema_version": "1.0",
+  "scientific_approval_granted": false,
+  "scope": "Declared native snapshots and source/task registers only; not a language-wide inventory",
+  "source_leads": [
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/sources/0/source_id",
+      "kind": "source_id",
+      "source_path": "analysis/source-coverage-v1.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/sources/1/source_id",
+      "kind": "source_id",
+      "source_path": "analysis/source-coverage-v1.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/sources/2/source_id",
+      "kind": "source_id",
+      "source_path": "analysis/source-coverage-v1.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/sources/3/source_id",
+      "kind": "source_id",
+      "source_path": "analysis/source-coverage-v1.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/sources/4/source_id",
+      "kind": "source_id",
+      "source_path": "analysis/source-coverage-v1.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/sources/5/source_id",
+      "kind": "source_id",
+      "source_path": "analysis/source-coverage-v1.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/sources/6/source_id",
+      "kind": "source_id",
+      "source_path": "analysis/source-coverage-v1.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/sources/7/source_id",
+      "kind": "source_id",
+      "source_path": "analysis/source-coverage-v1.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/witnesses/0/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/0/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/1/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/2/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/3/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/4/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/5/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/6/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/7/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/8/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/9/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/10/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/11/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/12/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/13/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/14/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/15/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/16/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/17/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/18/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/19/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/20/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/21/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/22/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/23/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/24/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/25/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/26/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/27/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/28/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/29/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/30/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/31/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/32/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/33/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/34/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/35/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/36/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/37/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/38/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/39/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/40/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/41/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/42/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/43/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/44/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/45/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/46/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/47/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/48/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/49/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/50/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/51/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/52/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/53/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/54/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/55/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/56/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/57/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/58/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/59/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/groups/60/provenance/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/rights/third_party_material/0/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/rights/third_party_material/1/source_id",
+      "kind": "source_id",
+      "source_path": "corpus/disc.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/0/source_id",
+      "kind": "source_id",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/0/url",
+      "kind": "url",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/1/source_id",
+      "kind": "source_id",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/1/url",
+      "kind": "url",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/2/source_id",
+      "kind": "source_id",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/2/url",
+      "kind": "url",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/3/source_id",
+      "kind": "source_id",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/3/title",
+      "kind": "title",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/3/url",
+      "kind": "url",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/3/locators/0",
+      "kind": "locators",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/3/locators/1",
+      "kind": "locators",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/3/locators/2",
+      "kind": "locators",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/3/locators/3",
+      "kind": "locators",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/3/locators/4",
+      "kind": "locators",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/3/locators/5",
+      "kind": "locators",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/4/source_id",
+      "kind": "source_id",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/4/url",
+      "kind": "url",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/4/title",
+      "kind": "title",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/5/source_id",
+      "kind": "source_id",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/5/url",
+      "kind": "url",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/5/title",
+      "kind": "title",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/6/source_id",
+      "kind": "source_id",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/6/title",
+      "kind": "title",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/6/doi",
+      "kind": "doi",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/6/url",
+      "kind": "url",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/7/source_id",
+      "kind": "source_id",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/7/title",
+      "kind": "title",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/7/url",
+      "kind": "url",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/7/locators/0",
+      "kind": "locators",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/7/locators/1",
+      "kind": "locators",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/7/locators/2",
+      "kind": "locators",
+      "source_path": "sources/sources.json"
+    },
+    {
+      "inspection": "REFER_TO_NATIVE_ASSERTION; NOT_INSPECTED_BY_BUILDING_THIS_LEDGER",
+      "json_pointer": "/7/locators/3",
+      "kind": "locators",
+      "source_path": "sources/sources.json"
+    }
+  ],
+  "tasks": [],
+  "terminal_pre_expert_maximum_established": false
+}
