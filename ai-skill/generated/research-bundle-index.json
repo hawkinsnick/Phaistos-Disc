@@ -1,0 +1,65 @@
+{
+  "schema_version": "0.3.1",
+  "skill_version": "0.3.1",
+  "source_commit": "44fa2c086863ab452eb10d0f88f2c8a39ecdc5dc",
+  "canonical_repository": true,
+  "generated_at_utc": "2026-10-10T16:52:57+00:00",
+  "contract": {
+    "corpus_is_authoritative": true,
+    "missing_means_unknown": true,
+    "cross_corpus_equivalence_requires_explicit_evidence": true,
+    "preserve_uncertainty": true,
+    "preserve_source_independence": true,
+    "preserve_rights": true
+  },
+  "artifacts": [
+    {
+      "role": "collection_work_ledger",
+      "path": "research/collection-work-ledger.json",
+      "sha256": "37b6e690a7b0f34c31afcc2348149f6880fcf819efac4234efec9e37a3f48826",
+      "bytes": 74364
+    },
+    {
+      "role": "collection_review_packet",
+      "path": "review/collection-packet.json",
+      "sha256": "e249a79a4258c0df9aef7e4ee1100a6071840cbe6f39c23bc40b63994d3b941a",
+      "bytes": 1851
+    },
+    {
+      "role": "current_status",
+      "path": "analysis/current-status.json",
+      "sha256": "742ef7366b102dd2a415d00c97a548fcbb5d4d1c31877f0ced27812c532c5c4e",
+      "bytes": 9431
+    },
+    {
+      "role": "acceptance",
+      "path": "analysis/acceptance-2.0.json",
+      "sha256": "29e83a1c403e6609a50db7b2555c4a9fb74ae2ddac897f7567ea69c32d4ccf9d",
+      "bytes": 3203
+    },
+    {
+      "role": "disc",
+      "path": "corpus/disc.json",
+      "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "bytes": 63422
+    },
+    {
+      "role": "sources",
+      "path": "sources/sources.json",
+      "sha256": "ca56bc3067ef3b0967270a3d2c153c92db3306e413e7280549c71937801c4ad3",
+      "bytes": 6651
+    },
+    {
+      "role": "notice",
+      "path": "NOTICE",
+      "sha256": "cc5120da762ed398aac92590de299e5f07114af48ec2766259df03dc81c98cdb",
+      "bytes": 918
+    },
+    {
+      "role": "heraklion_museum_authority",
+      "path": "research/heraklion-museum-authority-v1.json",
+      "sha256": "15e125ad01a6a7a669d84a9751c0e8d9f363acf25488db88ea4d4f91f1bbe72f",
+      "bytes": 1054
+    }
+  ]
+}

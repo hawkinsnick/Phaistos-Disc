@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "checked": "2026-10-02",
+  "institution": "Heraklion Archaeological Museum",
+  "catalogue": {
+    "object_id": "Π-Ν1358",
+    "material": "Clay",
+    "condition": "Intact",
+    "diameter_cm": "15.8-16.5",
+    "provenance": "Phaistos, House 101",
+    "museum_date": "c. 1700-1650 BC",
+    "reported_signs": 241,
+    "reported_groups": 61,
+    "reported_direction": "edge toward centre"
+  },
+  "project_comparison": {
+    "project_slots": 242,
+    "identified_slots": 241,
+    "unknown_slots": 1,
+    "status": "COUNT_CONVENTION_DIFFERENCE_PRESERVED",
+    "interpretation": "Museum 241-sign assertion and project 242-slot encoding are not forcibly harmonized; one project slot is explicitly unresolved."
+  },
+  "rights": "Institutional catalogue facts recorded as attributed metadata; museum images are not redistributed by this record.",
+  "scientific_boundary": "Museum wording that groups presumably represent words is an attributed interpretation, not a project admission that graphical groups are linguistic words."
+}
