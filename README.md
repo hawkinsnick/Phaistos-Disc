@@ -117,3 +117,7 @@ This corpus participates in the Combined Corpus Research AI fleet. Fleet admissi
 
 ## Offline corpus browser
 Run `python scripts/build_corpus_browser.py` to generate `workbench/corpus-browser.html`. The browser is self-contained and searches only the explicitly allowlisted files in `research/browser-sources.json`. Adding a file to the browser requires a rights/provenance check; never recursively ingest repository data or restricted upstream material. Browser display does not establish decipherment, source independence, or expert validation.
+
+## Evidence denominator and review policy
+
+The 242 project occurrence slots and the historical edition's 241 count are distinct, source-attributed assertions; neither figure is silently corrected to match the other. Report face/group/slot units separately, and do not treat two faces or multiple reproductions as independent objects. A reproducible build or visual comparison is not independent physical-mark verification, human epigraphic acceptance, or decipherment. Final 2.0 remains gated by the documented review and physical-evidence requirements.
