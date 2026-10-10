@@ -1,0 +1,39 @@
+name: Reconcile Phaistos evidence digests (one-time)
+on:
+  push:
+    branches:
+      - repair-museum-integration
+permissions:
+  contents: write
+jobs:
+  regenerate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Re-pin exact current evidence bytes
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          root=pathlib.Path('.')
+          p=root/'analysis/current-status.json'
+          state=json.loads(p.read_text())
+          for entry in state['evidence']:
+              path=root/entry['path']
+              if not path.is_file():
+                  raise FileNotFoundError(path)
+              entry['sha256']=hashlib.sha256(path.read_bytes()).hexdigest()
+          p.write_text(json.dumps(state,indent=2,ensure_ascii=False)+'\n')
+          PY
+      - name: Commit regenerated evidence manifest only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add analysis/current-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: re-pin Phaistos evidence digests after museum reconciliation"
+            git push
+          fi
