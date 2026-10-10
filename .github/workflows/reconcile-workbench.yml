@@ -1,0 +1,42 @@
+name: Rebuild Phaistos museum workbench (one-time)
+on:
+  push:
+    branches:
+      - repair-museum-integration
+permissions:
+  contents: write
+jobs:
+  regenerate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild source coverage, edition and evidence workbench
+        run: |
+          python scripts/source_coverage.py > analysis/source-coverage-v1.json
+          python scripts/edition_workbench.py > analysis/edition-workbench-v1.json
+          python scripts/evidence_workbench.py --write
+          python scripts/evidence_workbench.py
+      - name: Refresh evidence status pins after regeneration
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          root=pathlib.Path('.')
+          p=root/'analysis/current-status.json'
+          state=json.loads(p.read_text())
+          for entry in state['evidence']:
+              entry['sha256']=hashlib.sha256((root/entry['path']).read_bytes()).hexdigest()
+          p.write_text(json.dumps(state,indent=2,ensure_ascii=False)+'\n')
+          PY
+      - name: Commit exact regenerated artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add analysis/source-coverage-v1.json analysis/edition-workbench-v1.json analysis/evidence-index-v1.json analysis/workbench-acceptance-v1.json workbench/evidence.html analysis/current-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: regenerate museum evidence workbench and source pins"
+            git push
+          fi
