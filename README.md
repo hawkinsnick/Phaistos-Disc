@@ -73,7 +73,7 @@ LinearA, LinearB, Cypro-Minoan, Cretan hieroglyphic and Phaistos Disc share prov
 
 ## Rights and citation
 
-Original code and project-created transcription records: MIT. Unicode-derived records: Unicode-3.0 (`licenses/Unicode-3.0.txt`). Historical Evans pages: public-domain edition, with author, publication and digitization attribution in `sources/sources.json`. These rights do not license modern museum photographs or scholarly editions. See `CITATION.cff` and cite the original evidence used.
+Current project-original code: PolyForm Noncommercial 1.0.0. Current project-created copyrightable corpus content/documentation: CC BY-NC 4.0. Unicode-derived records retain Unicode-3.0 (`licenses/Unicode-3.0.txt`). Historical Evans pages remain public-domain edition material, with author, publication and digitization attribution in `sources/sources.json`. Earlier grants, if any, remain effective for material already distributed under them. These rights do not license modern museum photographs or scholarly editions. See `CITATION.cff` and cite the original evidence used.
 
 See `releases/` for milestone-specific scope and acceptance records. The next evidence gate is independent epigraphic review; see `reviews/independent-review-brief.md`. The photograph comparison and source-exemplar crosswalk are under `reviews/` and `signs/`.
 
@@ -108,3 +108,16 @@ Download the research workbench ZIP, extract it, and open [workbench/evidence.ht
 ### Research workbench 1.1
 
 Download the [research workbench 1.1 package](https://github.com/hawkinsnick/Phaistos-Disc/releases/tag/research-workbench-v1.1.0), extract it, and open `workbench/evidence.html`. It adds snapshot-bound inspection collections and includes the immutable release correction tracker. The Disc explorer also presents readable scenario comparisons. This engineering release grants no scientific acceptance.
+
+
+## Fleet admission
+
+This corpus participates in the Combined Corpus Research AI fleet. Fleet admission requires the repository's component-specific licensing architecture, its individual `ai-skill` research contract and generated bundle, explicit master-registry membership, and passing member/master validation. Third-party material retains its upstream rights.
+
+
+## Offline corpus browser
+Run `python scripts/build_corpus_browser.py` to generate `workbench/corpus-browser.html`. The browser is self-contained and searches only the explicitly allowlisted files in `research/browser-sources.json`. Adding a file to the browser requires a rights/provenance check; never recursively ingest repository data or restricted upstream material. Browser display does not establish decipherment, source independence, or expert validation.
+
+## Evidence denominator and review policy
+
+The 242 project occurrence slots and the historical edition's 241 count are distinct, source-attributed assertions; neither figure is silently corrected to match the other. Report face/group/slot units separately, and do not treat two faces or multiple reproductions as independent objects. A reproducible build or visual comparison is not independent physical-mark verification, human epigraphic acceptance, or decipherment. Final 2.0 remains gated by the documented review and physical-evidence requirements.

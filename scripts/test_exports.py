@@ -10,8 +10,9 @@ with (R/'exports/occurrences.csv').open(newline='') as f:rows=list(csv.DictReade
 assert [r['occurrence_id'] for r in rows]==[o['occurrence_id'] for o in native['occurrences']]
 for row,o in zip(rows,native['occurrences']):
     assert (row['sign_id'] or None)==o['sign_id']
-    assert row['record_license']=='MIT' and row['source_rights_profile']=='evans1909-public-domain+Unicode-3.0'
+    assert row['record_license']=='CC-BY-NC-4.0' and row['source_rights_profile']=='evans1909-public-domain+Unicode-3.0'
     assert row['source_id']=='evans1909' and row['source_locator']
+    assert next(record for record in export if record['record_id']==row['occurrence_id'])['rights']['record_license']==row['record_license']
 unknown=next(r for r in export if r['record_id']=='PD-A-E24-S05')
 assert unknown['assertions'][0]['value']=={'native_sign_id':None,'evans_number':None}
 assert unknown['assertions'][0]['uncertainty']=='unknown'

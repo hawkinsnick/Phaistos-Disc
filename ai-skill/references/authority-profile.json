@@ -1,33 +1,4 @@
 {
-  "schema_version": "1.0",
-  "corpus": "Phaistos-Disc",
-  "required_authorities": [
-    {
-      "role": "current_status",
-      "path": "analysis/current-status.json",
-      "required": true
-    },
-    {
-      "role": "acceptance",
-      "path": "analysis/acceptance-2.0.json",
-      "required": true
-    },
-    {
-      "role": "corpus",
-      "path": "corpus/disc.json",
-      "required": true
-    },
-    {
-      "role": "sources",
-      "path": "sources/sources.json",
-      "required": true
-    },
-    {
-      "role": "museum_authority",
-      "path": "research/heraklion-museum-authority-v1.json",
-      "required": true
-    }
-  ],
   "behavioral_gates": [
     "One physical object with two faces is not two independent documents",
     "Graphical groups are not assumed to be words",
@@ -35,5 +6,44 @@
     "Final 2.0 and independent human epigraphic review remain blocked",
     "Historical and project slot counts must remain distinct where they disagree",
     "Preserve the Heraklion Museum 241-sign assertion separately from the project's 242-slot encoding with one unresolved slot; do not silently harmonize count conventions."
-  ]
+  ],
+  "corpus": "Phaistos-Disc",
+  "required_authorities": [
+    {
+      "path": "analysis/current-status.json",
+      "required": true,
+      "role": "current_status"
+    },
+    {
+      "path": "analysis/acceptance-2.0.json",
+      "required": true,
+      "role": "acceptance"
+    },
+    {
+      "path": "corpus/disc.json",
+      "required": true,
+      "role": "corpus"
+    },
+    {
+      "path": "sources/sources.json",
+      "required": true,
+      "role": "sources"
+    },
+    {
+      "path": "research/heraklion-museum-authority-v1.json",
+      "required": true,
+      "role": "museum_authority"
+    },
+    {
+      "path": "research/collection-work-ledger.json",
+      "required": true,
+      "role": "collection_work_ledger"
+    },
+    {
+      "path": "review/collection-packet.json",
+      "required": true,
+      "role": "collection_review_packet"
+    }
+  ],
+  "schema_version": "1.0"
 }

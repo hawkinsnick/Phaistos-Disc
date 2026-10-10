@@ -80,7 +80,9 @@ def validate(root=R):
         counts['project_checked_photographic_witnesses']=1
     require(state['committed_evidence_counts']==counts,'evidence count drift')
     require(state['scientific_results']['decipherment_claim_allowed'] is False and state['scientific_results']['external_peer_review_completed']==recorded_review['external_review_accepted'],'scientific claim promotion')
-    for item in state['evidence']:require(sha(item['path'])==item['sha256'],'evidence digest drift: '+item['path'])
+    for item in state['evidence']:
+        actual=sha(item['path'])
+        require(actual==item['sha256'],'evidence digest drift: '+item['path']+' expected='+item['sha256']+' actual='+actual)
     family=load('research/family-compatibility-v1.json');suite=load('research/family-compatibility-suite-v1.json')
     require(family['contract_version']==suite['required_contract_version']==suite['suite_version'] and family['contract_version'] in ['1.1.0','1.2.0'],'family version')
     require(set(family['members'])==set(suite['required_members'])==MEMBERS and len(family['members'])==5,'family membership')
@@ -108,7 +110,7 @@ def validate(root=R):
         require(load('analysis/descriptive-v1.json')==analyze(root),'descriptive replay drift')
     if (root/'exports/aegean-interop.json').exists():
         records=load('exports/aegean-interop.json');require(len(records)==242,'export coverage')
-        for record in records:v.validate(record);require(record['rights']['record_license']=='MIT' and len(record['rights']['third_party_material'])==2,'export rights lost')
+        for record in records:v.validate(record);require(record['rights']['record_license']=='CC-BY-NC-4.0' and len(record['rights']['third_party_material'])==2,'export rights lost')
         from export_corpus import export_records
         require(records==export_records(root),'export/native mismatch')
     if (root/'research/family-readiness-v1.json').exists():
