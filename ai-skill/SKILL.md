@@ -43,3 +43,7 @@ Before reporting validation or scholarly readiness, consult `research/validation
 
 ## Evidence-denominator policy
 Always distinguish the historical 241 assertion from the project's 242 graphical slots. State the unit and witness dependence for any statistic; do not infer linguistic words from graphical groups or scientific acceptance from reproducible checks. Apply the final 2.0 review and physical-evidence gates in `research/acceptance-2.0.md`.
+
+## Human-review gate
+Read `analysis/acceptance-2.0.json` before making any statement about independent review or final-2.0 readiness. A received or schema-valid review packet is not accepted review. AI must never attest reviewer identity, expertise, conflicts, independence, redistribution permission, physical inspection, or evidence adequacy. Those checks require a recorded human-maintainer acceptance. Until the replayed acceptance report sets `final_2_0_allowed` to true, describe final 2.0 as blocked.
+
