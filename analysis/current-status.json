@@ -123,7 +123,7 @@
     },
     {
       "path": "analysis/source-coverage-v1.json",
-      "sha256": "e64c4458a02050585108b037a17f89f3e806a00e9b0d03d5f398bb8edabd012c"
+      "sha256": "59364664ff2783a971ae223599831af807f217a14ca2bc83c2236cfe37b423ea"
     },
     {
       "path": "scripts/source_coverage.py",
@@ -179,15 +179,15 @@
     },
     {
       "path": "analysis/evidence-index-v1.json",
-      "sha256": "9825e1ec28fcee808476e643cb312196efc8962cf29934745befbc55f8c3be56"
+      "sha256": "d54de162bed54d0f63d387d828880166df3eb409afc5ff07684b3f8a72d2d5d7"
     },
     {
       "path": "analysis/workbench-acceptance-v1.json",
-      "sha256": "c92151ce949286b83019712d660834bd65078b89a46299c9f43b46f8db024bb3"
+      "sha256": "7cac01667492e3c671cb0ba9f17bfbcd5d88030466daff4f471001d1715b332d"
     },
     {
       "path": "workbench/evidence.html",
-      "sha256": "785b01cea26cfddbeabf5c31afda0b37282a3bad853b34bbdd1974176607aeed"
+      "sha256": "f0216bfbcb436cccc54aca9a27c44cbcfeebcc210e0fb0b9a693f1116edad9ea"
     },
     {
       "path": "research/workbench-milestone-v1.json",
@@ -219,7 +219,7 @@
     },
     {
       "path": "analysis/edition-workbench-v1.json",
-      "sha256": "5a1bc2e9b8a4a22a759bc2c7c3838f2173f966df81fc5fddd74210e5185302cc"
+      "sha256": "07cfc8dcc4f75a4e9e3bd65b9756fa6c92ec99ea9afe51839aa39e91a046c320"
     },
     {
       "path": "reviews/occurrence-review-sheet.tsv",
