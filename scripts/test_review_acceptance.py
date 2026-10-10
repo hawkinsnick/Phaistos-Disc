@@ -56,6 +56,32 @@ class ReceiptTests(unittest.TestCase):
             with self.subTest(mutation=mutation),self.assertRaises(ValueError):validate_submission(p,self.root)
         self.write();self.record['packet_path']='../escape.json';(self.root/RECORD).write_text(json.dumps(self.record))
         with self.assertRaises(ValueError):evaluate(self.root)
+    def test_adversarial_acceptance_cannot_be_self_asserted(self):
+        cases=[]
+        p=copy.deepcopy(self.packet);p['entries'][0]['decision']='accepted';p['entries'][0]['source_locator']=None;cases.append(('missing locator',p))
+        p=copy.deepcopy(self.packet);p['entries'][0]['fine_detail_checked']='true';cases.append(('boolean string',p))
+        p=copy.deepcopy(self.packet);p['mark_assessments'][0]['coverage']='physical_coverage_supported';p['mark_assessments'][0]['entire_group_examined']=False;cases.append(('partial physical coverage',p))
+        p=copy.deepcopy(self.packet);p['source_evidence'].append(copy.deepcopy(p['source_evidence'][0]));cases.append(('duplicate evidence',p))
+        for label,p in cases:
+            with self.subTest(label=label),self.assertRaises(ValueError):validate_submission(p,self.root)
+
+    def test_acceptance_record_cannot_replace_packet_or_human_checks(self):
+        self.write()
+        for key in ['identity_verified','expertise_verified','conflicts_reviewed','independence_verified','redistribution_permission_verified']:
+            record=copy.deepcopy(self.record);record[key]=False;(self.root/RECORD).write_text(json.dumps(record))
+            with self.subTest(key=key),self.assertRaises(ValueError):evaluate(self.root)
+        self.write();record=copy.deepcopy(self.record);record['packet_sha256']='0'*64;(self.root/RECORD).write_text(json.dumps(record))
+        with self.assertRaises(ValueError):evaluate(self.root)
+
+    def test_declared_nonindependence_and_inadequate_evidence_stay_blocked(self):
+        self.packet['reviewer']['independence_declared']=False
+        validate_submission(self.packet,self.root) # honest dependent review may be received
+        self.write()
+        with self.assertRaises(ValueError):evaluate(self.root)
+        self.packet['reviewer']['independence_declared']=True
+        self.record['physical_evidence_adequacy_verified']=False
+        self.write();self.assertFalse(evaluate(self.root)['final_2_0_allowed'])
+
     def test_final_version_cannot_bypass_missing_acceptance_artifact(self):
         from validate_current_state import validate
         (self.root/'VERSION').write_text('2.0.0\n')

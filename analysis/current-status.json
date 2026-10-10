@@ -171,7 +171,7 @@
     },
     {
       "path": "scripts/test_review_acceptance.py",
-      "sha256": "3d38b1224e6ea5d965074e547e4fc73861c29c8c98fb60e84a89b7e669436df1"
+      "sha256": "4a1df095b017c73948ca486fcc0a151c349a3219ea9444c1dcbf68357416a604"
     },
     {
       "path": "analysis/source-adequacy-v2.json",
@@ -179,15 +179,15 @@
     },
     {
       "path": "analysis/evidence-index-v1.json",
-      "sha256": "dba1a5abf2ffc5a2d0fe17073a288c7e8d9de50f5089c1e04b2d4b21f40c39af"
+      "sha256": "8eb0917e58191d5cb06f9892a360122897de56fc4da28862b92e6a369414ccee"
     },
     {
       "path": "analysis/workbench-acceptance-v1.json",
-      "sha256": "a962d66939c166bad47aa97c5164024560273ba97dc320e7508ed89951e57447"
+      "sha256": "334eca0e8134c89970338f3a44528801b342d5b4bedcaba68df9b7d2b1837e8b"
     },
     {
       "path": "workbench/evidence.html",
-      "sha256": "f71d9f3ae5537f4732022d2e7c03234b46c5f33821e70007e68c9009e7b82197"
+      "sha256": "52eb96e6650c5f1b6c2c11358ebbe7815cd1bf5a4dbc7104d8fe84363db353fa"
     },
     {
       "path": "research/workbench-milestone-v1.json",

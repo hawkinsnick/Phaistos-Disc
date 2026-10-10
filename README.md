@@ -121,3 +121,5 @@ Run `python scripts/build_corpus_browser.py` to generate `workbench/corpus-brows
 ## Evidence denominator and review policy
 
 The 242 project occurrence slots and the historical edition's 241 count are distinct, source-attributed assertions; neither figure is silently corrected to match the other. Report face/group/slot units separately, and do not treat two faces or multiple reproductions as independent objects. A reproducible build or visual comparison is not independent physical-mark verification, human epigraphic acceptance, or decipherment. Final 2.0 remains gated by the documented review and physical-evidence requirements.
+
+Independent-review handoff: [reviewer instructions](reviews/INDEPENDENT-REVIEW-HANDOFF.md), [ingestion runbook](research/review-ingestion-runbook.md). The acceptance report remains authoritative; receipt or schema validity alone never opens final 2.0.

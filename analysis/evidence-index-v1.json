@@ -310,8 +310,8 @@
     },
     {
       "path": "scripts/test_review_acceptance.py",
-      "sha256": "3d38b1224e6ea5d965074e547e4fc73861c29c8c98fb60e84a89b7e669436df1",
-      "bytes": 6581,
+      "sha256": "4a1df095b017c73948ca486fcc0a151c349a3219ea9444c1dcbf68357416a604",
+      "bytes": 8596,
       "category": "scripts",
       "summary": {}
     },
