@@ -1,0 +1,26 @@
+name: Final Phaistos handoff replay (one-time)
+on:
+  push:
+    branches: [repair-museum-integration]
+permissions:
+  contents: write
+jobs:
+  regenerate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python scripts/build_collection_handoff.py --write
+          python scripts/build_collection_handoff.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/collection-work-ledger.json review/collection-packet.json review/collection-decision-template.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh handoff after museum workbench replay"
+            git push
+          fi
