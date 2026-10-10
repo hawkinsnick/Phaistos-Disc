@@ -37,3 +37,6 @@ Read `ai-skill/generated/source-state.json` before substantive work. It records 
 
 ## Offline corpus browser
 Run `python scripts/build_corpus_browser.py` to generate `workbench/corpus-browser.html`. The browser is self-contained and searches only the explicitly allowlisted files in `research/browser-sources.json`. Adding a file to the browser requires a rights/provenance check; never recursively ingest repository data or restricted upstream material. Browser display does not establish decipherment, source independence, or expert validation.
+
+## Validation and AI-use documentation
+Before reporting validation or scholarly readiness, consult `research/validation-and-ai-use.md` alongside `research/acceptance-2.0.md`. Distinguish reproducible software checks from independently verified epigraphic assessment; record the repository commit and command results. Preserve the 241 historical versus 242 project slot-count discrepancy, source dependencies and rights boundaries in all AI-facing summaries.
