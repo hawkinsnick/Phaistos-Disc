@@ -269,7 +269,7 @@
     },
     {
       "path": "analysis/acceptance-2.0.json",
-      "sha256": "fdef5433b2845def2e3acf84bd219379a8912c7ca5dc4f4c8d5acec1fd2b02cc",
+      "sha256": "3bb0bd6871f2805e69e0c8dc3893a8f27f7b064bef2b1e857a4b42c849ae186f",
       "bytes": 3203,
       "category": "analysis",
       "summary": {

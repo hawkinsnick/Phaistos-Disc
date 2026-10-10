@@ -2,9 +2,9 @@
   "builder_sha256": "4b61ca559d0817b09e869f6c3ca38ae7478071a0466f89861e71954d1bb499d6",
   "completion_rule": "Enumeration is a completed work map, not completed collation. Resolve every open task using exact inspected evidence or a documented access/rights dependency; leave scientific adjudication to independent review.",
   "config_sha256": "04a364c36c5260d05a3033b8a1ec566a28a188e913792a375e9707358f008368",
-  "evidence_fingerprint": "9c7ff74cfbbc05a7b26a521140f5baaa41bd8706ed66bbb84850452abba61440",
+  "evidence_fingerprint": "eb7461e3c3c3ee91fb26588ce62911644fbcb9808572b3d13565730fb051ae2f",
   "input_sha256": {
-    "analysis/current-status.json": "99ed6fe4abd30d34a84da0f18785699179ba755e4defdf1c1b019b93597dd1b8",
+    "analysis/current-status.json": "e0a29d0c8e477441435b5077274369283e2552ce64a0153af4cf999fa584275d",
     "analysis/source-coverage-v1.json": "59364664ff2783a971ae223599831af807f217a14ca2bc83c2236cfe37b423ea",
     "corpus/disc.json": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
     "sources/sources.json": "ca56bc3067ef3b0967270a3d2c153c92db3306e413e7280549c71937801c4ad3"

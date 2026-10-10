@@ -151,7 +151,7 @@
     },
     {
       "path": "analysis/acceptance-2.0.json",
-      "sha256": "fdef5433b2845def2e3acf84bd219379a8912c7ca5dc4f4c8d5acec1fd2b02cc"
+      "sha256": "3bb0bd6871f2805e69e0c8dc3893a8f27f7b064bef2b1e857a4b42c849ae186f"
     },
     {
       "path": "scripts/acceptance_2.py",
@@ -179,15 +179,15 @@
     },
     {
       "path": "analysis/evidence-index-v1.json",
-      "sha256": "d54de162bed54d0f63d387d828880166df3eb409afc5ff07684b3f8a72d2d5d7"
+      "sha256": "dba1a5abf2ffc5a2d0fe17073a288c7e8d9de50f5089c1e04b2d4b21f40c39af"
     },
     {
       "path": "analysis/workbench-acceptance-v1.json",
-      "sha256": "7cac01667492e3c671cb0ba9f17bfbcd5d88030466daff4f471001d1715b332d"
+      "sha256": "a962d66939c166bad47aa97c5164024560273ba97dc320e7508ed89951e57447"
     },
     {
       "path": "workbench/evidence.html",
-      "sha256": "f0216bfbcb436cccc54aca9a27c44cbcfeebcc210e0fb0b9a693f1116edad9ea"
+      "sha256": "f71d9f3ae5537f4732022d2e7c03234b46c5f33821e70007e68c9009e7b82197"
     },
     {
       "path": "research/workbench-milestone-v1.json",
