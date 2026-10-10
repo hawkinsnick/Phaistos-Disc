@@ -40,3 +40,6 @@ Run `python scripts/build_corpus_browser.py` to generate `workbench/corpus-brows
 
 ## Validation and AI-use documentation
 Before reporting validation or scholarly readiness, consult `research/validation-and-ai-use.md` alongside `research/acceptance-2.0.md`. Distinguish reproducible software checks from independently verified epigraphic assessment; record the repository commit and command results. Preserve the 241 historical versus 242 project slot-count discrepancy, source dependencies and rights boundaries in all AI-facing summaries.
+
+## Evidence-denominator policy
+Always distinguish the historical 241 assertion from the project's 242 graphical slots. State the unit and witness dependence for any statistic; do not infer linguistic words from graphical groups or scientific acceptance from reproducible checks. Apply the final 2.0 review and physical-evidence gates in `research/acceptance-2.0.md`.
