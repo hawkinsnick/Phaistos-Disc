@@ -35,7 +35,7 @@
     },
     {
       "path": "sources/sources.json",
-      "sha256": "6b53c8556e2a5bcd124e0ab1748b7b7012080b2b0521e63cf8818e46898a1b7d"
+      "sha256": "ca56bc3067ef3b0967270a3d2c153c92db3306e413e7280549c71937801c4ad3"
     },
     {
       "path": "research/transcription-policy-v1.json",
@@ -75,7 +75,7 @@
     },
     {
       "path": "exports/aegean-interop.json",
-      "sha256": "501c9e044e6472e03243a6d6237164106801dd6392b5932a910efe6012d35564"
+      "sha256": "7ec74763f3f20db4994b64ed3eafd4998378e06c5a1e3c7e4833cf7953d952ed"
     },
     {
       "path": "analysis/descriptive-v1.json",
@@ -195,11 +195,11 @@
     },
     {
       "path": "scripts/evidence_workbench.py",
-      "sha256": "682a350d9457b1e88ff3a3c4d1263880e4fdf98e1012578580b7d2b9d877c916"
+      "sha256": "9fefde8c7f3dac7b555250e1ca1688910599e6744d66bdba4ab0a8210f535c89"
     },
     {
       "path": "scripts/test_evidence_workbench.py",
-      "sha256": "071d52a7996556919876d35182f2fdcc1a4e46a6ad60c97c3508c639b259c1e4"
+      "sha256": "a9742395c2e0523f563570ea4f87416c1119acc2dbd9038d7df3354a4d4a726c"
     },
     {
       "path": "scripts/test_evidence_browser.cjs",
