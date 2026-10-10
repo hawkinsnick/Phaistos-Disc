@@ -18,6 +18,15 @@ jobs:
         run: |
           python scripts/source_coverage.py > analysis/source-coverage-v1.json
           python scripts/edition_workbench.py > analysis/edition-workbench-v1.json
+          python - <<'PY'
+          import hashlib,json,pathlib
+          root=pathlib.Path('.')
+          p=root/'analysis/current-status.json'
+          state=json.loads(p.read_text())
+          for entry in state['evidence']:
+              entry['sha256']=hashlib.sha256((root/entry['path']).read_bytes()).hexdigest()
+          p.write_text(json.dumps(state,indent=2,ensure_ascii=False)+'\n')
+          PY
           python scripts/evidence_workbench.py --write
           python scripts/evidence_workbench.py
       - name: Refresh evidence status pins after regeneration
