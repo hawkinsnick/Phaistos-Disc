@@ -1,0 +1,33 @@
+{
+  "native_review_links": [
+    "reviews/review-packet-v1.json",
+    "LICENSING.md"
+  ],
+  "public_payload_rule": "Identifiers and source pointers only; no new transcriptions or source images. Restricted A/B derivatives stay local.",
+  "record_sets": [
+    {
+      "id_key": "object_id",
+      "name": "disc-object",
+      "path": "corpus/disc.json",
+      "pointer": "",
+      "singleton": true,
+      "unit": "physical_object"
+    },
+    {
+      "id_key": "group_id",
+      "name": "disc-groups",
+      "path": "corpus/disc.json",
+      "pointer": "/groups",
+      "unit": "graphical_group"
+    }
+  ],
+  "repository": "hawkinsnick/Phaistos-Disc",
+  "schema_version": "1.0",
+  "scope_rule": "Every row in declared views is indexed; overlapping views are never summed as unique objects. Discovery outside these views remains open.",
+  "source_discovery_rule": "Declare new native source/task registers here so offline replay and the collection report include them.",
+  "source_files": [
+    "analysis/current-status.json",
+    "analysis/source-coverage-v1.json",
+    "sources/sources.json"
+  ]
+}
