@@ -1,6 +1,6 @@
 {
   "format": "source-coverage-v1",
-  "source_registry_sha256": "942ea067831f90a6cd72c7f35bc668974a2b63e1de67d2759f74bf27456c5924",
+  "source_registry_sha256": "ca56bc3067ef3b0967270a3d2c153c92db3306e413e7280549c71937801c4ad3",
   "physical_objects": 1,
   "sources": [
     {
@@ -20,7 +20,7 @@
       "source_id": "heraklion-catalogue",
       "role": "museum_metadata_pending",
       "record_license": "NOASSERTION",
-      "recorded_access_status": "blocked_http_502",
+      "recorded_access_status": "verified_current_web_2026-10-02",
       "full_source_sha256": null,
       "coverage_units": null,
       "complete_object_autopsy": false,
@@ -30,7 +30,7 @@
       "source_id": "heraklion-exhibit",
       "role": "museum_metadata_pending",
       "record_license": "NOASSERTION",
-      "recorded_access_status": "blocked_http_502",
+      "recorded_access_status": "verified_current_web_2026-10-02",
       "full_source_sha256": null,
       "coverage_units": null,
       "complete_object_autopsy": false,
@@ -39,7 +39,7 @@
     {
       "source_id": "evans1909",
       "role": "native_graphical_baseline",
-      "record_license": "Public-domain historical edition; original project transcription MIT",
+      "record_license": "Public-domain historical edition; current project-created copyrightable transcription content is CC BY-NC 4.0; earlier grants remain effective where applicable",
       "recorded_access_status": "authenticated_bytes",
       "full_source_sha256": "b06f8a04f3f7e33578f28aa0e88be600a13ebc6d03891a79c721558ca50c05e7",
       "coverage_units": {

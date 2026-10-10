@@ -10,7 +10,7 @@ def calculate(root=R):
   p=(root/e['path']).resolve()
   if not p.is_relative_to(root.resolve()) or not p.is_file():raise ValueError('invalid evidence path')
   actual=digest(p)
-  if actual!=e['sha256']:raise ValueError('evidence pin mismatch: '+e['path'])
+  if actual!=e['sha256']:raise ValueError('evidence pin mismatch: '+e['path']+' (expected '+e['sha256']+', actual '+actual+'); regenerate evidence pins only after independently verifying the changed source')
   value=json.loads(p.read_text()) if p.suffix=='.json' else None
   summary={k:value[k] for k in ['format','scope','boundary','status','source_id','record_license','acquisition_status','interpretation'] if isinstance(value,dict) and k in value}
   rows.append({'path':e['path'],'sha256':actual,'bytes':p.stat().st_size,'category':e['path'].split('/')[0],'summary':summary})
@@ -31,7 +31,11 @@ def acceptance(root=R):
  if spec['milestone']!='research-workbench' or spec['version']!='1.1.0' or spec['expert_review_granted'] is not False or spec['native_changes_applied'] is not False or spec['human_review_required_for_this_engineering_milestone'] is not False:raise ValueError('engineering milestone scope drift')
  if not (root/'research/workbench-guide.md').is_file():raise ValueError('missing readable review guide')
  index=calculate(root)
- if json.loads((root/'analysis/evidence-index-v1.json').read_text())!=index:raise ValueError('index replay drift')
+ if json.loads((root/'analysis/evidence-index-v1.json').read_text())!=index:
+  stored=json.loads((root/'analysis/evidence-index-v1.json').read_text())
+  previous={e['path']:e['sha256'] for e in stored['evidence']}
+  changed=[e['path'] for e in index['evidence'] if previous.get(e['path'])!=e['sha256']]
+  raise ValueError('index replay drift; changed evidence: '+', '.join(changed))
  if (root/'workbench/evidence.html').read_text()!=html(root):raise ValueError('offline viewer replay drift')
  edition=None
  if index['project']=='Phaistos-Disc':

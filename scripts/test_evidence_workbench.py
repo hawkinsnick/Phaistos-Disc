@@ -13,6 +13,13 @@ class EvidenceTests(unittest.TestCase):
    with self.assertRaisesRegex(ValueError,'pin mismatch'):calculate(root)
    p.write_bytes((R/'analysis/current-status.json').read_bytes());(root/'workbench/evidence.html').write_text('<p>tampered</p>')
    with self.assertRaisesRegex(ValueError,'viewer replay drift'):acceptance(root)
+ def test_stale_index_names_changed_evidence(self):
+  with tempfile.TemporaryDirectory() as td:
+   root=pathlib.Path(td)/'repo';shutil.copytree(R,root,ignore=shutil.ignore_patterns('.git','images','output','node_modules','__pycache__'))
+   index_path=root/'analysis/evidence-index-v1.json';index=json.loads(index_path.read_text())
+   evidence=next(e for e in index['evidence'] if e['path']=='sources/sources.json')
+   evidence['sha256']='0'*64;index_path.write_text(json.dumps(index))
+   with self.assertRaisesRegex(ValueError,'index replay drift; changed evidence: sources/sources.json'):acceptance(root)
  def test_unsafe_paths_duplicates_and_script_text(self):
   with tempfile.TemporaryDirectory() as td:
    root=pathlib.Path(td)/'repo';shutil.copytree(R,root,ignore=shutil.ignore_patterns('.git','images','output','node_modules','__pycache__'));p=root/'analysis/current-status.json';base=json.loads(p.read_text())
