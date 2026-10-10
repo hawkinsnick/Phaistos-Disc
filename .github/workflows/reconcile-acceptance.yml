@@ -1,0 +1,49 @@
+name: Final Phaistos acceptance replay (one-time)
+on:
+  push:
+    branches: [repair-museum-integration]
+permissions:
+  contents: write
+jobs:
+  regenerate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regenerate release acceptance and all dependent integrity artifacts
+        run: |
+          python scripts/acceptance_2.py > analysis/acceptance-2.0.json
+          python - <<'PY'
+          import hashlib,json,pathlib
+          root=pathlib.Path('.')
+          p=root/'analysis/current-status.json'
+          state=json.loads(p.read_text())
+          for entry in state['evidence']:
+              entry['sha256']=hashlib.sha256((root/entry['path']).read_bytes()).hexdigest()
+          p.write_text(json.dumps(state,indent=2,ensure_ascii=False)+'\n')
+          PY
+          python scripts/evidence_workbench.py --write
+          python scripts/evidence_workbench.py
+          python - <<'PY'
+          import hashlib,json,pathlib
+          root=pathlib.Path('.')
+          p=root/'analysis/current-status.json'
+          state=json.loads(p.read_text())
+          for entry in state['evidence']:
+              entry['sha256']=hashlib.sha256((root/entry['path']).read_bytes()).hexdigest()
+          p.write_text(json.dumps(state,indent=2,ensure_ascii=False)+'\n')
+          PY
+          python scripts/build_collection_handoff.py --write
+          python scripts/build_collection_handoff.py
+      - name: Commit only regenerated evidence and review files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add analysis/acceptance-2.0.json analysis/current-status.json analysis/evidence-index-v1.json analysis/workbench-acceptance-v1.json workbench/evidence.html research/collection-work-ledger.json review/collection-packet.json review/collection-decision-template.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: synchronize final museum acceptance and review evidence replay"
+            git push
+          fi
