@@ -1,0 +1,34 @@
+{
+  "format": "PD-museum-integration-reconciliation-v1",
+  "checked": "2026-10-02",
+  "reason": "Current museum source metadata was integrated without rebuilding dependent source coverage, acceptance, edition workbench or AI authority index. Reviewed metadata delta propagated through deterministic generators; native readings and human review gates remain unchanged.",
+  "changes": [
+    {
+      "path": "sources/sources.json",
+      "before_sha256": "942ea067831f90a6cd72c7f35bc668974a2b63e1de67d2759f74bf27456c5924",
+      "after_sha256": "6b53c8556e2a5bcd124e0ab1748b7b7012080b2b0521e63cf8818e46898a1b7d"
+    },
+    {
+      "path": "analysis/source-coverage-v1.json",
+      "before_sha256": "381188f9af2f6342b60663950dc4e2c379b3925256a582165f056057cc7de171",
+      "after_sha256": "e64c4458a02050585108b037a17f89f3e806a00e9b0d03d5f398bb8edabd012c"
+    },
+    {
+      "path": "scripts/source_coverage.py",
+      "before_sha256": "98c9c518993fef7db43ce238cc29900bf8c9d662c8574510f65e805a77a4b317",
+      "after_sha256": "cf66bbd3e64071a6fe9857f85bbb9ea95cd0fffd91e33d9a72063f4ea63fd3b0"
+    },
+    {
+      "path": "analysis/acceptance-2.0.json",
+      "before_sha256": "aa6f1db547d5a90a04a8bc4ed8a79334a7db4fe152fd757817ef32878ad85b19",
+      "after_sha256": "fdef5433b2845def2e3acf84bd219379a8912c7ca5dc4f4c8d5acec1fd2b02cc"
+    },
+    {
+      "path": "analysis/edition-workbench-v1.json",
+      "before_sha256": "0b584940b4772e324d298003c8c357dc0a563318877897fc2c74e9d53dd91e9f",
+      "after_sha256": "5a1bc2e9b8a4a22a759bc2c7c3838f2173f966df81fc5fddd74210e5185302cc"
+    }
+  ],
+  "native_corpus_sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+  "final_2_0_allowed": false
+}

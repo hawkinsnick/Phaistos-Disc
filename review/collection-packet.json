@@ -9,7 +9,7 @@
     "uncertainty": "Retain damage, restorations, unreadable signs and competing segmentations; do not silently normalize them."
   },
   "enumerated_record_keys": 62,
-  "evidence_fingerprint": "6c612163c26274733c19301904f726ff1ad8323e997cbb97d0ea09ee7ee2539e",
+  "evidence_fingerprint": "eb7461e3c3c3ee91fb26588ce62911644fbcb9808572b3d13565730fb051ae2f",
   "ledger_path": "research/collection-work-ledger.json",
   "native_review_links": [
     "reviews/review-packet-v1.json",

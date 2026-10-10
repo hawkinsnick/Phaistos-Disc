@@ -123,11 +123,11 @@
     },
     {
       "path": "analysis/source-coverage-v1.json",
-      "sha256": "f61ea5e31a15ca87f265fb0a12ecb9414ee13a9d9b6c9ce83efc347731b3de0a"
+      "sha256": "59364664ff2783a971ae223599831af807f217a14ca2bc83c2236cfe37b423ea"
     },
     {
       "path": "scripts/source_coverage.py",
-      "sha256": "98c9c518993fef7db43ce238cc29900bf8c9d662c8574510f65e805a77a4b317"
+      "sha256": "cf66bbd3e64071a6fe9857f85bbb9ea95cd0fffd91e33d9a72063f4ea63fd3b0"
     },
     {
       "path": "research/descriptive-protocol-v2.json",
@@ -151,7 +151,7 @@
     },
     {
       "path": "analysis/acceptance-2.0.json",
-      "sha256": "29e83a1c403e6609a50db7b2555c4a9fb74ae2ddac897f7567ea69c32d4ccf9d"
+      "sha256": "3bb0bd6871f2805e69e0c8dc3893a8f27f7b064bef2b1e857a4b42c849ae186f"
     },
     {
       "path": "scripts/acceptance_2.py",
@@ -179,15 +179,15 @@
     },
     {
       "path": "analysis/evidence-index-v1.json",
-      "sha256": "a845f3e91833f2b824e5f578b22393da8d74bac2b6cb9491fc45f6846b08ee83"
+      "sha256": "dba1a5abf2ffc5a2d0fe17073a288c7e8d9de50f5089c1e04b2d4b21f40c39af"
     },
     {
       "path": "analysis/workbench-acceptance-v1.json",
-      "sha256": "e2b618c5530f4c3c0f3337fade51a4d76d0e83083e18a37b1fe52105877cc10a"
+      "sha256": "a962d66939c166bad47aa97c5164024560273ba97dc320e7508ed89951e57447"
     },
     {
       "path": "workbench/evidence.html",
-      "sha256": "f094a0f0676d19ae5ab744ee776219799fd9c34db56435ebcde51b584ed0d469"
+      "sha256": "f71d9f3ae5537f4732022d2e7c03234b46c5f33821e70007e68c9009e7b82197"
     },
     {
       "path": "research/workbench-milestone-v1.json",
@@ -219,7 +219,7 @@
     },
     {
       "path": "analysis/edition-workbench-v1.json",
-      "sha256": "3721043a85e5e6c61d17e16795ae53a65971e9e0e7ef1f502cec70200115c5f6"
+      "sha256": "07cfc8dcc4f75a4e9e3bd65b9756fa6c92ec99ea9afe51839aa39e91a046c320"
     },
     {
       "path": "reviews/occurrence-review-sheet.tsv",
@@ -252,8 +252,16 @@
     {
       "path": ".github/workflows/release-change-ledger.yml",
       "sha256": "acad59395f7ff8b4353bc6eea69dfec6d8e6b342e08df87617c897dcd27d8a1f"
+    },
+    {
+      "path": "research/heraklion-museum-authority-v1.json",
+      "sha256": "15e125ad01a6a7a669d84a9751c0e8d9f363acf25488db88ea4d4f91f1bbe72f"
+    },
+    {
+      "path": "scripts/test_source_coverage.py",
+      "sha256": "edc48544e58dc7f9e4ac37f0ad40ebfd9ad2f220360abc667775b08dec41b888"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved.",
-  "checked": "2026-10-01"
+  "checked": "2026-10-02"
 }

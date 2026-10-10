@@ -10,4 +10,11 @@ class SourceTests(unittest.TestCase):
         self.assertIsNone(rows['pernier1908']['coverage_units']);self.assertIsNone(rows['hmu-codification']['coverage_units'])
         self.assertTrue(all(not s['complete_object_autopsy'] and not s['independent_review_completed'] for s in rows.values()))
         self.assertEqual(rows['olivier1975']['coverage_units']['individual_ordinal_pending'],196)
+    def test_museum_metadata_is_separate_from_transcription_review(self):
+        rows={s['source_id']:s for s in calculate()['sources']}
+        for sid,role in [('heraklion-catalogue','institutional_object_metadata'),('heraklion-exhibit','institutional_exhibit_assertions')]:
+            self.assertEqual(rows[sid]['role'],role)
+            self.assertEqual(rows[sid]['recorded_access_status'],'verified_current_web_2026-10-02')
+            self.assertIsNone(rows[sid]['coverage_units'])
+            self.assertFalse(rows[sid]['independent_review_completed'])
 if __name__=='__main__':unittest.main()
