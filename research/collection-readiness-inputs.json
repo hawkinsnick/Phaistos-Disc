@@ -28,6 +28,8 @@
   "source_files": [
     "analysis/current-status.json",
     "analysis/source-coverage-v1.json",
-    "sources/sources.json"
+    "sources/sources.json",
+    "research/cross-corpus-dependencies.json",
+    "docs/AI-INTEGRITY.md"
   ]
 }

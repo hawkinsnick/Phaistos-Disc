@@ -47,3 +47,7 @@ Always distinguish the historical 241 assertion from the project's 242 graphical
 ## Human-review gate
 Read `analysis/acceptance-2.0.json` before making any statement about independent review or final-2.0 readiness. A received or schema-valid review packet is not accepted review. AI must never attest reviewer identity, expertise, conflicts, independence, redistribution permission, physical inspection, or evidence adequacy. Those checks require a recorded human-maintainer acceptance. Until the replayed acceptance report sets `final_2_0_allowed` to true, describe final 2.0 as blocked.
 
+
+## Enforced assertion, dependency and bundle integrity
+
+Read `docs/AI-INTEGRITY.md` and the required `research/cross-corpus-dependencies.json` before source counts or cross-corpus analysis. Use qualified assertion views when provided; original source literals must travel with their reconciliation, uncertainty and identity context. The dependency register does not certify physical identity or linguistic affinity. Shared catalogue references and duplicated digital sources are not independent witnesses. Missing links mean unknown, not independent. `scripts/check_cross_corpus_dependencies.py` screens declared record selections and rejects pooled physical/witness counts and phonetic transfer. Native AI bundle validation checks the dependency projection and local evidence hashes. Bundle publication validates the exact source parent and never rebases or force-pushes the validated artifact. Software and packaging checks do not establish expert or model-behavior acceptance.
