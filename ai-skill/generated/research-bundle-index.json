@@ -1,9 +1,9 @@
 {
   "schema_version": "0.3.1",
   "skill_version": "0.3.1",
-  "source_commit": "6a56104c5acc5c7d3c1dd8c8372a9b7499aff13e",
+  "source_commit": "894be809ca091e8027bc16024ef0bcc203df75d7",
   "canonical_repository": true,
-  "generated_at_utc": "2026-10-10T21:43:07+00:00",
+  "generated_at_utc": "2026-10-11T23:25:49+00:00",
   "contract": {
     "corpus_is_authoritative": true,
     "missing_means_unknown": true,
@@ -16,8 +16,8 @@
     {
       "role": "current_status",
       "path": "analysis/current-status.json",
-      "sha256": "94f42d3ac03d3cdfd89ac4e26c5dc18a68082be4521d778b6f9e919ff4292581",
-      "bytes": 9733
+      "sha256": "ced39c1026bf67926e73386ccfc89d2b92fbf968e939e5be4f0d5ea0a57e50aa",
+      "bytes": 10020
     },
     {
       "role": "acceptance",
@@ -52,14 +52,32 @@
     {
       "role": "collection_work_ledger",
       "path": "research/collection-work-ledger.json",
-      "sha256": "17d7ec28b2ca3f7d16e78d8b1b2f019e6c155353251f52cfc88477927fa83a58",
-      "bytes": 74364
+      "sha256": "3c8d018d10c8bcffdb309b0f654bbcea5b108fc311feeaa62aea061482405d60",
+      "bytes": 74575
     },
     {
       "role": "collection_review_packet",
       "path": "review/collection-packet.json",
-      "sha256": "1c9a52dd21b567bee17d413274edc6f121dd0e1d1b32e7fe7cd65c13384ba106",
+      "sha256": "bb4bb982546d65a4c1e979de9dc59003d0d9af88b85bed3e2e27a054e5dcc08e",
       "bytes": 1851
+    },
+    {
+      "role": "cross_corpus_dependencies",
+      "path": "research/cross-corpus-dependencies.json",
+      "sha256": "5f69cea9dce3a980c013bfa2d28059eea53a0c9891a22ca5a5860d6e5783cc68",
+      "bytes": 454
+    },
+    {
+      "role": "sync_publication_guard",
+      "path": "ai-skill/scripts/publish_sync.py",
+      "sha256": "d8eba15aaa833fc4071e98bdd22da53385bce1c5cbafc973443cb42f7e39cc0e",
+      "bytes": 2836
+    },
+    {
+      "role": "ai_integrity_guide",
+      "path": "docs/AI-INTEGRITY.md",
+      "sha256": "8619d2ac88ca104eb10570b6c5c83021da5e5cdb57a7af1de076131d185207b0",
+      "bytes": 1766
     }
   ]
 }
