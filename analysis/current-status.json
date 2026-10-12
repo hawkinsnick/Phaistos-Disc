@@ -179,15 +179,15 @@
     },
     {
       "path": "analysis/evidence-index-v1.json",
-      "sha256": "8eb0917e58191d5cb06f9892a360122897de56fc4da28862b92e6a369414ccee"
+      "sha256": "ec74b38a4ceec21836f6d834325da25b2fea778a5685cbbd5bb0e4b731c57ddc"
     },
     {
       "path": "analysis/workbench-acceptance-v1.json",
-      "sha256": "334eca0e8134c89970338f3a44528801b342d5b4bedcaba68df9b7d2b1837e8b"
+      "sha256": "84539c5bc19b0b84434da1ab72160fe6caeee79bbca85650b556c99cb7c20500"
     },
     {
       "path": "workbench/evidence.html",
-      "sha256": "52eb96e6650c5f1b6c2c11358ebbe7815cd1bf5a4dbc7104d8fe84363db353fa"
+      "sha256": "74939111b06be495fb1afa25f1879fb0e03de37cfcc6a7d298e8fe03b06080a2"
     },
     {
       "path": "research/workbench-milestone-v1.json",
@@ -260,6 +260,14 @@
     {
       "path": "scripts/test_source_coverage.py",
       "sha256": "edc48544e58dc7f9e4ac37f0ad40ebfd9ad2f220360abc667775b08dec41b888"
+    },
+    {
+      "path": "research/cross-corpus-dependencies.json",
+      "sha256": "5f69cea9dce3a980c013bfa2d28059eea53a0c9891a22ca5a5860d6e5783cc68"
+    },
+    {
+      "path": "docs/AI-INTEGRITY.md",
+      "sha256": "8619d2ac88ca104eb10570b6c5c83021da5e5cdb57a7af1de076131d185207b0"
     }
   ],
   "boundary": "Counts refer to one project transcription of a published graphical witness; faces are not independent physical objects. Unknowns and source disagreements are preserved.",
