@@ -1,0 +1,121 @@
+{
+  "format": "corpus-native-evidence-query-v1",
+  "repository": "hawkinsnick/Phaistos-Disc",
+  "collections": [
+    {
+      "name": "graphical-groups",
+      "path": "corpus/disc.json",
+      "pointer": "/groups",
+      "id_pointer": "/group_id",
+      "unit": "source graphical group",
+      "scope": "Groups are not established linguistic words."
+    },
+    {
+      "name": "occurrences",
+      "path": "corpus/disc.json",
+      "pointer": "/occurrences",
+      "id_pointer": "/occurrence_id",
+      "unit": "source sign-impression slot",
+      "scope": "Erased/unidentified slots and uncertainty remain literal."
+    },
+    {
+      "name": "attributed-claims",
+      "path": "apparatus/claims.json",
+      "pointer": "",
+      "id_pointer": "/claim_id",
+      "unit": "apparatus claim",
+      "scope": "Conjectures do not change the baseline."
+    },
+    {
+      "name": "stroke-assertions",
+      "path": "apparatus/stroke-assertions.json",
+      "pointer": "/marks",
+      "id_pointer": "/mark_id",
+      "unit": "source mark assertion",
+      "scope": "Mark placement and interpretation remain separately qualified."
+    }
+  ],
+  "relations": [
+    {
+      "from": "graphical-groups",
+      "to": "occurrences",
+      "from_pointer": "/group_id",
+      "to_pointer": "/group_id",
+      "label": "EXACT_DECLARED_ID_MATCH_NOT_PHYSICAL_CERTIFICATION_OR_INDEPENDENCE"
+    },
+    {
+      "from": "occurrences",
+      "to": "attributed-claims",
+      "from_pointer": "/occurrence_id",
+      "to_pointer": "/locus",
+      "label": "EXACT_DECLARED_ID_MATCH_NOT_PHYSICAL_CERTIFICATION_OR_INDEPENDENCE"
+    },
+    {
+      "from": "graphical-groups",
+      "to": "stroke-assertions",
+      "from_pointer": "/group_id",
+      "to_pointer": "/group_id",
+      "label": "EXACT_DECLARED_ID_MATCH_NOT_PHYSICAL_CERTIFICATION_OR_INDEPENDENCE"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "corpus/disc.json",
+      "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "encoding": "json",
+      "role": "graphical-groups, occurrences"
+    },
+    {
+      "path": "apparatus/claims.json",
+      "sha256": "8b94dc170ca025a8012da5dcb9cbe165d7019e75d83687cc0a535f27a04c43a7",
+      "encoding": "json",
+      "role": "attributed-claims"
+    },
+    {
+      "path": "apparatus/stroke-assertions.json",
+      "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c",
+      "encoding": "json",
+      "role": "stroke-assertions"
+    },
+    {
+      "path": "sources/sources.json",
+      "sha256": "ca56bc3067ef3b0967270a3d2c153c92db3306e413e7280549c71937801c4ad3",
+      "encoding": "json",
+      "role": "corpus-level source/rights/context register"
+    },
+    {
+      "path": "apparatus/witness-lineage.json",
+      "sha256": "9e6a161b637dcf01f287b4e7c3c3ff448f31caeb4b33cdb9c34ff02095ccc834",
+      "encoding": "json",
+      "role": "corpus-level source/rights/context register"
+    },
+    {
+      "path": "research/count-assertions.json",
+      "sha256": "a8a2d0c510b10d2d6382201ffe2563155443dbf75870da01cef6b43679d01f97",
+      "encoding": "json",
+      "role": "corpus-level source/rights/context register"
+    },
+    {
+      "path": "research/transcription-policy-v1.json",
+      "sha256": "67a5471f9c720e8e197656b8352cc6b5e558a8f7f376cd222775cec1048ad144",
+      "encoding": "json",
+      "role": "corpus-level source/rights/context register"
+    },
+    {
+      "path": "LICENSE-CONTENT.md",
+      "sha256": "24b4bfcf2de2f729b7ebce80c8011e7d75f82f5626a63bdcf333b28f8a2a2802",
+      "encoding": "text",
+      "role": "corpus-level source/rights/context register"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "cc5120da762ed398aac92590de299e5f07114af48ec2766259df03dc81c98cdb",
+      "encoding": "text",
+      "role": "corpus-level source/rights/context register"
+    }
+  ],
+  "scholarly_limits": [
+    "One disc with two faces; neither groups nor occurrences are independent documents. Attributed conjectures and erased slots are preserved without decipherment or adjudication."
+  ],
+  "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65"
+}
