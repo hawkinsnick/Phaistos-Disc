@@ -1,0 +1,164 @@
+{
+  "format": "corpus-native-evidence-query-coverage-v1",
+  "repository": "hawkinsnick/Phaistos-Disc",
+  "profile_sha256": "f30851cebc3d90c66d3589e4b939b467c951714cda61bba87c040f2774356012",
+  "implementation_sha256": "70aa6686802122667b369811fa569c45c407847ed8965b917f58130c5a685550",
+  "collections": [
+    {
+      "name": "graphical-groups",
+      "native_unit": "source graphical group",
+      "record_count": 61,
+      "scope": "Groups are not established linguistic words.",
+      "example_ids": [
+        "PD-A-E31",
+        "PD-A-E30",
+        "PD-A-E29"
+      ],
+      "provenance": {
+        "path": "corpus/disc.json",
+        "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+        "pointer": "/groups",
+        "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+        "role": "graphical-groups, occurrences",
+        "encoding": "json"
+      }
+    },
+    {
+      "name": "occurrences",
+      "native_unit": "source sign-impression slot",
+      "record_count": 242,
+      "scope": "Erased/unidentified slots and uncertainty remain literal.",
+      "example_ids": [
+        "PD-A-E31-S01",
+        "PD-A-E31-S02",
+        "PD-A-E31-S03"
+      ],
+      "provenance": {
+        "path": "corpus/disc.json",
+        "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+        "pointer": "/occurrences",
+        "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+        "role": "graphical-groups, occurrences",
+        "encoding": "json"
+      }
+    },
+    {
+      "name": "attributed-claims",
+      "native_unit": "apparatus claim",
+      "record_count": 7,
+      "scope": "Conjectures do not change the baseline.",
+      "example_ids": [
+        "PD-C001",
+        "PD-C002",
+        "PD-C003"
+      ],
+      "provenance": {
+        "path": "apparatus/claims.json",
+        "sha256": "8b94dc170ca025a8012da5dcb9cbe165d7019e75d83687cc0a535f27a04c43a7",
+        "pointer": "",
+        "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+        "role": "attributed-claims",
+        "encoding": "json"
+      }
+    },
+    {
+      "name": "stroke-assertions",
+      "native_unit": "source mark assertion",
+      "record_count": 16,
+      "scope": "Mark placement and interpretation remain separately qualified.",
+      "example_ids": [
+        "PD-M001",
+        "PD-M002",
+        "PD-M003"
+      ],
+      "provenance": {
+        "path": "apparatus/stroke-assertions.json",
+        "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c",
+        "pointer": "/marks",
+        "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+        "role": "stroke-assertions",
+        "encoding": "json"
+      }
+    }
+  ],
+  "context_resources": [
+    {
+      "path": "corpus/disc.json",
+      "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "pointer": "",
+      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "role": "graphical-groups, occurrences",
+      "encoding": "json"
+    },
+    {
+      "path": "apparatus/claims.json",
+      "sha256": "8b94dc170ca025a8012da5dcb9cbe165d7019e75d83687cc0a535f27a04c43a7",
+      "pointer": "",
+      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "role": "attributed-claims",
+      "encoding": "json"
+    },
+    {
+      "path": "apparatus/stroke-assertions.json",
+      "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c",
+      "pointer": "",
+      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "role": "stroke-assertions",
+      "encoding": "json"
+    },
+    {
+      "path": "sources/sources.json",
+      "sha256": "ca56bc3067ef3b0967270a3d2c153c92db3306e413e7280549c71937801c4ad3",
+      "pointer": "",
+      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "role": "corpus-level source/rights/context register",
+      "encoding": "json"
+    },
+    {
+      "path": "apparatus/witness-lineage.json",
+      "sha256": "9e6a161b637dcf01f287b4e7c3c3ff448f31caeb4b33cdb9c34ff02095ccc834",
+      "pointer": "",
+      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "role": "corpus-level source/rights/context register",
+      "encoding": "json"
+    },
+    {
+      "path": "research/count-assertions.json",
+      "sha256": "a8a2d0c510b10d2d6382201ffe2563155443dbf75870da01cef6b43679d01f97",
+      "pointer": "",
+      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "role": "corpus-level source/rights/context register",
+      "encoding": "json"
+    },
+    {
+      "path": "research/transcription-policy-v1.json",
+      "sha256": "67a5471f9c720e8e197656b8352cc6b5e558a8f7f376cd222775cec1048ad144",
+      "pointer": "",
+      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "role": "corpus-level source/rights/context register",
+      "encoding": "json"
+    },
+    {
+      "path": "LICENSE-CONTENT.md",
+      "sha256": "24b4bfcf2de2f729b7ebce80c8011e7d75f82f5626a63bdcf333b28f8a2a2802",
+      "pointer": "",
+      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "role": "corpus-level source/rights/context register",
+      "encoding": "text"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "cc5120da762ed398aac92590de299e5f07114af48ec2766259df03dc81c98cdb",
+      "pointer": "",
+      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "role": "corpus-level source/rights/context register",
+      "encoding": "text"
+    }
+  ],
+  "scholarly_limits": [
+    "One disc with two faces; neither groups nor occurrences are independent documents. Attributed conjectures and erased slots are preserved without decipherment or adjudication."
+  ],
+  "alternative_pair_count": null,
+  "independent_witness_count": null,
+  "boundary": "These are views of existing source records, not new witnesses or adjudications. Counts retain their declared native units and must not be summed as unique objects. Registers may contain project hypotheses or untraced alternatives. Only explicitly attributed, aligned readings can support an editorial comparison; no alternative-pair or independent-witness count is inferred by this tool."
+}
