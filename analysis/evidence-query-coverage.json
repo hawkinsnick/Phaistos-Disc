@@ -1,7 +1,7 @@
 {
   "format": "corpus-native-evidence-query-coverage-v1",
   "repository": "hawkinsnick/Phaistos-Disc",
-  "profile_sha256": "f30851cebc3d90c66d3589e4b939b467c951714cda61bba87c040f2774356012",
+  "profile_sha256": "4cdd57c203b301fdb0a603d441ffcd6a3278b9b7d48b65128814b4f8b3e5cd71",
   "implementation_sha256": "70aa6686802122667b369811fa569c45c407847ed8965b917f58130c5a685550",
   "collections": [
     {
@@ -18,7 +18,7 @@
         "path": "corpus/disc.json",
         "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
         "pointer": "/groups",
-        "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+        "native_artifacts_snapshot_commit": null,
         "role": "graphical-groups, occurrences",
         "encoding": "json"
       }
@@ -37,7 +37,7 @@
         "path": "corpus/disc.json",
         "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
         "pointer": "/occurrences",
-        "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+        "native_artifacts_snapshot_commit": null,
         "role": "graphical-groups, occurrences",
         "encoding": "json"
       }
@@ -56,7 +56,7 @@
         "path": "apparatus/claims.json",
         "sha256": "8b94dc170ca025a8012da5dcb9cbe165d7019e75d83687cc0a535f27a04c43a7",
         "pointer": "",
-        "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+        "native_artifacts_snapshot_commit": null,
         "role": "attributed-claims",
         "encoding": "json"
       }
@@ -75,8 +75,27 @@
         "path": "apparatus/stroke-assertions.json",
         "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c",
         "pointer": "/marks",
-        "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+        "native_artifacts_snapshot_commit": null,
         "role": "stroke-assertions",
+        "encoding": "json"
+      }
+    },
+    {
+      "name": "attribution-review",
+      "native_unit": "bounded documentary attribution review task",
+      "record_count": 7,
+      "scope": "All seven claims distinguish erased-sign conjecture, sign/mark differences, same-source discrepancies, arithmetic scope and traversal hypotheses.",
+      "example_ids": [
+        "PD-C001",
+        "PD-C002",
+        "PD-C003"
+      ],
+      "provenance": {
+        "path": "research/attribution-review.json",
+        "sha256": "8ff52e8a75046eb4a96b082092c08bf7589c7b06a9d0f04dbc8a3c30fa95bed6",
+        "pointer": "/cases",
+        "native_artifacts_snapshot_commit": null,
+        "role": "bounded attribution review",
         "encoding": "json"
       }
     }
@@ -86,7 +105,7 @@
       "path": "corpus/disc.json",
       "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "native_artifacts_snapshot_commit": null,
       "role": "graphical-groups, occurrences",
       "encoding": "json"
     },
@@ -94,7 +113,7 @@
       "path": "apparatus/claims.json",
       "sha256": "8b94dc170ca025a8012da5dcb9cbe165d7019e75d83687cc0a535f27a04c43a7",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "native_artifacts_snapshot_commit": null,
       "role": "attributed-claims",
       "encoding": "json"
     },
@@ -102,7 +121,7 @@
       "path": "apparatus/stroke-assertions.json",
       "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "native_artifacts_snapshot_commit": null,
       "role": "stroke-assertions",
       "encoding": "json"
     },
@@ -110,7 +129,7 @@
       "path": "sources/sources.json",
       "sha256": "ca56bc3067ef3b0967270a3d2c153c92db3306e413e7280549c71937801c4ad3",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "native_artifacts_snapshot_commit": null,
       "role": "corpus-level source/rights/context register",
       "encoding": "json"
     },
@@ -118,7 +137,7 @@
       "path": "apparatus/witness-lineage.json",
       "sha256": "9e6a161b637dcf01f287b4e7c3c3ff448f31caeb4b33cdb9c34ff02095ccc834",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "native_artifacts_snapshot_commit": null,
       "role": "corpus-level source/rights/context register",
       "encoding": "json"
     },
@@ -126,7 +145,7 @@
       "path": "research/count-assertions.json",
       "sha256": "a8a2d0c510b10d2d6382201ffe2563155443dbf75870da01cef6b43679d01f97",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "native_artifacts_snapshot_commit": null,
       "role": "corpus-level source/rights/context register",
       "encoding": "json"
     },
@@ -134,7 +153,7 @@
       "path": "research/transcription-policy-v1.json",
       "sha256": "67a5471f9c720e8e197656b8352cc6b5e558a8f7f376cd222775cec1048ad144",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "native_artifacts_snapshot_commit": null,
       "role": "corpus-level source/rights/context register",
       "encoding": "json"
     },
@@ -142,7 +161,7 @@
       "path": "LICENSE-CONTENT.md",
       "sha256": "24b4bfcf2de2f729b7ebce80c8011e7d75f82f5626a63bdcf333b28f8a2a2802",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "native_artifacts_snapshot_commit": null,
       "role": "corpus-level source/rights/context register",
       "encoding": "text"
     },
@@ -150,13 +169,22 @@
       "path": "NOTICE",
       "sha256": "cc5120da762ed398aac92590de299e5f07114af48ec2766259df03dc81c98cdb",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65",
+      "native_artifacts_snapshot_commit": null,
       "role": "corpus-level source/rights/context register",
       "encoding": "text"
+    },
+    {
+      "path": "research/attribution-review.json",
+      "sha256": "8ff52e8a75046eb4a96b082092c08bf7589c7b06a9d0f04dbc8a3c30fa95bed6",
+      "pointer": "",
+      "native_artifacts_snapshot_commit": null,
+      "role": "bounded attribution review",
+      "encoding": "json"
     }
   ],
   "scholarly_limits": [
-    "One disc with two faces; neither groups nor occurrences are independent documents. Attributed conjectures and erased slots are preserved without decipherment or adjudication."
+    "One disc with two faces; neither groups nor occurrences are independent documents. Attributed conjectures and erased slots are preserved without decipherment or adjudication.",
+    "Attribution review inspects pinned native packets, not underlying sources afresh. Its cases and apparatus notes are not independent witnesses or an alternative-pair total."
   ],
   "alternative_pair_count": null,
   "independent_witness_count": null,
