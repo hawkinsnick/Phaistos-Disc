@@ -33,6 +33,14 @@
       "id_pointer": "/mark_id",
       "unit": "source mark assertion",
       "scope": "Mark placement and interpretation remain separately qualified."
+    },
+    {
+      "name": "attribution-review",
+      "path": "research/attribution-review.json",
+      "pointer": "/cases",
+      "id_pointer": "/review_id",
+      "unit": "bounded documentary attribution review task",
+      "scope": "All seven claims distinguish erased-sign conjecture, sign/mark differences, same-source discrepancies, arithmetic scope and traversal hypotheses."
     }
   ],
   "relations": [
@@ -63,59 +71,77 @@
       "path": "corpus/disc.json",
       "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
       "encoding": "json",
-      "role": "graphical-groups, occurrences"
+      "role": "graphical-groups, occurrences",
+      "source_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65"
     },
     {
       "path": "apparatus/claims.json",
       "sha256": "8b94dc170ca025a8012da5dcb9cbe165d7019e75d83687cc0a535f27a04c43a7",
       "encoding": "json",
-      "role": "attributed-claims"
+      "role": "attributed-claims",
+      "source_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65"
     },
     {
       "path": "apparatus/stroke-assertions.json",
       "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c",
       "encoding": "json",
-      "role": "stroke-assertions"
+      "role": "stroke-assertions",
+      "source_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65"
     },
     {
       "path": "sources/sources.json",
       "sha256": "ca56bc3067ef3b0967270a3d2c153c92db3306e413e7280549c71937801c4ad3",
       "encoding": "json",
-      "role": "corpus-level source/rights/context register"
+      "role": "corpus-level source/rights/context register",
+      "source_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65"
     },
     {
       "path": "apparatus/witness-lineage.json",
       "sha256": "9e6a161b637dcf01f287b4e7c3c3ff448f31caeb4b33cdb9c34ff02095ccc834",
       "encoding": "json",
-      "role": "corpus-level source/rights/context register"
+      "role": "corpus-level source/rights/context register",
+      "source_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65"
     },
     {
       "path": "research/count-assertions.json",
       "sha256": "a8a2d0c510b10d2d6382201ffe2563155443dbf75870da01cef6b43679d01f97",
       "encoding": "json",
-      "role": "corpus-level source/rights/context register"
+      "role": "corpus-level source/rights/context register",
+      "source_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65"
     },
     {
       "path": "research/transcription-policy-v1.json",
       "sha256": "67a5471f9c720e8e197656b8352cc6b5e558a8f7f376cd222775cec1048ad144",
       "encoding": "json",
-      "role": "corpus-level source/rights/context register"
+      "role": "corpus-level source/rights/context register",
+      "source_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65"
     },
     {
       "path": "LICENSE-CONTENT.md",
       "sha256": "24b4bfcf2de2f729b7ebce80c8011e7d75f82f5626a63bdcf333b28f8a2a2802",
       "encoding": "text",
-      "role": "corpus-level source/rights/context register"
+      "role": "corpus-level source/rights/context register",
+      "source_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65"
     },
     {
       "path": "NOTICE",
       "sha256": "cc5120da762ed398aac92590de299e5f07114af48ec2766259df03dc81c98cdb",
       "encoding": "text",
-      "role": "corpus-level source/rights/context register"
+      "role": "corpus-level source/rights/context register",
+      "source_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65"
+    },
+    {
+      "path": "research/attribution-review.json",
+      "sha256": "8ff52e8a75046eb4a96b082092c08bf7589c7b06a9d0f04dbc8a3c30fa95bed6",
+      "encoding": "json",
+      "role": "bounded attribution review",
+      "source_snapshot_commit": null
     }
   ],
   "scholarly_limits": [
-    "One disc with two faces; neither groups nor occurrences are independent documents. Attributed conjectures and erased slots are preserved without decipherment or adjudication."
+    "One disc with two faces; neither groups nor occurrences are independent documents. Attributed conjectures and erased slots are preserved without decipherment or adjudication.",
+    "Attribution review inspects pinned native packets, not underlying sources afresh. Its cases and apparatus notes are not independent witnesses or an alternative-pair total."
   ],
-  "native_artifacts_snapshot_commit": "1941c5631f72b1108374cfc3587b9ff4d9800c65"
+  "native_artifacts_snapshot_commit": null,
+  "snapshot_commit_scope": "Mixed inputs retain their per-artifact anchors. New original review artifacts are byte-pinned and identified by published repository history, not assigned to an earlier commit."
 }

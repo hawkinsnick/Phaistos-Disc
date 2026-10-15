@@ -1,0 +1,165 @@
+{
+  "format": "corpus-attribution-review-v1",
+  "repository": "hawkinsnick/Phaistos-Disc",
+  "checked": "2026-10-15",
+  "scope": "All seven claims distinguish erased-sign conjecture, sign/mark differences, same-source discrepancies, arithmetic scope and traversal hypotheses.",
+  "consultation_this_pass": "PINNED_REPOSITORY_EVIDENCE_ONLY",
+  "consultation_boundary": "Existing source consultation receipts and limits are inherited exactly from the referenced native packets. This pass inspects those packets, not the underlying publications afresh. No exhaustive literature search, new autopsy or independent review is claimed.",
+  "rights": "Original project review and bibliographic/source pointers only. Native attribution and rights remain attached to evidence; no new source files, figures or full protected editions are redistributed. Linear A GORILA refusal is not relaxed.",
+  "inputs": [
+    {
+      "path": "apparatus/claims.json",
+      "sha256": "8b94dc170ca025a8012da5dcb9cbe165d7019e75d83687cc0a535f27a04c43a7",
+      "source_snapshot_commit": "55326a77e150a118f158b27bafb5dd6b58634208"
+    },
+    {
+      "path": "sources/sources.json",
+      "sha256": "ca56bc3067ef3b0967270a3d2c153c92db3306e413e7280549c71937801c4ad3",
+      "source_snapshot_commit": "55326a77e150a118f158b27bafb5dd6b58634208"
+    }
+  ],
+  "complete_selections": [
+    {
+      "path": "apparatus/claims.json",
+      "pointer": "",
+      "expected_rows": 7
+    }
+  ],
+  "cases": [
+    {
+      "review_id": "PD-C001",
+      "case_class": "READING_COMPARISON",
+      "finding": "The proposed erased sign remains a question-marked conjecture, not a baseline reading.",
+      "remaining_gap": "Check graphic locus and source author identity through sources.json; the erased slot remains null.",
+      "evidence": [
+        {
+          "path": "apparatus/claims.json",
+          "pointer": "/0"
+        },
+        {
+          "path": "sources/sources.json",
+          "pointer": "/5"
+        }
+      ],
+      "pair_attribution": "NOT_APPLICABLE",
+      "new_reading_admitted": false,
+      "independent_review_added": false
+    },
+    {
+      "review_id": "PD-C002",
+      "case_class": "READING_COMPARISON",
+      "finding": "HMU sign25 and the project figure reading07 are different assertions at the declared group/slot.",
+      "remaining_gap": "Confirm counting convention and graphic alignment before treating this as a fully collated sign dispute.",
+      "evidence": [
+        {
+          "path": "apparatus/claims.json",
+          "pointer": "/1"
+        },
+        {
+          "path": "sources/sources.json",
+          "pointer": "/5"
+        }
+      ],
+      "pair_attribution": "PARTIAL_LOCATED_COMPARISON",
+      "new_reading_admitted": false,
+      "independent_review_added": false
+    },
+    {
+      "review_id": "PD-C003",
+      "case_class": "READING_COMPARISON",
+      "finding": "The same HMU source differs between overview and detail on an underscore.",
+      "remaining_gap": "Omission from a drawing is not physical absence; inspect both representations and mark alignment.",
+      "evidence": [
+        {
+          "path": "apparatus/claims.json",
+          "pointer": "/2"
+        },
+        {
+          "path": "sources/sources.json",
+          "pointer": "/5"
+        }
+      ],
+      "pair_attribution": "SAME_SOURCE_INTERNAL",
+      "new_reading_admitted": false,
+      "independent_review_added": false
+    },
+    {
+      "review_id": "PD-C004",
+      "case_class": "READING_COMPARISON",
+      "finding": "Evans’s footnote target does not occur in the project figure-derived group.",
+      "remaining_gap": "Align footnote numbering and figure/signary conventions before moving or inventing an occurrence.",
+      "evidence": [
+        {
+          "path": "apparatus/claims.json",
+          "pointer": "/3"
+        },
+        {
+          "path": "sources/sources.json",
+          "pointer": "/3"
+        }
+      ],
+      "pair_attribution": "SAME_SOURCE_INTERNAL",
+      "new_reading_admitted": false,
+      "independent_review_added": false
+    },
+    {
+      "review_id": "PD-C005",
+      "case_class": "COUNT_OR_IDENTITY",
+      "finding": "Evans’s stated15 and face counts9+7 have an unresolved inclusion/arithmetic scope.",
+      "remaining_gap": "Keep the possible A25 inferred stroke separate; do not force agreement by changing a count.",
+      "evidence": [
+        {
+          "path": "apparatus/claims.json",
+          "pointer": "/4"
+        },
+        {
+          "path": "sources/sources.json",
+          "pointer": "/3"
+        }
+      ],
+      "pair_attribution": "NOT_APPLICABLE",
+      "new_reading_admitted": false,
+      "independent_review_added": false
+    },
+    {
+      "review_id": "PD-C006",
+      "case_class": "INTERPRETATION",
+      "finding": "Evans’s center-to-outer proposal is a source-attributed traversal hypothesis.",
+      "remaining_gap": "Reconcile argument and physical production sequence independently of reversible project traversal.",
+      "evidence": [
+        {
+          "path": "apparatus/claims.json",
+          "pointer": "/5"
+        },
+        {
+          "path": "sources/sources.json",
+          "pointer": "/3"
+        }
+      ],
+      "pair_attribution": "NOT_APPLICABLE",
+      "new_reading_admitted": false,
+      "independent_review_added": false
+    },
+    {
+      "review_id": "PD-C007",
+      "case_class": "INTERPRETATION",
+      "finding": "The Unicode proposal reports a reading consensus and separately specifies exchange directionality.",
+      "remaining_gap": "Encoding left-to-right does not determine ancient physical or linguistic reading direction.",
+      "evidence": [
+        {
+          "path": "apparatus/claims.json",
+          "pointer": "/6"
+        },
+        {
+          "path": "sources/sources.json",
+          "pointer": "/4"
+        }
+      ],
+      "pair_attribution": "NOT_APPLICABLE",
+      "new_reading_admitted": false,
+      "independent_review_added": false
+    }
+  ],
+  "new_readings_admitted": 0,
+  "independent_reviews_added": 0
+}
