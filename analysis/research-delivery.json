@@ -1,0 +1,224 @@
+{
+  "format": "native-research-delivery-v1",
+  "repository": "hawkinsnick/Phaistos-Disc",
+  "status": "PASS_DELIVERY_CONTROLS_ONLY",
+  "source_attribution_completeness": "NOT_CERTIFIED_BY_FILE_POINTERS",
+  "facts_hypotheses_policy": "PRESERVE_NATIVE_CATEGORIES_NO_AUTOMATIC_PROMOTION",
+  "scholarly_completeness": false,
+  "expert_acceptance_added": false,
+  "model_behavior_empirically_validated": false,
+  "collections": [
+    {
+      "name": "graphical-groups",
+      "native_unit": "source graphical group",
+      "record_count": 61,
+      "scope": "Groups are not established linguistic words.",
+      "example_ids": [
+        "PD-A-E31",
+        "PD-A-E30",
+        "PD-A-E29"
+      ],
+      "provenance": {
+        "path": "corpus/disc.json",
+        "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+        "pointer": "/groups",
+        "native_artifacts_snapshot_commit": null,
+        "role": "graphical-groups, occurrences",
+        "encoding": "json"
+      }
+    },
+    {
+      "name": "occurrences",
+      "native_unit": "source sign-impression slot",
+      "record_count": 242,
+      "scope": "Erased/unidentified slots and uncertainty remain literal.",
+      "example_ids": [
+        "PD-A-E31-S01",
+        "PD-A-E31-S02",
+        "PD-A-E31-S03"
+      ],
+      "provenance": {
+        "path": "corpus/disc.json",
+        "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+        "pointer": "/occurrences",
+        "native_artifacts_snapshot_commit": null,
+        "role": "graphical-groups, occurrences",
+        "encoding": "json"
+      }
+    },
+    {
+      "name": "attributed-claims",
+      "native_unit": "apparatus claim",
+      "record_count": 7,
+      "scope": "Conjectures do not change the baseline.",
+      "example_ids": [
+        "PD-C001",
+        "PD-C002",
+        "PD-C003"
+      ],
+      "provenance": {
+        "path": "apparatus/claims.json",
+        "sha256": "8b94dc170ca025a8012da5dcb9cbe165d7019e75d83687cc0a535f27a04c43a7",
+        "pointer": "",
+        "native_artifacts_snapshot_commit": null,
+        "role": "attributed-claims",
+        "encoding": "json"
+      }
+    },
+    {
+      "name": "stroke-assertions",
+      "native_unit": "source mark assertion",
+      "record_count": 16,
+      "scope": "Mark placement and interpretation remain separately qualified.",
+      "example_ids": [
+        "PD-M001",
+        "PD-M002",
+        "PD-M003"
+      ],
+      "provenance": {
+        "path": "apparatus/stroke-assertions.json",
+        "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c",
+        "pointer": "/marks",
+        "native_artifacts_snapshot_commit": null,
+        "role": "stroke-assertions",
+        "encoding": "json"
+      }
+    },
+    {
+      "name": "attribution-review",
+      "native_unit": "bounded documentary attribution review task",
+      "record_count": 7,
+      "scope": "All seven claims distinguish erased-sign conjecture, sign/mark differences, same-source discrepancies, arithmetic scope and traversal hypotheses.",
+      "example_ids": [
+        "PD-C001",
+        "PD-C002",
+        "PD-C003"
+      ],
+      "provenance": {
+        "path": "research/attribution-review.json",
+        "sha256": "8ff52e8a75046eb4a96b082092c08bf7589c7b06a9d0f04dbc8a3c30fa95bed6",
+        "pointer": "/cases",
+        "native_artifacts_snapshot_commit": null,
+        "role": "bounded attribution review",
+        "encoding": "json"
+      }
+    }
+  ],
+  "scholarly_limits": [
+    "One disc with two faces; neither groups nor occurrences are independent documents. Attributed conjectures and erased slots are preserved without decipherment or adjudication.",
+    "Attribution review inspects pinned native packets, not underlying sources afresh. Its cases and apparatus notes are not independent witnesses or an alternative-pair total."
+  ],
+  "inputs": [
+    {
+      "path": "LICENSE",
+      "sha256": "a6483079a3962d57e0174a735f70813ce644e4371869e1108114dfee6cfd5674",
+      "bytes": 582
+    },
+    {
+      "path": "LICENSE-CODE",
+      "sha256": "5abeed8801e0a4a528efb27f35cc14998789d6f0f7f851ca38fa28283372b2a4",
+      "bytes": 386
+    },
+    {
+      "path": "LICENSE-CONTENT.md",
+      "sha256": "24b4bfcf2de2f729b7ebce80c8011e7d75f82f5626a63bdcf333b28f8a2a2802",
+      "bytes": 762
+    },
+    {
+      "path": "LICENSING.md",
+      "sha256": "ab9b5ec64d32f4e987fa4081dec15853a6b87858a4a8dbb7162af4ab9a54c7e8",
+      "bytes": 2487
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "cc5120da762ed398aac92590de299e5f07114af48ec2766259df03dc81c98cdb",
+      "bytes": 918
+    },
+    {
+      "path": "ai-skill/SKILL.md",
+      "sha256": "6b27733a7781cd1c5af985663f5cb5aa08398b281e2e09e2162aa6b856d4160e",
+      "bytes": 8132
+    },
+    {
+      "path": "apparatus/claims.json",
+      "sha256": "8b94dc170ca025a8012da5dcb9cbe165d7019e75d83687cc0a535f27a04c43a7",
+      "bytes": 2930
+    },
+    {
+      "path": "apparatus/stroke-assertions.json",
+      "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c",
+      "bytes": 5356
+    },
+    {
+      "path": "apparatus/witness-lineage.json",
+      "sha256": "9e6a161b637dcf01f287b4e7c3c3ff448f31caeb4b33cdb9c34ff02095ccc834",
+      "bytes": 1375
+    },
+    {
+      "path": "corpus/disc.json",
+      "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+      "bytes": 63422
+    },
+    {
+      "path": "docs/RESEARCH-DELIVERY.md",
+      "sha256": "e745c98907a4134dc4c1e7b7b89aa584215482be81ceccd835495e84aa889189",
+      "bytes": 4065
+    },
+    {
+      "path": "research/attribution-review.json",
+      "sha256": "8ff52e8a75046eb4a96b082092c08bf7589c7b06a9d0f04dbc8a3c30fa95bed6",
+      "bytes": 6045
+    },
+    {
+      "path": "research/collection-work-ledger.json",
+      "sha256": "3c8d018d10c8bcffdb309b0f654bbcea5b108fc311feeaa62aea061482405d60",
+      "bytes": 74575
+    },
+    {
+      "path": "research/count-assertions.json",
+      "sha256": "a8a2d0c510b10d2d6382201ffe2563155443dbf75870da01cef6b43679d01f97",
+      "bytes": 728
+    },
+    {
+      "path": "research/evidence-query-profile.json",
+      "sha256": "4cdd57c203b301fdb0a603d441ffcd6a3278b9b7d48b65128814b4f8b3e5cd71",
+      "bytes": 5780
+    },
+    {
+      "path": "research/transcription-policy-v1.json",
+      "sha256": "67a5471f9c720e8e197656b8352cc6b5e558a8f7f376cd222775cec1048ad144",
+      "bytes": 1020
+    },
+    {
+      "path": "review/collection-packet.json",
+      "sha256": "bb4bb982546d65a4c1e979de9dc59003d0d9af88b85bed3e2e27a054e5dcc08e",
+      "bytes": 1851
+    },
+    {
+      "path": "reviews/review-packet-v1.json",
+      "sha256": "695c427dcde98e479ff0ad4cd12909735bf2c8c034a0b13d2aabdf4afa3d1a2b",
+      "bytes": 34474
+    },
+    {
+      "path": "scripts/evidence_query.py",
+      "sha256": "70aa6686802122667b369811fa569c45c407847ed8965b917f58130c5a685550",
+      "bytes": 11289
+    },
+    {
+      "path": "scripts/research_delivery.py",
+      "sha256": "2c113043ed51a459b82dc3959b7f56849bf1aa8c2223719ef3fdaa1321decf8d",
+      "bytes": 10075
+    },
+    {
+      "path": "scripts/test_research_delivery.py",
+      "sha256": "70d2149542b267fdd633d43dd925644dbeeb5d5e66f27675b28c77de7109464b",
+      "bytes": 5678
+    },
+    {
+      "path": "sources/sources.json",
+      "sha256": "ca56bc3067ef3b0967270a3d2c153c92db3306e413e7280549c71937801c4ad3",
+      "bytes": 6651
+    }
+  ],
+  "boundary": "Source assertions, hypotheses and review tasks retain their native categories. Retrieval and byte replay establish neither scholarly completeness nor expert acceptance. Missing source attribution, access, permission and independent review remain open where recorded."
+}
