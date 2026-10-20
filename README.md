@@ -1,5 +1,16 @@
 # Phaistos Disc — 2.0.0-rc.3
 
+
+## Use the AI research skill
+
+Start with [the individual skill](ai-skill/SKILL.md) and the
+[step-by-step use and validation guide](docs/AI-SKILL-VALIDATION.md).
+Run `python scripts/validate_ai_skill.py` on a complete matching checkout.
+The skill requires access to its native evidence; a GitHub link alone does not
+install it. Passing checks establish the documented retrieval scope, not accepted
+readings, expert review or cross-platform model accuracy.
+
+
 **2.0 release candidate: final independently reviewed 2.0 is blocked.** See [acceptance criteria](research/acceptance-2.0.md) and [current acceptance report](analysis/acceptance-2.0.json). The latest stable 1.x release is 1.6.0.
 
 A source-attributed research corpus and reproducible workbench within the five-member Aegean corpus family.
