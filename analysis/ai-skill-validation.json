@@ -1,0 +1,84 @@
+{
+  "format": "corpus-ai-skill-function-check-v1",
+  "repository": "hawkinsnick/Phaistos-Disc",
+  "status": "PASS_SCOPED_FUNCTIONAL_CHECKS",
+  "scope": "NATIVE_EVIDENCE_RETRIEVAL",
+  "skill_name": "phaistos-disc-research",
+  "skill_version": "0.3.1",
+  "skill_sha256": "ef86d1cf3dabbd6ff63066f044d3bb67af7d1eecb1149d4177f0424165a8a767",
+  "bundle_source_commit": "fb7926c6540a7044293e1e06720e174c847fa606",
+  "bundle_sha256": "b71035bcf861da4fe2a1dd04634088f5d006322be9f903a99ce7bd2c98aaa5cf",
+  "indexed_artifact_entries_checked": 34,
+  "unique_indexed_paths_checked": 34,
+  "lookups": [
+    {
+      "collection": "graphical-groups",
+      "id": "PD-A-E31",
+      "native_unit": "source graphical group",
+      "provenance": {
+        "path": "corpus/disc.json",
+        "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+        "pointer": "/groups/0",
+        "native_artifacts_snapshot_commit": null,
+        "role": "graphical-groups, occurrences",
+        "encoding": "json"
+      }
+    },
+    {
+      "collection": "occurrences",
+      "id": "PD-A-E31-S01",
+      "native_unit": "source sign-impression slot",
+      "provenance": {
+        "path": "corpus/disc.json",
+        "sha256": "fdc0cd3aa4ec78acc67fb1db65941a975a656ddfc9bab66313edf9b32b4d89ee",
+        "pointer": "/occurrences/0",
+        "native_artifacts_snapshot_commit": null,
+        "role": "graphical-groups, occurrences",
+        "encoding": "json"
+      }
+    },
+    {
+      "collection": "attributed-claims",
+      "id": "PD-C001",
+      "native_unit": "apparatus claim",
+      "provenance": {
+        "path": "apparatus/claims.json",
+        "sha256": "8b94dc170ca025a8012da5dcb9cbe165d7019e75d83687cc0a535f27a04c43a7",
+        "pointer": "/0",
+        "native_artifacts_snapshot_commit": null,
+        "role": "attributed-claims",
+        "encoding": "json"
+      }
+    },
+    {
+      "collection": "stroke-assertions",
+      "id": "PD-M001",
+      "native_unit": "source mark assertion",
+      "provenance": {
+        "path": "apparatus/stroke-assertions.json",
+        "sha256": "5450ca71fa1c900ede3c2f287ec3d4a7208eedcbdd5b8beffe311e54a037e72c",
+        "pointer": "/marks/0",
+        "native_artifacts_snapshot_commit": null,
+        "role": "stroke-assertions",
+        "encoding": "json"
+      }
+    },
+    {
+      "collection": "attribution-review",
+      "id": "PD-C001",
+      "native_unit": "bounded documentary attribution review task",
+      "provenance": {
+        "path": "research/attribution-review.json",
+        "sha256": "8ff52e8a75046eb4a96b082092c08bf7589c7b06a9d0f04dbc8a3c30fa95bed6",
+        "pointer": "/cases/0",
+        "native_artifacts_snapshot_commit": null,
+        "role": "bounded attribution review",
+        "encoding": "json"
+      }
+    }
+  ],
+  "missing_id_rejected": true,
+  "scholarly_acceptance_granted": false,
+  "empirical_model_accuracy_established": false,
+  "limits": "Deterministic workflow checks only. Independent model usage exercises are recorded separately; no cross-platform accuracy or scholarly acceptance is inferred."
+}
