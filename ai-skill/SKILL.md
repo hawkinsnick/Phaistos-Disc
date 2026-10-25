@@ -98,3 +98,12 @@ Prepare bounded review drafts with `--review-template`; validate submissions wit
 and deterministic answer tests as engineering checks, not empirical LLM validation
 or completion of scholarly/source-permission work. Local packaging grants no new
 redistribution rights. Label any model-generated analysis separately and cite it.
+
+## Preserve review provenance
+
+Reject malformed JSON-pointer escapes and negative or leading-zero array indices
+when verifying source citations; literal object keys retain their own spelling.
+Read the [master hostile-review report](https://github.com/hawkinsnick/Master-Corpus-AI-Skill/blob/main/references/hostile-review-2026-10-25.md)
+for this member's pinned retrieval scope and the limits of the source-fidelity
+and development checks. Complete retrieval-view traversal does not certify
+corpus completeness, accepted readings, independent witnesses or expert review.
