@@ -8,6 +8,7 @@ c=[('attribution_review', 'research/attribution-review.json'), ('attribution_rev
 c += [("research_delivery", p) for p in ['scripts/research_delivery.py','scripts/test_research_delivery.py','docs/RESEARCH-DELIVERY.md','analysis/research-delivery.json']]
 c += [("skill_function_validation", p) for p in ['ai-skill/SKILL.md', 'ai-skill/manifest.json', 'scripts/validate_ai_skill.py', 'scripts/test_ai_skill_validation.py', 'docs/AI-SKILL-VALIDATION.md', '.github/workflows/ai-skill-function.yml']]
 c += [('skill_validator_code', p) for p in ['ai-skill/scripts/build_bundle.py', 'ai-skill/scripts/validate_bundle.py', 'ai-skill/scripts/sync_skill.py']]
+c += [('nonreview_workflow', 'docs/NONREVIEW-WORK.md')]
 a=[]
 profile=json.loads((R/"ai-skill"/"references"/"authority-profile.json").read_text())
 indexed={rel for _,rel in c}

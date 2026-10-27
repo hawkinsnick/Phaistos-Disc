@@ -58,6 +58,11 @@
       "role": "ai_integrity_guide",
       "path": "docs/AI-INTEGRITY.md",
       "required": true
+    },
+    {
+      "role": "nonreview_workflow",
+      "path": "docs/NONREVIEW-WORK.md",
+      "required": true
     }
   ],
   "schema_version": "1.0"
