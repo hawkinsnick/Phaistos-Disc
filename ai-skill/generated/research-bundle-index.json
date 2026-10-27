@@ -1,9 +1,9 @@
 {
   "schema_version": "0.3.1",
   "skill_version": "0.3.1",
-  "source_commit": "2b6c5ad8902d4fd67eef4cb51570a5cf3169559a",
+  "source_commit": "bd08bcbd27cd2af5db225d9d4cc880c5364fadd3",
   "canonical_repository": true,
-  "generated_at_utc": "2026-10-25T19:29:34+00:00",
+  "generated_at_utc": "2026-10-27T13:07:45+00:00",
   "contract": {
     "corpus_is_authoritative": true,
     "missing_means_unknown": true,
@@ -106,8 +106,8 @@
     {
       "role": "research_delivery",
       "path": "scripts/research_delivery.py",
-      "sha256": "2c82a9f1fdac786da4b9583c3d463002a77d45fcdd604be86e4234b09070d756",
-      "bytes": 10387
+      "sha256": "41a6e40571391e2a4303b06a9a6eb4bf8575a84ca715d3932b8907edda64566c",
+      "bytes": 10514
     },
     {
       "role": "research_delivery",
@@ -124,14 +124,14 @@
     {
       "role": "research_delivery",
       "path": "analysis/research-delivery.json",
-      "sha256": "59673ff8a31e534280f5d59fee1925bed810a6a018f9339021bf10c2b5e9d027",
-      "bytes": 7685
+      "sha256": "ac301114a479f5fc0a7a761afaf9d527605a23323a63a82cee24d9c036f41d77",
+      "bytes": 7842
     },
     {
       "role": "skill_function_validation",
       "path": "ai-skill/SKILL.md",
-      "sha256": "395b98407f2ba6c917efaa24faaa56e8f0500359a5ec98c907aef6484b7ac269",
-      "bytes": 10068
+      "sha256": "bfaf65d3baee453547d391fc074c5663a70be917e9473388b4a0c220084513fa",
+      "bytes": 11715
     },
     {
       "role": "skill_function_validation",
@@ -166,8 +166,8 @@
     {
       "role": "skill_validator_code",
       "path": "ai-skill/scripts/build_bundle.py",
-      "sha256": "d843d4ed6e6852ca5bbed4644e965c17cbd28728ff61451266de0a8fa91364b4",
-      "bytes": 3339
+      "sha256": "cbf99a1900d33e544cde244144b7c96d4c32de5d3652b268d7b15e0838cb5560",
+      "bytes": 3395
     },
     {
       "role": "skill_validator_code",
@@ -180,6 +180,12 @@
       "path": "ai-skill/scripts/sync_skill.py",
       "sha256": "a4afd4e907a41ecc923ccf73c72a1a229f0b98c78f9eea51b06f06d3f359a30e",
       "bytes": 232
+    },
+    {
+      "role": "nonreview_workflow",
+      "path": "docs/NONREVIEW-WORK.md",
+      "sha256": "8043f2ea3cb5afde1171ae38a3432decfed47d469af08c6775d0d62197b102ee",
+      "bytes": 2932
     },
     {
       "role": "museum_authority",
